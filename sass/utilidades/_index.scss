@@ -1,8 +1,104 @@
-
-.header-astrox{
-   
-        .logo-astrox{
-            width: 10rem;
-            height: 10rem;
+body{
+    background: $color-fondo;
+    .boton-wpp{
+        text-align: center;
+        position: fixed;
+        z-index: 999;
+        border-radius: 50%;
+        bottom: 20px;
+        right: 25px;
+        padding: 25px;
+        transition: ease 0,3s;
+        
+        .whatsapp{
+            list-style: none;
+            text-decoration: none;
+            color: black;
+            
+            img{
+                width: 10rem;
+                height: 10rem;
+               }
+        }
+    
+    }
+    .boton-wpp:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+}
+.contenedor-menu{
+    background: $color-header;
+    .header-astrox{
+        margin-left: 3rem;
+        margin-right: 3rem;
+            .navbar{
+                background: $color-header;
             }
+            .logo-astrox{
+                width: 10rem;
+                height: 10rem;
+                }
+    }
+}
+
+//header del index
+main{
+    .contenido-principal{
+        margin-top: 3rem;
+        padding: 8rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        h1{
+            color:$color-h1;
+            text-align: center;
+        }
+        p{
+            color: $color-p;
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+//footer del index
+footer{
+    background: $color-footer;
+    padding: 0.7rem;
+    .footer-contenedor{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        .imagenes-footer{
+            a{
+                list-style: none;
+                text-decoration: none;
+                
+                img{
+                    width: 2.2rem;
+                    height: 2.2rem;
+                    margin-right: 0.3rem;
+                                      
+                    
+                }
+                
+            }
+
+        }
+
+    }
+    text-align: center;
+    color: rgb(31, 31, 31);
+    
+    .derechos{
+
+        a{
+            text-decoration: none;
+            list-style: none;
+            color: rgb(247, 105, 23);
+        }
+            
+        
+    }
 }
