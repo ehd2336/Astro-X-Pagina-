@@ -89,27 +89,62 @@ section{
             color: white;
             margin-bottom: 2rem;
         }
-        .cartanatal-index{
+        .cartanatal-servicios{
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 35rem;
-            height: 35rem;
-            -moz-border-radius: 50%;
-            -webkit-border-radius: 50%;
-            border-radius: 50%;
-            background: #fffff0;
-            margin-bottom: 2rem;
-            img{
-                width: 32rem;
-                height: 32rem;
-                margin-top: 1.5rem;
+            .servicios-texto{
+                margin-top: 8.5rem;
+                a{
+                    margin-right: 1rem;
+                    margin-left: 8rem;
+                    text-decoration: none;
+                    color: orange;
                 }
+                p{
+                    text-align: center;
+                    font-size: larger;
+
+                }
+                li{
+                    margin-left: 4rem;
+                    color: white;
+                }
+            }
+            .cartanatal-index{
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               width: 35rem;
+               height: 35rem;
+               -moz-border-radius: 50%;
+               -webkit-border-radius: 50%;
+               border-radius: 50%;
+               background: #fffff0;
+               margin-bottom: 2rem;
+               margin-right: 5rem;
+               overflow: hidden;
+                  img{
+                      width: 32rem;
+                      height: 32rem;
+                      margin-top: 1.5rem;
+                      transition: 0.5s;
+                      object-fit: cover;
+                  }
+                  img:hover{
+                      transform:scale(1.1)
+                  }
+               }
         }
+        
     }
     
     
 }
+
+// segunda section
+.carousel{
+
+}
+
 
 //footer del index
 footer{
