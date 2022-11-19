@@ -140,10 +140,24 @@ section{
     
 }
 
-// segunda section
+// tercera section
 .carousel{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    .carousel-inner{
+        div{
+            .conociendo-pluton{
+                width: 60rem;
+                height: 40rem;
+    
+            }
+        }
+    }
 }
+
 
 
 //footer del index

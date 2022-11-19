@@ -98,6 +98,16 @@ section .section-astrox {
       section .section-astrox .cartanatal-servicios .cartanatal-index img:hover {
         transform: scale(1.1); }
 
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+  .carousel .carousel-inner div .conociendo-pluton {
+    width: 60rem;
+    height: 40rem; }
+
 footer {
   background: linear-gradient(135deg, #69FF97 10%, #00E4FF 100%);
   padding: 0.7rem;
