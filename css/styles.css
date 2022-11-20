@@ -107,6 +107,12 @@ section .section-astrox {
   .carousel .carousel-inner div .conociendo-pluton {
     width: 60rem;
     height: 40rem; }
+  .carousel .carousel-inner .carousel-item .conociendo-jupiter {
+    width: 60rem;
+    height: 40rem; }
+  .carousel .carousel-inner .carousel-item .conociendo-luna {
+    width: 60rem;
+    height: 40rem; }
 
 footer {
   background: linear-gradient(135deg, #69FF97 10%, #00E4FF 100%);
