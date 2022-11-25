@@ -1,12 +1,13 @@
 body{
-    background: $color-fondo;
-    .barra-separadora{
-        img{
-            text-align: center;
-            width: 100%;
-            }
+    video{
+        position: fixed;
+        min-width: 100%;
+        min-height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translatex(-50%) translatey(-50%);
+        z-index: -1;
     }
-    
     .boton-wpp{
         text-align: center;
         position: fixed;
@@ -55,9 +56,11 @@ body{
 
 //header del index
 main{
+    background: $color-div;
+    margin-top: 5rem;
     .contenido-principal{
         margin-top: 1.5rem;
-        padding: 6rem;
+        padding: 3rem;
         background-repeat: no-repeat;
         background-size: cover;
         h1{
@@ -72,8 +75,14 @@ main{
     }
 }
 
-//section
+//section carta natal
 
+section{
+    background: $color-div;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+}
 section{
     .section-astrox{
         display: flex;
@@ -84,13 +93,15 @@ section{
             color: white;
             margin-top: 3rem;
         }
-        p{
+        .texto-h2{
             text-align: center;
             color: white;
-            margin-bottom: 2rem;
+            margin-bottom: 4rem;
+            width: 60rem;
         }
         .cartanatal-servicios{
             display: flex;
+            margin-left: 2rem;
             .servicios-texto{
                 margin-top: 8.5rem;
                 a{
@@ -102,6 +113,7 @@ section{
                 p{
                     text-align: center;
                     font-size: larger;
+                    color: white;
 
                 }
                 li{
@@ -140,7 +152,34 @@ section{
     
 }
 
-// tercera section
+// section de cursos y talleres (video)
+
+section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    .video-youtube{
+        iframe{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            margin-right: 2rem;
+        }
+    }
+    .texto-cursos{
+        align-self: center;
+        color: white;
+        width: 30rem;
+        margin-left: 2rem;
+        .cursos{
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+    }
+}
+
+// section astro adicto
 .carousel{
     display: flex;
     flex-direction: column;
@@ -178,6 +217,7 @@ section{
 footer{
     background: $color-footer;
     padding: 0.7rem;
+    margin-top: 5rem;
     .footer-contenedor{
         display: flex;
         justify-content: space-evenly;

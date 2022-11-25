@@ -1,29 +1,34 @@
-body {
-  background: linear-gradient(to right, #4e4376, #2b5876); }
-  body .barra-separadora img {
-    text-align: center;
-    width: 100%; }
-  body .boton-wpp {
-    text-align: center;
-    position: fixed;
-    z-index: 999;
-    border-radius: 50%;
-    bottom: 20px;
-    right: 25px;
-    padding: 25px;
-    transition: ease 0,3s;
-    margin-bottom: 2rem; }
-    body .boton-wpp p {
-      color: white; }
-    body .boton-wpp .whatsapp {
-      list-style: none;
-      text-decoration: none; }
-      body .boton-wpp .whatsapp img {
-        width: 10rem;
-        height: 10rem; }
-  body .boton-wpp:hover {
-    transform: scale(1.1);
-    transition: 0.3s; }
+body video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translatex(-50%) translatey(-50%);
+  z-index: -1; }
+
+body .boton-wpp {
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 25px;
+  padding: 25px;
+  transition: ease 0,3s;
+  margin-bottom: 2rem; }
+  body .boton-wpp p {
+    color: white; }
+  body .boton-wpp .whatsapp {
+    list-style: none;
+    text-decoration: none; }
+    body .boton-wpp .whatsapp img {
+      width: 10rem;
+      height: 10rem; }
+
+body .boton-wpp:hover {
+  transform: scale(1.1);
+  transition: 0.3s; }
 
 .contenedor-menu {
   background: linear-gradient(135deg, #69FF97 10%, #00E4FF 100%); }
@@ -36,18 +41,26 @@ body {
       width: 10rem;
       height: 10rem; }
 
-main .contenido-principal {
-  margin-top: 1.5rem;
-  padding: 6rem;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  main .contenido-principal h1 {
-    color: white;
-    text-align: center; }
-  main .contenido-principal p {
-    color: white;
-    text-align: center;
-    margin-top: 1.5rem; }
+main {
+  background: linear-gradient(to right, #4e4376, #2b5876);
+  margin-top: 5rem; }
+  main .contenido-principal {
+    margin-top: 1.5rem;
+    padding: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    main .contenido-principal h1 {
+      color: white;
+      text-align: center; }
+    main .contenido-principal p {
+      color: white;
+      text-align: center;
+      margin-top: 1.5rem; }
+
+section {
+  background: linear-gradient(to right, #4e4376, #2b5876);
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
 
 section .section-astrox {
   display: flex;
@@ -57,12 +70,14 @@ section .section-astrox {
     text-align: center;
     color: white;
     margin-top: 3rem; }
-  section .section-astrox p {
+  section .section-astrox .texto-h2 {
     text-align: center;
     color: white;
-    margin-bottom: 2rem; }
+    margin-bottom: 4rem;
+    width: 60rem; }
   section .section-astrox .cartanatal-servicios {
-    display: flex; }
+    display: flex;
+    margin-left: 2rem; }
     section .section-astrox .cartanatal-servicios .servicios-texto {
       margin-top: 8.5rem; }
       section .section-astrox .cartanatal-servicios .servicios-texto a {
@@ -72,7 +87,8 @@ section .section-astrox {
         color: orange; }
       section .section-astrox .cartanatal-servicios .servicios-texto p {
         text-align: center;
-        font-size: larger; }
+        font-size: larger;
+        color: white; }
       section .section-astrox .cartanatal-servicios .servicios-texto li {
         margin-left: 4rem;
         color: white; }
@@ -98,6 +114,24 @@ section .section-astrox {
       section .section-astrox .cartanatal-servicios .cartanatal-index img:hover {
         transform: scale(1.1); }
 
+section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+  section .video-youtube iframe {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem; }
+  section .texto-cursos {
+    align-self: center;
+    color: white;
+    width: 30rem;
+    margin-left: 2rem; }
+    section .texto-cursos .cursos {
+      text-align: center;
+      margin-bottom: 2rem; }
+
 .carousel {
   display: flex;
   flex-direction: column;
@@ -117,6 +151,7 @@ section .section-astrox {
 footer {
   background: linear-gradient(135deg, #69FF97 10%, #00E4FF 100%);
   padding: 0.7rem;
+  margin-top: 5rem;
   text-align: center;
   color: #1f1f1f; }
   footer .footer-contenedor {
