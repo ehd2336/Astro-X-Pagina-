@@ -1,42 +1,4 @@
-body{
-    video{
-        position: fixed;
-        min-width: 100%;
-        min-height: 100%;
-        top: 50%;
-        left: 50%;
-        transform: translatex(-50%) translatey(-50%);
-        z-index: -1;
-    }
-    .boton-wpp{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: fixed;
-        z-index: 999;
-        border-radius: 50%;
-        bottom: 20px;
-        right: 25px;
-        padding: 25px;
-        transition: ease 0,3s;
-        margin-bottom: 2rem;
-        .hablemos{
-            color: $color-p
-                }
-         .whatsapp{
-            img{
-                width: 10rem;
-                height: 10rem;
-               }
-            
-        }
-    
-    }
-    .boton-wpp:hover{
-        transform: scale(1.1);
-        transition: 0.3s;
-    }
-}
+
 .sobre-mi{
     h1{
         color: white;
@@ -85,7 +47,6 @@ body{
         }
         .imagen-eric{
             grid-area: imagen-eric;
-           
             width: 35rem;
         }
         h1, h2, h3, p{
@@ -94,12 +55,17 @@ body{
         }
         
     }
+}
     //section que contiene carta natal y planetas
-    section{
+
+.eric-carta{
+        margin-top: 5rem;
+        padding-bottom: 5rem;
         h4{
             color: white;
             margin-left: 0.5rem;
-    
+            margin-bottom: 4rem;
+            padding-top: 3rem;
         }
         .mi-carta{
             display: flex;
@@ -137,5 +103,12 @@ body{
                 }
             }
         }
-    }
+        .h4-texto-carta{
+            color: $color-h1;
+        }
+        .texto-carta{
+            color: $color-p;
+            margin-bottom: 5rem;
+            margin-left: 0.5rem;
+        }
 }

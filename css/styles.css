@@ -187,37 +187,6 @@ footer {
     list-style: none;
     color: #f76917; }
 
-body video {
-  position: fixed;
-  min-width: 100%;
-  min-height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translatex(-50%) translatey(-50%);
-  z-index: -1; }
-
-body .boton-wpp {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
-  z-index: 999;
-  border-radius: 50%;
-  bottom: 20px;
-  right: 25px;
-  padding: 25px;
-  transition: ease 0,3s;
-  margin-bottom: 2rem; }
-  body .boton-wpp .hablemos {
-    color: white; }
-  body .boton-wpp .whatsapp img {
-    width: 10rem;
-    height: 10rem; }
-
-body .boton-wpp:hover {
-  transform: scale(1.1);
-  transition: 0.3s; }
-
 .sobre-mi h1 {
   color: white;
   margin-top: 3rem;
@@ -256,40 +225,116 @@ body .boton-wpp:hover {
     color: white;
     margin-left: 0.5rem; }
 
-.sobre-mi section h4 {
-  color: white;
-  margin-left: 0.5rem; }
-
-.sobre-mi section .mi-carta {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center; }
-  .sobre-mi section .mi-carta .imagen-carta {
-    width: 45rem;
-    height: 45rem;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #fffff0;
-    margin-bottom: 2rem;
-    overflow: hidden; }
-    .sobre-mi section .mi-carta .imagen-carta img {
-      width: 42rem;
-      height: 42rem;
-      margin-top: 1.5rem;
-      transition: 0.5s;
-      object-fit: cover; }
-    .sobre-mi section .mi-carta .imagen-carta img:hover {
-      transform: scale(1.1); }
-  .sobre-mi section .mi-carta ul {
+.eric-carta {
+  margin-top: 5rem;
+  padding-bottom: 5rem; }
+  .eric-carta h4 {
+    color: white;
+    margin-left: 0.5rem;
+    margin-bottom: 4rem;
+    padding-top: 3rem; }
+  .eric-carta .mi-carta {
     display: flex;
-    flex-direction: column;
-    align-self: center;
-    margin-right: 6rem; }
-    .sobre-mi section .mi-carta ul li {
-      list-style: none;
+    justify-content: space-evenly;
+    text-align: center; }
+    .eric-carta .mi-carta .imagen-carta {
+      width: 45rem;
+      height: 45rem;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background: #fffff0;
+      margin-bottom: 2rem;
+      overflow: hidden; }
+      .eric-carta .mi-carta .imagen-carta img {
+        width: 42rem;
+        height: 42rem;
+        margin-top: 1.5rem;
+        transition: 0.5s;
+        object-fit: cover; }
+      .eric-carta .mi-carta .imagen-carta img:hover {
+        transform: scale(1.1); }
+    .eric-carta .mi-carta ul {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      margin-right: 6rem; }
+      .eric-carta .mi-carta ul li {
+        list-style: none;
+        text-decoration: none;
+        color: white; }
+  .eric-carta .h4-texto-carta {
+    color: white; }
+  .eric-carta .texto-carta {
+    color: white;
+    margin-bottom: 5rem;
+    margin-left: 0.5rem; }
+
+.servicios-carta {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  justify-content: center;
+  align-items: center; }
+  .servicios-carta h1, .servicios-carta p {
+    color: white; }
+  .servicios-carta p {
+    width: 60rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem; }
+
+.servicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "carta-escrita carta-escrita-revo" "carta-online carta-revo";
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  gap: 5rem;
+  background: none; }
+  .servicios div {
+    background: linear-gradient(to right, #4e4376, #2b5876);
+    color: white;
+    border-radius: 3rem;
+    text-align: center;
+    margin: 1rem;
+    width: 40rem;
+    padding: 5rem;
+    transition: transform 0.2s; }
+    .servicios div h2 {
+      margin-bottom: 3rem; }
+    .servicios div a {
       text-decoration: none;
       color: white; }
+  .servicios div:hover {
+    transform: scale(1.1); }
+  .servicios .carta-escrita {
+    grid-area: carta-escrita; }
+  .servicios .carta-escrita-revo {
+    grid-area: carta-escrita-revo; }
+  .servicios .carta-online {
+    grid-area: carta-online; }
+  .servicios .carta-revo {
+    grid-area: carta-revo; }
+
+.preguntas-frecuentes {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .preguntas-frecuentes .divisor-preguntas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .preguntas-frecuentes .divisor-preguntas img {
+      width: 14rem; }
+    .preguntas-frecuentes .divisor-preguntas h3 {
+      margin-bottom: 5rem; }
+  .preguntas-frecuentes h3, .preguntas-frecuentes h4, .preguntas-frecuentes p {
+    color: white; }
+  .preguntas-frecuentes p {
+    width: 50rem;
+    text-align: center; }
 
 * {
   margin: 0;
