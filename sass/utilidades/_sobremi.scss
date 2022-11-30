@@ -1,0 +1,141 @@
+body{
+    video{
+        position: fixed;
+        min-width: 100%;
+        min-height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translatex(-50%) translatey(-50%);
+        z-index: -1;
+    }
+    .boton-wpp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        z-index: 999;
+        border-radius: 50%;
+        bottom: 20px;
+        right: 25px;
+        padding: 25px;
+        transition: ease 0,3s;
+        margin-bottom: 2rem;
+        .hablemos{
+            color: $color-p
+                }
+         .whatsapp{
+            img{
+                width: 10rem;
+                height: 10rem;
+               }
+            
+        }
+    
+    }
+    .boton-wpp:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+}
+.sobre-mi{
+    h1{
+        color: white;
+        margin-top: 3rem;
+        margin-left: 0.5rem;
+        margin-bottom: 2rem;
+        padding-top: 2rem;
+    }
+    .big3{
+        display: flex;
+        margin-bottom: 3rem;
+        img{
+            width: 8rem;
+        }
+        p{
+        flex-direction: column;
+        align-self: center;   
+        color: white; 
+           
+        }
+    }
+    // contiene los textos de mi historia y de astrologia
+    .historia-mia{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows:0.2fr 1fr 0.2fr 1fr ;
+        grid-template-areas: 
+        "h2-historia imagen-eric"
+        "historia imagen-eric"
+        "h3-astro imagen-eric"
+        "historia-astro imagen-eric";
+        gap: 1rem;
+        .h2-historia{
+            grid-area: h2-historia;
+        }
+        .historia{
+            grid-area: historia;
+            
+        }
+        .h3-astro{
+            grid-area: h3-astro;
+        }
+        .historia-astro{
+            grid-area: historia-astro;
+            
+        }
+        .imagen-eric{
+            grid-area: imagen-eric;
+           
+            width: 35rem;
+        }
+        h1, h2, h3, p{
+            color: white;
+            margin-left: 0.5rem;
+        }
+        
+    }
+    //section que contiene carta natal y planetas
+    section{
+        h4{
+            color: white;
+            margin-left: 0.5rem;
+    
+        }
+        .mi-carta{
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            .imagen-carta{
+                width: 45rem;
+                height: 45rem;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                background: #fffff0;
+                margin-bottom: 2rem;
+                overflow: hidden;
+                img{
+                      width: 42rem;
+                      height: 42rem;
+                      margin-top: 1.5rem;
+                      transition: 0.5s;
+                      object-fit: cover;
+                }
+                img:hover{
+                      transform:scale(1.1)
+                }
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                margin-right: 6rem;
+                li{
+                    list-style: none;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+}

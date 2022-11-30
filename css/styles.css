@@ -8,7 +8,9 @@ body video {
   z-index: -1; }
 
 body .boton-wpp {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: fixed;
   z-index: 999;
   border-radius: 50%;
@@ -17,14 +19,11 @@ body .boton-wpp {
   padding: 25px;
   transition: ease 0,3s;
   margin-bottom: 2rem; }
-  body .boton-wpp p {
+  body .boton-wpp .hablemos {
     color: white; }
-  body .boton-wpp .whatsapp {
-    list-style: none;
-    text-decoration: none; }
-    body .boton-wpp .whatsapp img {
-      width: 10rem;
-      height: 10rem; }
+  body .boton-wpp .whatsapp img {
+    width: 10rem;
+    height: 10rem; }
 
 body .boton-wpp:hover {
   transform: scale(1.1);
@@ -45,92 +44,109 @@ main {
   background: linear-gradient(to right, #4e4376, #2b5876);
   margin-top: 5rem; }
   main .contenido-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 1.5rem;
     padding: 3rem;
     background-repeat: no-repeat;
     background-size: cover; }
     main .contenido-principal h1 {
       color: white;
-      text-align: center; }
-    main .contenido-principal p {
-      color: white;
       text-align: center;
-      margin-top: 1.5rem; }
+      margin-bottom: 4rem; }
+    main .contenido-principal .bloque-imagenes {
+      display: flex; }
+      main .contenido-principal .bloque-imagenes p {
+        flex-direction: column;
+        align-self: center;
+        color: white;
+        width: 15rem;
+        margin-top: 1.5rem;
+        margin-left: 3rem;
+        margin-right: 3rem; }
+      main .contenido-principal .bloque-imagenes .mano {
+        width: 30rem;
+        height: 30rem; }
 
 section {
   background: linear-gradient(to right, #4e4376, #2b5876);
   margin-top: 5rem;
   margin-bottom: 5rem; }
 
-section .section-astrox {
+.section-carta {
   display: flex;
-  flex-direction: column;
-  align-items: center; }
-  section .section-astrox h2 {
-    text-align: center;
-    color: white;
-    margin-top: 3rem; }
-  section .section-astrox .texto-h2 {
-    text-align: center;
-    color: white;
-    margin-bottom: 4rem;
-    width: 60rem; }
-  section .section-astrox .cartanatal-servicios {
+  justify-content: space-evenly; }
+  .section-carta .section-astrox {
     display: flex;
-    margin-left: 2rem; }
-    section .section-astrox .cartanatal-servicios .servicios-texto {
-      margin-top: 8.5rem; }
-      section .section-astrox .cartanatal-servicios .servicios-texto a {
-        margin-right: 1rem;
-        margin-left: 8rem;
-        text-decoration: none;
-        color: orange; }
-      section .section-astrox .cartanatal-servicios .servicios-texto p {
-        text-align: center;
-        font-size: larger;
-        color: white; }
-      section .section-astrox .cartanatal-servicios .servicios-texto li {
-        margin-left: 4rem;
-        color: white; }
-    section .section-astrox .cartanatal-servicios .cartanatal-index {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 35rem;
-      height: 35rem;
-      -moz-border-radius: 50%;
-      -webkit-border-radius: 50%;
-      border-radius: 50%;
-      background: #fffff0;
-      margin-bottom: 2rem;
-      margin-right: 5rem;
-      overflow: hidden; }
-      section .section-astrox .cartanatal-servicios .cartanatal-index img {
-        width: 32rem;
-        height: 32rem;
-        margin-top: 1.5rem;
-        transition: 0.5s;
-        object-fit: cover; }
-      section .section-astrox .cartanatal-servicios .cartanatal-index img:hover {
-        transform: scale(1.1); }
+    flex-direction: column;
+    align-items: center; }
+    .section-carta .section-astrox h2 {
+      text-align: center;
+      color: white;
+      margin-top: 3rem; }
+    .section-carta .section-astrox .texto-h2 {
+      text-align: center;
+      color: white;
+      margin-bottom: 4rem;
+      width: 60rem; }
+    .section-carta .section-astrox .cartanatal-servicios {
+      display: flex; }
+      .section-carta .section-astrox .cartanatal-servicios .servicios-texto {
+        margin-top: 8.5rem; }
+        .section-carta .section-astrox .cartanatal-servicios .servicios-texto a {
+          margin-right: 1rem;
+          margin-left: 8rem;
+          text-decoration: none;
+          color: orange; }
+        .section-carta .section-astrox .cartanatal-servicios .servicios-texto p {
+          text-align: center;
+          font-size: larger;
+          color: white; }
+        .section-carta .section-astrox .cartanatal-servicios .servicios-texto li {
+          margin-left: 4rem;
+          color: white; }
+      .section-carta .section-astrox .cartanatal-servicios .cartanatal-index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 35rem;
+        height: 35rem;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: #fffff0;
+        margin-bottom: 2rem;
+        overflow: hidden; }
+        .section-carta .section-astrox .cartanatal-servicios .cartanatal-index img {
+          width: 32rem;
+          height: 32rem;
+          margin-top: 1.5rem;
+          transition: 0.5s;
+          object-fit: cover; }
+        .section-carta .section-astrox .cartanatal-servicios .cartanatal-index img:hover {
+          transform: scale(1.1); }
 
-section {
+.section-cursos {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 3rem;
   margin-bottom: 3rem; }
-  section .video-youtube iframe {
+  .section-cursos .video-youtube iframe {
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-right: 2rem; }
-  section .texto-cursos {
+  .section-cursos .texto-cursos {
     align-self: center;
     color: white;
     width: 30rem;
     margin-left: 2rem; }
-    section .texto-cursos .cursos {
+    .section-cursos .texto-cursos .cursos {
       text-align: center;
       margin-bottom: 2rem; }
+    .section-cursos .texto-cursos a {
+      text-decoration: none;
+      color: white; }
 
 .carousel {
   display: flex;
@@ -170,6 +186,110 @@ footer {
     text-decoration: none;
     list-style: none;
     color: #f76917; }
+
+body video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translatex(-50%) translatey(-50%);
+  z-index: -1; }
+
+body .boton-wpp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 25px;
+  padding: 25px;
+  transition: ease 0,3s;
+  margin-bottom: 2rem; }
+  body .boton-wpp .hablemos {
+    color: white; }
+  body .boton-wpp .whatsapp img {
+    width: 10rem;
+    height: 10rem; }
+
+body .boton-wpp:hover {
+  transform: scale(1.1);
+  transition: 0.3s; }
+
+.sobre-mi h1 {
+  color: white;
+  margin-top: 3rem;
+  margin-left: 0.5rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem; }
+
+.sobre-mi .big3 {
+  display: flex;
+  margin-bottom: 3rem; }
+  .sobre-mi .big3 img {
+    width: 8rem; }
+  .sobre-mi .big3 p {
+    flex-direction: column;
+    align-self: center;
+    color: white; }
+
+.sobre-mi .historia-mia {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+  grid-template-areas: "h2-historia imagen-eric" "historia imagen-eric" "h3-astro imagen-eric" "historia-astro imagen-eric";
+  gap: 1rem; }
+  .sobre-mi .historia-mia .h2-historia {
+    grid-area: h2-historia; }
+  .sobre-mi .historia-mia .historia {
+    grid-area: historia; }
+  .sobre-mi .historia-mia .h3-astro {
+    grid-area: h3-astro; }
+  .sobre-mi .historia-mia .historia-astro {
+    grid-area: historia-astro; }
+  .sobre-mi .historia-mia .imagen-eric {
+    grid-area: imagen-eric;
+    width: 35rem; }
+  .sobre-mi .historia-mia h1, .sobre-mi .historia-mia h2, .sobre-mi .historia-mia h3, .sobre-mi .historia-mia p {
+    color: white;
+    margin-left: 0.5rem; }
+
+.sobre-mi section h4 {
+  color: white;
+  margin-left: 0.5rem; }
+
+.sobre-mi section .mi-carta {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center; }
+  .sobre-mi section .mi-carta .imagen-carta {
+    width: 45rem;
+    height: 45rem;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #fffff0;
+    margin-bottom: 2rem;
+    overflow: hidden; }
+    .sobre-mi section .mi-carta .imagen-carta img {
+      width: 42rem;
+      height: 42rem;
+      margin-top: 1.5rem;
+      transition: 0.5s;
+      object-fit: cover; }
+    .sobre-mi section .mi-carta .imagen-carta img:hover {
+      transform: scale(1.1); }
+  .sobre-mi section .mi-carta ul {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-right: 6rem; }
+    .sobre-mi section .mi-carta ul li {
+      list-style: none;
+      text-decoration: none;
+      color: white; }
 
 * {
   margin: 0;

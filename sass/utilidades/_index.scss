@@ -9,7 +9,9 @@ body{
         z-index: -1;
     }
     .boton-wpp{
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         position: fixed;
         z-index: 999;
         border-radius: 50%;
@@ -18,14 +20,10 @@ body{
         padding: 25px;
         transition: ease 0,3s;
         margin-bottom: 2rem;
-        p{
-            color: white;
-        }
-
+        .hablemos{
+            color: $color-p
+                }
          .whatsapp{
-            list-style: none;
-            text-decoration: none;
-            
             img{
                 width: 10rem;
                 height: 10rem;
@@ -59,6 +57,9 @@ main{
     background: $color-div;
     margin-top: 5rem;
     .contenido-principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-top: 1.5rem;
         padding: 3rem;
         background-repeat: no-repeat;
@@ -66,12 +67,25 @@ main{
         h1{
             color:$color-h1;
             text-align: center;
+            margin-bottom: 4rem;
         }
-        p{
-            color: $color-p;
-            text-align: center;
-            margin-top: 1.5rem;
+        .bloque-imagenes{
+            display: flex;
+            p{
+                flex-direction: column;
+                align-self: center;
+                color: $color-p;
+                width: 15rem;
+                margin-top: 1.5rem;
+                margin-left: 3rem;
+                margin-right: 3rem;
+            }
+            .mano{ 
+                width: 30rem;
+                height: 30rem;
+            }
         }
+        
     }
 }
 
@@ -83,7 +97,9 @@ section{
     margin-bottom: 5rem;
 
 }
-section{
+.section-carta{
+    display: flex;
+    justify-content: space-evenly;
     .section-astrox{
         display: flex;
         flex-direction: column;
@@ -101,7 +117,7 @@ section{
         }
         .cartanatal-servicios{
             display: flex;
-            margin-left: 2rem;
+            
             .servicios-texto{
                 margin-top: 8.5rem;
                 a{
@@ -132,7 +148,6 @@ section{
                border-radius: 50%;
                background: #fffff0;
                margin-bottom: 2rem;
-               margin-right: 5rem;
                overflow: hidden;
                   img{
                       width: 32rem;
@@ -154,9 +169,9 @@ section{
 
 // section de cursos y talleres (video)
 
-section{
+.section-cursos{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 3rem;
     margin-bottom: 3rem;
     .video-youtube{
@@ -174,6 +189,10 @@ section{
         .cursos{
             text-align: center;
             margin-bottom: 2rem;
+        }
+        a{
+            text-decoration: none;
+            color: white;
         }
 
     }
