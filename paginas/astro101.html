@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Animate on scroll CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- link css-->
     <link rel="stylesheet" href="../css/styles.css">
     <title>Astro 101</title>
 </head>
 <body>
+    <!-- Js de Animate on scroll-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <video src="../img/video-fondo.mp4" autoplay loop muted></video>
     <div class="boton-wpp">
       <a href="https://api.whatsapp.com/send?phone=542915660864" class="whatsapp" target="_blank">
@@ -53,18 +60,29 @@
       <!-- arranca el main---------------->
     <main class="main-101">
         <h1>Astro 101: Nuestra Sección dedicada para que sigas aprendiendo</h1>
-         <div class="pluton-101">
+        <div class="aside">
+          <h2 class="lista"> Artículos</h2>
+          <ul>
+            <li> <a href="#pluton">Plutón</a></li>
+            <li><a href="#jupiter">Júpiter</a></li>
+            <li><a href="#luna">La Luna</a></li>
+            <li><a href="">Marte</a></li>
+          </ul>
+        </div>
+        <div id="pluton" class="pluton-101" data-aos="flip-right" data-aos-delat="1000" data-aos-duration="1000">
+            <h2>El planeta de la profundidad y transformación:</h2>
             <img src="../img/conociendo-pluton.jpg" alt="tarjeta de planeta plutón">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam hic officia corrupti suscipit fugit sit rerum, inventore amet unde architecto,accusantium iure sed fuga eaque necessitatibus nam earum. Vitae, recusandae.</p>
-            <img class="divisor-2" src="../img/divisor3.png" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam hic officia corrupti suscipit fugit sit rerum, inventore amet unde architecto,accusantium iure sed fuga eaque necessitatibus nam earum. Vitae, recusandae.<a href="../paginas/pluton.html" target="blank">Seguir leyendo...</a></p>
          </div>
-         <div class="jupiter-101">
+         <div id="jupiter" class="jupiter-101" data-aos="flip-left" data-aos-delat="500" data-aos-duration="1000">
+            <h2>Júpiter, el planeta que agranda todo lo que toca: </h2>
              <img src="../img/conociendo-jupiter.jpg" alt="tarjeta de planeta plutón">
-             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam hic officia corrupti suscipit fugit sit rerum, inventore amet unde architecto,          accusantium iure sed fuga eaque necessitatibus nam earum. Vitae, recusandae.</p>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam hic officia corrupti suscipit fugit sit rerum, inventore amet unde architecto,          accusantium iure sed fuga eaque necessitatibus nam earum. Vitae, recusandae.<a href="" target="blank">Seguir leyendo...</a></p>
          </div>
-         <div class="luna-101">
+         <div id="luna" class="luna-101" data-aos="flip-right" data-aos-delat="500" data-aos-duration="1000">
+            <h2>La Luna y nuestros mecanismos inconscientes:</h2>
              <img src="../img/conociendo-luna.jpg" alt="tarjeta de planeta plutón">
-             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam hic officia corrupti suscipit fugit sit rerum, inventore amet unde architecto,          accusantium iure sed fuga eaque necessitatibus nam earum. Vitae, recusandae.</p>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam hic officia corrupti suscipit fugit sit rerum, inventore amet unde architecto,accusantium iure sed fuga eaque necessitatibus nam earum. Vitae, recusandae. <a href="" target="blank">Seguir leyendo...</a></p>
          </div>
     </main>
     <footer>
@@ -85,5 +103,6 @@
     </footer> 
      <!-- JavaScript Bundle with Popper -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
 </body>
 </html>

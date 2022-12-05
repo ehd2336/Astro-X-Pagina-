@@ -301,7 +301,8 @@ footer {
     margin: 1rem;
     width: 40rem;
     padding: 5rem;
-    transition: transform 0.2s; }
+    transition: transform 0.2s;
+    box-shadow: 0px 15px 25px #030126; }
     .servicios div h2 {
       margin-bottom: 3rem; }
     .servicios div a {
@@ -347,8 +348,15 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    .main-talleres div .luna-titulo, .main-talleres div .ascendente-titulo, .main-talleres div .marte-titulo, .main-talleres div .venus-titulo {
+      flex-direction: column; }
+      .main-talleres div .luna-titulo p, .main-talleres div .ascendente-titulo p, .main-talleres div .marte-titulo p, .main-talleres div .venus-titulo p {
+        width: 30rem;
+        text-align: center; }
   .main-talleres div:hover {
     transform: scale(1.1); }
+  .main-talleres h2 {
+    margin-bottom: 3rem; }
   .main-talleres .taller-luna {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -356,8 +364,6 @@ footer {
     width: 80rem;
     text-align: center;
     padding: 15rem; }
-    .main-talleres .taller-luna .p-luna {
-      width: 20rem; }
   .main-talleres .taller-ascendente {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -365,10 +371,6 @@ footer {
     width: 80rem;
     text-align: center;
     padding: 15rem; }
-    .main-talleres .taller-ascendente .h2-ascendente {
-      text-align: left; }
-    .main-talleres .taller-ascendente p {
-      width: 20rem; }
   .main-talleres .taller-marte {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -376,74 +378,151 @@ footer {
     width: 80rem;
     text-align: center;
     padding: 15rem; }
-    .main-talleres .taller-marte .h2-marte {
-      text-align: left; }
-    .main-talleres .taller-marte p {
-      width: 20rem; }
   .main-talleres .taller-venus {
     margin-top: 3rem;
     margin-bottom: 3rem;
     background: linear-gradient(to right, #4e4376, #2b5876);
     width: 80rem;
-    text-align: center;
     padding: 15rem; }
-    .main-talleres .taller-venus .venus-titulo {
-      flex-direction: column; }
-      .main-talleres .taller-venus .venus-titulo img {
-        width: 20rem; }
-    .main-talleres .taller-venus p {
+    .main-talleres .taller-venus img {
       width: 20rem;
-      margin-left: 5rem; }
+      margin-right: 5rem; }
 
-.main-101 div {
-  display: flex;
-  flex-direction: column; }
-  .main-101 div p {
+.main-101 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr;
+  grid-template-areas: "h1 h1" "pluton-101 aside" "jupiter-101 aside" "luna-101 aside";
+  justify-content: center; }
+  .main-101 div {
     margin-top: 3rem;
-    color: white; }
+    margin-bottom: 3rem;
+    padding: 4rem; }
+    .main-101 div img {
+      width: 60rem; }
+    .main-101 div p {
+      width: 40rem;
+      margin-top: 3rem;
+      color: white; }
+  .main-101 h1 {
+    grid-area: h1;
+    text-align: center;
+    color: white;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    text-align: left; }
+  .main-101 h2 {
+    color: white;
+    margin-bottom: 5rem; }
+  .main-101 .aside {
+    grid-area: aside;
+    text-align: center; }
+    .main-101 .aside ul li {
+      list-style: none; }
+      .main-101 .aside ul li a {
+        text-decoration: none;
+        color: white; }
+  .main-101 .pluton-101 {
+    grid-area: pluton-101; }
+  .main-101 .jupiter-101 {
+    grid-area: jupiter-101; }
+  .main-101 .luna-101 {
+    grid-area: luna-101; }
 
-.main-101 h1 {
-  text-align: center;
-  color: white;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  padding: 3rem; }
-
-.main-101 .pluton-101 {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  padding: 4rem; }
-  .main-101 .pluton-101 img {
-    width: 50rem; }
-  .main-101 .pluton-101 p {
-    width: 30rem; }
-
-.main-101 .jupiter-101 {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  padding: 4rem; }
-  .main-101 .jupiter-101 img {
-    width: 50rem; }
-  .main-101 .jupiter-101 p {
-    width: 30rem; }
-
-.main-101 .luna-101 {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  padding: 4rem; }
-  .main-101 .luna-101 img {
-    width: 50rem; }
-  .main-101 .luna-101 p {
-    width: 30rem; }
+@media (max-width: 768px) {
+  body .boton-wpp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0,3s;
+    margin-bottom: 2rem; }
+    body .boton-wpp .hablemos {
+      color: white; }
+    body .boton-wpp .whatsapp img {
+      width: 10rem;
+      height: 10rem; }
+  main .contenido-principal .bloque-imagenes {
+    display: flex;
+    flex-direction: column; }
+    main .contenido-principal .bloque-imagenes p {
+      align-self: center;
+      color: white;
+      width: 15rem;
+      margin-top: 1.5rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
+      text-align: center; }
+    main .contenido-principal .bloque-imagenes .mano {
+      width: 30rem;
+      height: 30rem; }
+  .section-carta {
+    display: flex;
+    justify-content: space-evenly; }
+    .section-carta .section-astrox {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .section-carta .section-astrox h2 {
+        text-align: center;
+        color: white;
+        margin-top: 3rem; }
+      .section-carta .section-astrox .texto-h2 {
+        text-align: center;
+        color: white;
+        margin-bottom: 4rem;
+        width: 40rem; }
+      .section-carta .section-astrox .cartanatal-servicios {
+        display: flex;
+        flex-direction: column; }
+        .section-carta .section-astrox .cartanatal-servicios h3 {
+          text-align: center;
+          color: white;
+          margin-top: 2rem; }
+        .section-carta .section-astrox .cartanatal-servicios .servicios-texto {
+          margin-top: 2rem; }
+          .section-carta .section-astrox .cartanatal-servicios .servicios-texto ul {
+            width: 40rem;
+            align-self: center;
+            margin: 0 0 0 0;
+            margin-bottom: 2rem; }
+            .section-carta .section-astrox .cartanatal-servicios .servicios-texto ul li {
+              color: white;
+              list-style: none;
+              text-align: center;
+              margin: 0 0 0 0; }
+          .section-carta .section-astrox .cartanatal-servicios .servicios-texto a {
+            text-decoration: none;
+            color: orange;
+            padding-bottom: 2rem; }
+  .section-cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
+    .section-cursos .video-youtube iframe {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      margin-right: 2rem; }
+    .section-cursos .texto-cursos {
+      align-self: center;
+      color: white;
+      width: 40rem;
+      margin-left: 2rem; }
+      .section-cursos .texto-cursos .cursos {
+        text-align: center;
+        margin-bottom: 2rem; }
+      .section-cursos .texto-cursos a {
+        text-decoration: none;
+        color: white; } }
 
 * {
   margin: 0;

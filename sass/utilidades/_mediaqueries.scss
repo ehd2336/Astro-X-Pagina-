@@ -1,5 +1,138 @@
-//mq index
-
-@media screen and (min-width:600px){
+//Desktop first 
+//mq para index
+@media (max-width:768px){
+   body{
+    .boton-wpp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        z-index: 999;
+        border-radius: 50%;
+        bottom: 20px;
+        right: 25px;
+        padding: 25px;
+        transition: ease 0,3s;
+        margin-bottom: 2rem;
+        .hablemos{
+            color: $color-p
+                }
+         .whatsapp{
+            img{
+                width: 10rem;
+                height: 10rem;
+               }
+            
+        }
     
+    }
+   }
+   //main del index
+main{
+    .contenido-principal{
+        .bloque-imagenes{
+            display: flex;
+            flex-direction: column;
+            p{
+                align-self: center;
+                color: $color-p;
+                width: 15rem;
+                margin-top: 1.5rem;
+                margin-left: 3rem;
+                margin-right: 3rem;
+                text-align: center;
+            }
+            .mano{ 
+                width: 30rem;
+                height: 30rem;
+            }
+        }
+    }
 }
+//section carta
+.section-carta{
+    display: flex;
+    justify-content: space-evenly;
+    .section-astrox{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        h2{
+          text-align: center;
+          color: white;
+          margin-top: 3rem;
+        }
+        .texto-h2{
+             text-align: center;
+             color: white;
+             margin-bottom: 4rem;
+             width: 40rem;
+            }
+            .cartanatal-servicios{
+                display: flex;
+                flex-direction: column;
+                h3{
+                    text-align: center;
+                    color: white;
+                    margin-top: 2rem;
+                  }
+                .servicios-texto{
+                    margin-top: 2rem;
+                    ul{
+                        width: 40rem;
+                        align-self: center;
+                        margin: 0 0 0 0;
+                        margin-bottom: 2rem;
+                        li{
+                            color: white;
+                            list-style: none;
+                            text-align: center;
+                            margin: 0 0 0 0;
+                        }
+                    }
+                    a{
+                        text-decoration: none;
+                        color: orange;
+                        padding-bottom: 2rem;
+                    }
+                }
+
+            }
+            
+        }
+        
+        
+    }
+//section crusos
+.section-cursos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    .video-youtube{
+        iframe{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            margin-right: 2rem;
+        }
+    }
+    .texto-cursos{
+        align-self: center;
+        color: white;
+        width: 40rem;
+        margin-left: 2rem;
+        .cursos{
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+    }
+}
+}
+

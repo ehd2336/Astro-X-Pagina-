@@ -9,9 +9,20 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        .luna-titulo, .ascendente-titulo, .marte-titulo, .venus-titulo{
+            flex-direction: column;
+            p{
+                width: 30rem;
+                text-align: center;
+            }
+        }
     }
     div:hover{
         transform: scale(1.1); 
+    }
+    h2{
+        margin-bottom: 3rem;
+
     }
     .taller-luna{
         margin-top: 3rem;
@@ -20,11 +31,6 @@
         width: 80rem;
         text-align: center;
         padding: 15rem;
-        .h2-luna{
-        }
-        .p-luna{
-            width: 20rem;
-        }
     }
     .taller-ascendente{
         margin-top: 3rem;
@@ -33,12 +39,6 @@
         width: 80rem;
         text-align: center;
         padding: 15rem;
-        .h2-ascendente{
-           text-align: left;
-        }
-        p{
-            width: 20rem;
-        }
     }
     .taller-marte{
         margin-top: 3rem;
@@ -47,31 +47,16 @@
         width: 80rem;
         text-align: center;
         padding: 15rem;
-        .h2-marte{
-           text-align: left;
-        }
-        p{
-            width: 20rem;
-        }
     }
     .taller-venus{
         margin-top: 3rem;
         margin-bottom: 3rem;
         background: $color-div;
         width: 80rem;
-        text-align: center;
         padding: 15rem;
-        .venus-titulo{
-            flex-direction: column;
-            img{
-                width: 20rem;
-            }
-            .h2-venus{
-            }
-        }
-        p{
+        img{
             width: 20rem;
-            margin-left: 5rem;
-        }
+            margin-right: 5rem;
+        } 
     }
 }
