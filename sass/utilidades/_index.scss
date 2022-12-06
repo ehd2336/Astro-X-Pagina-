@@ -115,28 +115,13 @@ section{
             margin-bottom: 4rem;
             width: 60rem;
         }
+        a{
+            text-decoration: none;
+            color: orange;
+            margin-bottom: 1.2rem;
+        }
         .cartanatal-servicios{
             display: flex;
-            
-            .servicios-texto{
-                margin-top: 8.5rem;
-                a{
-                    margin-right: 1rem;
-                    margin-left: 8rem;
-                    text-decoration: none;
-                    color: orange;
-                }
-                p{
-                    text-align: center;
-                    font-size: larger;
-                    color: white;
-
-                }
-                li{
-                    margin-left: 4rem;
-                    color: white;
-                }
-            }
             .cartanatal-index{
                display: flex;
                flex-direction: column;
@@ -149,23 +134,43 @@ section{
                background: #fffff0;
                margin-bottom: 2rem;
                overflow: hidden;
-                  img{
+                img{
                       width: 32rem;
                       height: 32rem;
                       margin-top: 1.5rem;
                       transition: 0.5s;
                       object-fit: cover;
-                  }
-                  img:hover{
+                }
+                img:hover{
                       transform:scale(1.1)
-                  }
-               }
+                }
+            }
         }
-        
-    }
-    
-    
+        .servicios-texto{
+            margin-top:5rem;
+            text-align: center;
+            }
+            h3{
+                text-align: center;
+                font-size: larger;
+                color: white;
+                margin-bottom: 1.5rem;
+            }
+            ul{
+                margin: 0 0 0 0;
+                margin-bottom: 2rem;
+                li{
+                    margin-left: 4rem;
+                    color: white;
+                    list-style: none;
+                    margin: 0 0 0 0;
+                }
+            }
+        } 
 }
+    
+    
+
 
 // section de cursos y talleres (video)
 
@@ -242,35 +247,26 @@ footer{
         justify-content: space-evenly;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        .imagenes-footer{
-            a{
-                list-style: none;
-                text-decoration: none;
-                
-                img{
-                    width: 2.2rem;
-                    height: 2.2rem;
-                    margin-right: 0.3rem;
-                                      
-                    
+        text-align: center;
+        color: rgb(31, 31, 31);
+        .derechos{
+           a{
+               text-decoration: none;
+               list-style: none;
+               color: rgb(247, 105, 23);
+           }
+        }
+            .imagenes-footer{
+                a{
+                    list-style: none;
+                    text-decoration: none;
+                    img{
+                        width: 2.2rem;
+                        height: 2.2rem;
+                        margin-right: 0.3rem;
+                    }
                 }
-                
             }
-
-        }
-
     }
-    text-align: center;
-    color: rgb(31, 31, 31);
     
-    .derechos{
-
-        a{
-            text-decoration: none;
-            list-style: none;
-            color: rgb(247, 105, 23);
-        }
-            
-        
-    }
 }

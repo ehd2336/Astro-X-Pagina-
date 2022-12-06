@@ -90,22 +90,12 @@ section {
       color: white;
       margin-bottom: 4rem;
       width: 60rem; }
+    .section-carta .section-astrox a {
+      text-decoration: none;
+      color: orange;
+      margin-bottom: 1.2rem; }
     .section-carta .section-astrox .cartanatal-servicios {
       display: flex; }
-      .section-carta .section-astrox .cartanatal-servicios .servicios-texto {
-        margin-top: 8.5rem; }
-        .section-carta .section-astrox .cartanatal-servicios .servicios-texto a {
-          margin-right: 1rem;
-          margin-left: 8rem;
-          text-decoration: none;
-          color: orange; }
-        .section-carta .section-astrox .cartanatal-servicios .servicios-texto p {
-          text-align: center;
-          font-size: larger;
-          color: white; }
-        .section-carta .section-astrox .cartanatal-servicios .servicios-texto li {
-          margin-left: 4rem;
-          color: white; }
       .section-carta .section-astrox .cartanatal-servicios .cartanatal-index {
         display: flex;
         flex-direction: column;
@@ -126,6 +116,22 @@ section {
           object-fit: cover; }
         .section-carta .section-astrox .cartanatal-servicios .cartanatal-index img:hover {
           transform: scale(1.1); }
+    .section-carta .section-astrox .servicios-texto {
+      margin-top: 5rem;
+      text-align: center; }
+    .section-carta .section-astrox h3 {
+      text-align: center;
+      font-size: larger;
+      color: white;
+      margin-bottom: 1.5rem; }
+    .section-carta .section-astrox ul {
+      margin: 0 0 0 0;
+      margin-bottom: 2rem; }
+      .section-carta .section-astrox ul li {
+        margin-left: 4rem;
+        color: white;
+        list-style: none;
+        margin: 0 0 0 0; }
 
 .section-cursos {
   display: flex;
@@ -167,14 +173,18 @@ section {
 footer {
   background: linear-gradient(135deg, #69FF97 10%, #00E4FF 100%);
   padding: 0.7rem;
-  margin-top: 5rem;
-  text-align: center;
-  color: #1f1f1f; }
+  margin-top: 5rem; }
   footer .footer-contenedor {
     display: flex;
     justify-content: space-evenly;
     margin-top: 2rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #1f1f1f; }
+    footer .footer-contenedor .derechos a {
+      text-decoration: none;
+      list-style: none;
+      color: #f76917; }
     footer .footer-contenedor .imagenes-footer a {
       list-style: none;
       text-decoration: none; }
@@ -182,10 +192,6 @@ footer {
         width: 2.2rem;
         height: 2.2rem;
         margin-right: 0.3rem; }
-  footer .derechos a {
-    text-decoration: none;
-    list-style: none;
-    color: #f76917; }
 
 .sobre-mi h1 {
   color: white;
@@ -430,6 +436,47 @@ footer {
   .main-101 .luna-101 {
     grid-area: luna-101; }
 
+@media (max-width: 667px) {
+  .section-carta .section-astrox .cartanatal-servicios {
+    display: flex; }
+    .section-carta .section-astrox .cartanatal-servicios .cartanatal-index {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 18rem;
+      height: 18rem;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background: #fffff0;
+      margin-bottom: 2rem;
+      overflow: hidden; }
+      .section-carta .section-astrox .cartanatal-servicios .cartanatal-index img {
+        width: 15rem;
+        height: 15rem;
+        margin-top: 1.5rem;
+        transition: 0.5s;
+        object-fit: cover; }
+  .section-carta .section-astrox .servicios-texto {
+    margin-top: 5rem;
+    text-align: center; }
+  .section-carta .section-astrox h3 {
+    text-align: center;
+    font-size: larger;
+    color: white;
+    margin-bottom: 1.5rem; }
+  .section-carta .section-astrox ul {
+    margin: 0 0 0 0;
+    margin-bottom: 2rem;
+    text-align: center; }
+    .section-carta .section-astrox ul li {
+      font-size: small;
+      text-align: center;
+      color: white;
+      list-style: none;
+      margin: 0 0 0 0;
+      width: 20rem; } }
+
 @media (max-width: 768px) {
   body .boton-wpp {
     display: flex;
@@ -464,43 +511,40 @@ footer {
       height: 30rem; }
   .section-carta {
     display: flex;
-    justify-content: space-evenly; }
-    .section-carta .section-astrox {
+    flex-direction: column;
+    align-items: center; }
+    .section-carta .section-astrox h2 {
+      text-align: center;
+      color: white;
+      margin-top: 3rem; }
+    .section-carta .section-astrox a {
+      text-decoration: none;
+      color: orange;
+      margin-bottom: 1.5rem; }
+    .section-carta .section-astrox .texto-h2 {
+      text-align: center;
+      color: white;
+      margin-bottom: 4rem;
+      width: 40rem; }
+    .section-carta .section-astrox .cartanatal-servicios {
       display: flex;
       flex-direction: column;
-      align-items: center; }
-      .section-carta .section-astrox h2 {
+      align-self: center; }
+    .section-carta .section-astrox .servicios-texto {
+      margin-top: 2rem; }
+      .section-carta .section-astrox .servicios-texto h3 {
         text-align: center;
         color: white;
-        margin-top: 3rem; }
-      .section-carta .section-astrox .texto-h2 {
-        text-align: center;
-        color: white;
-        margin-bottom: 4rem;
-        width: 40rem; }
-      .section-carta .section-astrox .cartanatal-servicios {
-        display: flex;
-        flex-direction: column; }
-        .section-carta .section-astrox .cartanatal-servicios h3 {
-          text-align: center;
+        margin-top: 2rem; }
+      .section-carta .section-astrox .servicios-texto ul {
+        align-self: center;
+        margin: 0 0 0 0;
+        margin-bottom: 2rem; }
+        .section-carta .section-astrox .servicios-texto ul li {
           color: white;
-          margin-top: 2rem; }
-        .section-carta .section-astrox .cartanatal-servicios .servicios-texto {
-          margin-top: 2rem; }
-          .section-carta .section-astrox .cartanatal-servicios .servicios-texto ul {
-            width: 40rem;
-            align-self: center;
-            margin: 0 0 0 0;
-            margin-bottom: 2rem; }
-            .section-carta .section-astrox .cartanatal-servicios .servicios-texto ul li {
-              color: white;
-              list-style: none;
-              text-align: center;
-              margin: 0 0 0 0; }
-          .section-carta .section-astrox .cartanatal-servicios .servicios-texto a {
-            text-decoration: none;
-            color: orange;
-            padding-bottom: 2rem; }
+          list-style: none;
+          text-align: center;
+          margin: 0 0 0 0; }
   .section-cursos {
     display: flex;
     flex-direction: column;
@@ -519,10 +563,40 @@ footer {
       margin-left: 2rem; }
       .section-cursos .texto-cursos .cursos {
         text-align: center;
-        margin-bottom: 2rem; }
+        margin-bottom: 2rem;
+        margin-top: 2rem; }
       .section-cursos .texto-cursos a {
         text-decoration: none;
-        color: white; } }
+        color: white; }
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem; }
+    .carousel h4 {
+      text-align: center;
+      color: white;
+      margin-top: 2rem;
+      margin-bottom: 1rem; }
+    .carousel .carousel-inner div .conociendo-pluton {
+      width: 40rem;
+      height: 25rem; }
+    .carousel .carousel-inner .carousel-item .conociendo-jupiter, .carousel .carousel-inner .carousel-item .conociendo-luna {
+      width: 40rem;
+      height: 25rem; }
+  footer .footer-contenedor p {
+    width: 10rem; }
+  footer .footer-contenedor .imagenes-footer {
+    flex-direction: column;
+    align-self: center; }
+    footer .footer-contenedor .imagenes-footer a {
+      list-style: none;
+      text-decoration: none; }
+      footer .footer-contenedor .imagenes-footer a img {
+        width: 2.2rem;
+        height: 2.2rem;
+        margin-right: 0.3rem; } }
 
 * {
   margin: 0;

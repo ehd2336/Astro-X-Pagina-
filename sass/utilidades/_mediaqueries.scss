@@ -1,5 +1,64 @@
 //Desktop first 
-//mq para index
+//mediaquerie para telefonos------------
+
+@media (max-width:667px){
+    .section-carta{
+        .section-astrox{
+          .cartanatal-servicios{
+              display: flex;
+              .cartanatal-index{
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                 width: 18rem;
+                 height: 18rem;
+                 -moz-border-radius: 50%;
+                 -webkit-border-radius: 50%;
+                 border-radius: 50%;
+                 background: #fffff0;
+                 margin-bottom: 2rem;
+                 overflow: hidden;
+                  img{
+                        width: 15rem;
+                        height: 15rem;
+                        margin-top: 1.5rem;
+                        transition: 0.5s;
+                        object-fit: cover;
+                      }
+                }
+            }
+            .servicios-texto{
+                margin-top:5rem;
+                text-align: center;
+                }
+                h3{
+                    text-align: center;
+                    font-size: larger;
+                    color: white;
+                    margin-bottom: 1.5rem;
+                }
+                ul{
+                    margin: 0 0 0 0;
+                    margin-bottom: 2rem;
+                    text-align: center;
+
+                    li{
+                        font-size: small;
+                        text-align: center;
+                        color: white;
+                        list-style: none;
+                        margin: 0 0 0 0;
+                        width: 20rem;
+                    }
+                }
+        }
+    }
+}
+//section carta-----
+
+
+    
+//mq para indextablet
 @media (max-width:768px){
    body{
     .boton-wpp{
@@ -52,15 +111,18 @@ main{
 //section carta
 .section-carta{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
     .section-astrox{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
         h2{
           text-align: center;
           color: white;
           margin-top: 3rem;
+        }
+        a{
+            text-decoration: none;
+            color: orange;
+            margin-bottom: 1.5rem;
         }
         .texto-h2{
              text-align: center;
@@ -71,38 +133,30 @@ main{
             .cartanatal-servicios{
                 display: flex;
                 flex-direction: column;
+                align-self: center;
+            }
+            .servicios-texto{
+                margin-top: 2rem;
                 h3{
                     text-align: center;
                     color: white;
                     margin-top: 2rem;
-                  }
-                .servicios-texto{
-                    margin-top: 2rem;
-                    ul{
-                        width: 40rem;
-                        align-self: center;
+                }
+                ul{
+                    align-self: center;
+                    margin: 0 0 0 0;
+                    margin-bottom: 2rem;
+                    li{
+                        color: white;
+                        list-style: none;
+                        text-align: center;
                         margin: 0 0 0 0;
-                        margin-bottom: 2rem;
-                        li{
-                            color: white;
-                            list-style: none;
-                            text-align: center;
-                            margin: 0 0 0 0;
-                        }
-                    }
-                    a{
-                        text-decoration: none;
-                        color: orange;
-                        padding-bottom: 2rem;
                     }
                 }
 
-            }
-            
-        }
-        
-        
-    }
+            }  
+        }  
+}
 //section crusos
 .section-cursos{
     display: flex;
@@ -126,6 +180,7 @@ main{
         .cursos{
             text-align: center;
             margin-bottom: 2rem;
+            margin-top: 2rem;
         }
         a{
             text-decoration: none;
@@ -134,5 +189,52 @@ main{
 
     }
 }
+.carousel{
+    h4{
+        text-align: center;
+        color: white;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    .carousel-inner{
+        div{
+            .conociendo-pluton{
+                width: 40rem;
+                height: 25rem;
+            }   
+        }
+        .carousel-item{
+            .conociendo-jupiter, .conociendo-luna{
+                width: 40rem;
+                height: 25rem;
+                }
+            }
+        }
+    }
+//...................footer
+footer{
+    .footer-contenedor{
+        p{
+            width: 10rem;
+        }
+        .imagenes-footer{
+            flex-direction: column;
+            align-self: center;
+            a{
+              list-style: none;
+              text-decoration: none;
+            img{
+                width: 2.2rem;
+                height: 2.2rem;
+                margin-right: 0.3rem;
+            }
+            }
+        }
+    }
 }
-
+}
