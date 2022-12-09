@@ -2,92 +2,201 @@
 //mediaquerie para telefonos------------
 
 @media (max-width:667px){
-    .section-carta{
-        .section-astrox{
-          .cartanatal-servicios{
-              display: flex;
-              .cartanatal-index{
-                 display: flex;
-                 flex-direction: column;
-                 align-items: center;
-                 width: 18rem;
-                 height: 18rem;
-                 -moz-border-radius: 50%;
-                 -webkit-border-radius: 50%;
-                 border-radius: 50%;
-                 background: #fffff0;
-                 margin-bottom: 2rem;
-                 overflow: hidden;
-                  img{
-                        width: 15rem;
-                        height: 15rem;
-                        margin-top: 1.5rem;
-                        transition: 0.5s;
-                        object-fit: cover;
-                      }
+//section carta natal
+body{
+    .boton-wpp{
+        right: 15px;
+        padding: 15px;
+        transition: ease 0,3s;
+        margin-bottom: 1rem;
+        .hablemos{
+            color: $color-p
+                }
+         .whatsapp{
+            img{
+                width: 5rem;
+                height: 5rem;
+               }
+        }
+    }
+    .main-index{
+        .contenido-principal{
+            .bloque-imagenes{
+                .mano{
+                    align-self: center;
+                    width:15rem;
+                    height: 15rem;
                 }
             }
-            .servicios-texto{
-                margin-top:5rem;
-                text-align: center;
-                }
-                h3{
-                    text-align: center;
-                    font-size: larger;
-                    color: white;
-                    margin-bottom: 1.5rem;
-                }
-                ul{
-                    margin: 0 0 0 0;
-                    margin-bottom: 2rem;
-                    text-align: center;
+        }
+    }
+    // section carta natal
+.section-carta{
+     .section-astrox{
+         .texto-h2{
+             width: 20rem;
+         }
+       .cartanatal-servicios{
+           display: flex;
+           .cartanatal-index{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 18rem;
+              height: 18rem;
+              -moz-border-radius: 50%;
+              -webkit-border-radius: 50%;
+              border-radius: 50%;
+              background: #fffff0;
+              margin-bottom: 2rem;
+              overflow: hidden;
+               img{
+                     width: 15rem;
+                     height: 15rem;
+                     margin-top: 1.5rem;
+                     transition: 0.5s;
+                     object-fit: cover;
+                   }
+             }
+         }
+         .servicios-texto{
+             margin-top:2rem;
+             text-align: center;
+             }
+             h3{
+                 text-align: center;
+                 font-size: larger;
+                 color: white;
+                 margin-bottom: 1.5rem;
+             }
+             ul{
+                 margin-left: 0px;
+                 padding: 0px;
+                 margin-bottom: 2rem;
+                 text-align: center;
+                 width: 20rem;
+                 li{
+                     font-size: small;
+                     text-align: center;
+                     color: white;
+                     list-style: none;
+                     margin: 0 0 0 0;
+                     margin-top: 1rem;
+                     
+                 }
+             }
+     }
+}
+// section cursos y talleres
+.section-cursos{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    .texto-cursos{
+        align-self: center;
+        color: white;
+        text-align: center;
+        width: 25rem;
+        p{
+            text-align: center;
+            margin-right: 2rem;
+        }
+        .cursos{
+            margin-bottom: 2rem;
+            margin-right: 2rem;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
 
-                    li{
-                        font-size: small;
-                        text-align: center;
-                        color: white;
-                        list-style: none;
-                        margin: 0 0 0 0;
-                        width: 20rem;
-                    }
-                }
+    }
+    .video-youtube{
+        iframe{
+            width: 22rem;
+            margin: 2rem;
         }
     }
 }
+//section astro 101
+.carousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    .carousel-inner{
+        div{
+            .conociendo-pluton{
+                width: 25rem;
+                height: 15rem;
+            }  
+        }
+        .carousel-item{
+            .conociendo-jupiter{
+                width: 25rem;
+                height: 15rem;
+                }
+                .conociendo-luna{
+                width: 25rem;
+                height: 15rem;
+                }
+            }  
+        }
+    }
+}
+//footer --------------
+footer{
+   .footer-contenedor{
+    display: none;
+   }
+   .footer-mobile{
+         background: $color-footer;
+         padding: 0.5rem;
+         margin-top: 5rem;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-evenly;
+         margin-top: 2rem;
+         margin-bottom: 1.2rem;
+         text-align: center;
+         color: rgb(31, 31, 31);
+        .derechos{
+            font-size: smaller;
+           a{
+               text-decoration: none;
+               list-style: none;
+               color: rgb(247, 105, 23);
+               
+           }
+        }
+        .imagenes-footer{
+            a{
+                list-style: none;
+                text-decoration: none;
+                img{
+                    width: 2.2rem;
+                    height: 2.2rem;
+                    margin-right: 0.8rem;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }  
+  }
+}
+
 //section carta-----
 
 
     
 //mq para indextablet
 @media (max-width:768px){
-   body{
-    .boton-wpp{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: fixed;
-        z-index: 999;
-        border-radius: 50%;
-        bottom: 20px;
-        right: 25px;
-        padding: 25px;
-        transition: ease 0,3s;
-        margin-bottom: 2rem;
-        .hablemos{
-            color: $color-p
-                }
-         .whatsapp{
-            img{
-                width: 10rem;
-                height: 10rem;
-               }
-            
-        }
-    
-    }
-   }
    //main del index
-main{
+.main-index{
     .contenido-principal{
         .bloque-imagenes{
             display: flex;

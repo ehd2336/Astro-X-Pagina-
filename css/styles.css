@@ -40,10 +40,10 @@ body .boton-wpp:hover {
       width: 10rem;
       height: 10rem; }
 
-main {
+.main-index {
   background: linear-gradient(to right, #4e4376, #2b5876);
   margin-top: 5rem; }
-  main .contenido-principal {
+  .main-index .contenido-principal {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,13 +51,13 @@ main {
     padding: 3rem;
     background-repeat: no-repeat;
     background-size: cover; }
-    main .contenido-principal h1 {
+    .main-index .contenido-principal h1 {
       color: white;
       text-align: center;
       margin-bottom: 4rem; }
-    main .contenido-principal .bloque-imagenes {
+    .main-index .contenido-principal .bloque-imagenes {
       display: flex; }
-      main .contenido-principal .bloque-imagenes p {
+      .main-index .contenido-principal .bloque-imagenes p {
         flex-direction: column;
         align-self: center;
         color: white;
@@ -65,7 +65,7 @@ main {
         margin-top: 1.5rem;
         margin-left: 3rem;
         margin-right: 3rem; }
-      main .contenido-principal .bloque-imagenes .mano {
+      .main-index .contenido-principal .bloque-imagenes .mano {
         width: 30rem;
         height: 30rem; }
 
@@ -437,9 +437,25 @@ footer {
     grid-area: luna-101; }
 
 @media (max-width: 667px) {
-  .section-carta .section-astrox .cartanatal-servicios {
+  body .boton-wpp {
+    right: 15px;
+    padding: 15px;
+    transition: ease 0,3s;
+    margin-bottom: 1rem; }
+    body .boton-wpp .hablemos {
+      color: white; }
+    body .boton-wpp .whatsapp img {
+      width: 5rem;
+      height: 5rem; }
+  body .main-index .contenido-principal .bloque-imagenes .mano {
+    align-self: center;
+    width: 15rem;
+    height: 15rem; }
+  body .section-carta .section-astrox .texto-h2 {
+    width: 20rem; }
+  body .section-carta .section-astrox .cartanatal-servicios {
     display: flex; }
-    .section-carta .section-astrox .cartanatal-servicios .cartanatal-index {
+    body .section-carta .section-astrox .cartanatal-servicios .cartanatal-index {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -451,54 +467,105 @@ footer {
       background: #fffff0;
       margin-bottom: 2rem;
       overflow: hidden; }
-      .section-carta .section-astrox .cartanatal-servicios .cartanatal-index img {
+      body .section-carta .section-astrox .cartanatal-servicios .cartanatal-index img {
         width: 15rem;
         height: 15rem;
         margin-top: 1.5rem;
         transition: 0.5s;
         object-fit: cover; }
-  .section-carta .section-astrox .servicios-texto {
-    margin-top: 5rem;
+  body .section-carta .section-astrox .servicios-texto {
+    margin-top: 2rem;
     text-align: center; }
-  .section-carta .section-astrox h3 {
+  body .section-carta .section-astrox h3 {
     text-align: center;
     font-size: larger;
     color: white;
     margin-bottom: 1.5rem; }
-  .section-carta .section-astrox ul {
-    margin: 0 0 0 0;
+  body .section-carta .section-astrox ul {
+    margin-left: 0px;
+    padding: 0px;
     margin-bottom: 2rem;
-    text-align: center; }
-    .section-carta .section-astrox ul li {
+    text-align: center;
+    width: 20rem; }
+    body .section-carta .section-astrox ul li {
       font-size: small;
       text-align: center;
       color: white;
       list-style: none;
       margin: 0 0 0 0;
-      width: 20rem; } }
-
-@media (max-width: 768px) {
-  body .boton-wpp {
+      margin-top: 1rem; }
+  body .section-cursos {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
+    body .section-cursos .texto-cursos {
+      align-self: center;
+      color: white;
+      text-align: center;
+      width: 25rem; }
+      body .section-cursos .texto-cursos p {
+        text-align: center;
+        margin-right: 2rem; }
+      body .section-cursos .texto-cursos .cursos {
+        margin-bottom: 2rem;
+        margin-right: 2rem; }
+      body .section-cursos .texto-cursos a {
+        text-decoration: none;
+        color: white; }
+    body .section-cursos .video-youtube iframe {
+      width: 22rem;
+      margin: 2rem; }
+  body .carousel {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed;
-    z-index: 999;
-    border-radius: 50%;
-    bottom: 20px;
-    right: 25px;
-    padding: 25px;
-    transition: ease 0,3s;
-    margin-bottom: 2rem; }
-    body .boton-wpp .hablemos {
-      color: white; }
-    body .boton-wpp .whatsapp img {
-      width: 10rem;
-      height: 10rem; }
-  main .contenido-principal .bloque-imagenes {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem; }
+    body .carousel .carousel-inner div .conociendo-pluton {
+      width: 25rem;
+      height: 15rem; }
+    body .carousel .carousel-inner .carousel-item .conociendo-jupiter {
+      width: 25rem;
+      height: 15rem; }
+    body .carousel .carousel-inner .carousel-item .conociendo-luna {
+      width: 25rem;
+      height: 15rem; }
+  footer .footer-contenedor {
+    display: none; }
+  footer .footer-mobile {
+    background: linear-gradient(135deg, #69FF97 10%, #00E4FF 100%);
+    padding: 0.5rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    color: #1f1f1f; }
+    footer .footer-mobile .derechos {
+      font-size: smaller; }
+      footer .footer-mobile .derechos a {
+        text-decoration: none;
+        list-style: none;
+        color: #f76917; }
+    footer .footer-mobile .imagenes-footer a {
+      list-style: none;
+      text-decoration: none; }
+      footer .footer-mobile .imagenes-footer a img {
+        width: 2.2rem;
+        height: 2.2rem;
+        margin-right: 0.8rem;
+        margin-bottom: 2rem; } }
+
+@media (max-width: 768px) {
+  .main-index .contenido-principal .bloque-imagenes {
     display: flex;
     flex-direction: column; }
-    main .contenido-principal .bloque-imagenes p {
+    .main-index .contenido-principal .bloque-imagenes p {
       align-self: center;
       color: white;
       width: 15rem;
@@ -506,7 +573,7 @@ footer {
       margin-left: 3rem;
       margin-right: 3rem;
       text-align: center; }
-    main .contenido-principal .bloque-imagenes .mano {
+    .main-index .contenido-principal .bloque-imagenes .mano {
       width: 30rem;
       height: 30rem; }
   .section-carta {
