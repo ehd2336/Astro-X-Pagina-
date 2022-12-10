@@ -174,6 +174,8 @@ footer {
   background: linear-gradient(135deg, #69FF97 10%, #00E4FF 100%);
   padding: 0.7rem;
   margin-top: 5rem; }
+  footer .footer-mobile {
+    display: none; }
   footer .footer-contenedor {
     display: flex;
     justify-content: space-evenly;
@@ -193,57 +195,63 @@ footer {
         height: 2.2rem;
         margin-right: 0.3rem; }
 
-.sobre-mi h1 {
-  color: white;
-  margin-top: 3rem;
-  margin-left: 0.5rem;
-  margin-bottom: 2rem;
-  padding-top: 2rem; }
-
-.sobre-mi .big3 {
-  display: flex;
-  margin-bottom: 3rem; }
-  .sobre-mi .big3 img {
-    width: 8rem; }
-  .sobre-mi .big3 p {
-    flex-direction: column;
-    align-self: center;
-    color: white; }
-
-.sobre-mi .historia-mia {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
-  grid-template-areas: "h2-historia imagen-eric" "historia imagen-eric" "h3-astro imagen-eric" "historia-astro imagen-eric";
-  gap: 1rem; }
-  .sobre-mi .historia-mia .h2-historia {
-    grid-area: h2-historia; }
-  .sobre-mi .historia-mia .historia {
-    grid-area: historia; }
-  .sobre-mi .historia-mia .h3-astro {
-    grid-area: h3-astro; }
-  .sobre-mi .historia-mia .historia-astro {
-    grid-area: historia-astro; }
-  .sobre-mi .historia-mia .imagen-eric {
-    grid-area: imagen-eric;
-    width: 35rem; }
-  .sobre-mi .historia-mia h1, .sobre-mi .historia-mia h2, .sobre-mi .historia-mia h3, .sobre-mi .historia-mia p {
+body .sobre-mi {
+  background: linear-gradient(to right, #4e4376, #2b5876); }
+  body .sobre-mi h1 {
     color: white;
-    margin-left: 0.5rem; }
+    margin-top: 3rem;
+    margin-left: 0.5rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem; }
+  body .sobre-mi .big3 {
+    display: flex;
+    margin-bottom: 3rem; }
+    body .sobre-mi .big3 img {
+      width: 8rem; }
+    body .sobre-mi .big3 p {
+      flex-direction: column;
+      align-self: center;
+      color: white; }
+  body .sobre-mi .historia-mia-mobile {
+    display: none; }
+  body .sobre-mi .historia-mia {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+    grid-template-areas: "h2-historia imagen-eric" "historia imagen-eric" "h3-astro imagen-eric" "historia-astro imagen-eric";
+    gap: 1rem; }
+    body .sobre-mi .historia-mia .h2-historia {
+      grid-area: h2-historia; }
+    body .sobre-mi .historia-mia .historia {
+      grid-area: historia; }
+    body .sobre-mi .historia-mia .h3-astro {
+      grid-area: h3-astro; }
+    body .sobre-mi .historia-mia .historia-astro {
+      grid-area: historia-astro; }
+    body .sobre-mi .historia-mia .imagen-eric {
+      grid-area: imagen-eric;
+      width: 35rem; }
+    body .sobre-mi .historia-mia h1, body .sobre-mi .historia-mia h2, body .sobre-mi .historia-mia h3, body .sobre-mi .historia-mia p {
+      color: white;
+      margin-left: 0.5rem; }
 
-.eric-carta {
+body .eric-carta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 5rem;
   padding-bottom: 5rem; }
-  .eric-carta h4 {
+  body .eric-carta .h4-micarta {
     color: white;
     margin-left: 0.5rem;
-    margin-bottom: 4rem;
-    padding-top: 3rem; }
-  .eric-carta .mi-carta {
+    margin-bottom: 10rem;
+    padding-top: 3rem;
+    align-self: center;
+    font-size: xx-large; }
+  body .eric-carta .mi-carta {
     display: flex;
-    justify-content: space-evenly;
     text-align: center; }
-    .eric-carta .mi-carta .imagen-carta {
+    body .eric-carta .mi-carta .imagen-carta {
       width: 45rem;
       height: 45rem;
       -moz-border-radius: 50%;
@@ -251,30 +259,35 @@ footer {
       border-radius: 50%;
       background: #fffff0;
       margin-bottom: 2rem;
+      margin-right: 10rem;
       overflow: hidden; }
-      .eric-carta .mi-carta .imagen-carta img {
+      body .eric-carta .mi-carta .imagen-carta img {
         width: 42rem;
         height: 42rem;
         margin-top: 1.5rem;
         transition: 0.5s;
         object-fit: cover; }
-      .eric-carta .mi-carta .imagen-carta img:hover {
+      body .eric-carta .mi-carta .imagen-carta img:hover {
         transform: scale(1.1); }
-    .eric-carta .mi-carta ul {
+    body .eric-carta .mi-carta ul {
       display: flex;
       flex-direction: column;
       align-self: center;
       margin-right: 6rem; }
-      .eric-carta .mi-carta ul li {
+      body .eric-carta .mi-carta ul li {
         list-style: none;
         text-decoration: none;
         color: white; }
-  .eric-carta .h4-texto-carta {
-    color: white; }
-  .eric-carta .texto-carta {
+  body .eric-carta .h4-texto-carta {
+    color: white;
+    margin-top: 3rem;
+    align-self: center;
+    margin-bottom: 3rem; }
+  body .eric-carta .texto-carta {
+    text-align: center;
     color: white;
     margin-bottom: 5rem;
-    margin-left: 0.5rem; }
+    width: 70rem; }
 
 .servicios-carta {
   display: flex;
@@ -524,14 +537,14 @@ footer {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem; }
     body .carousel .carousel-inner div .conociendo-pluton {
-      width: 25rem;
-      height: 15rem; }
+      width: 23rem;
+      height: 14rem; }
     body .carousel .carousel-inner .carousel-item .conociendo-jupiter {
-      width: 25rem;
-      height: 15rem; }
+      width: 23rem;
+      height: 14rem; }
     body .carousel .carousel-inner .carousel-item .conociendo-luna {
-      width: 25rem;
-      height: 15rem; }
+      width: 23rem;
+      height: 14rem; }
   footer .footer-contenedor {
     display: none; }
   footer .footer-mobile {
@@ -652,6 +665,8 @@ footer {
     .carousel .carousel-inner .carousel-item .conociendo-jupiter, .carousel .carousel-inner .carousel-item .conociendo-luna {
       width: 40rem;
       height: 25rem; }
+  footer .footer-mobile {
+    display: none; }
   footer .footer-contenedor p {
     width: 10rem; }
   footer .footer-contenedor .imagenes-footer {
@@ -661,6 +676,194 @@ footer {
       list-style: none;
       text-decoration: none; }
       footer .footer-contenedor .imagenes-footer a img {
+        width: 2.2rem;
+        height: 2.2rem;
+        margin-right: 0.3rem; } }
+
+@media (max-width: 667px) {
+  body .sobre-mi .historia-mia {
+    display: none; }
+  body .sobre-mi .big3 {
+    display: flex;
+    margin-bottom: 3rem; }
+    body .sobre-mi .big3 img {
+      width: 3.8rem; }
+    body .sobre-mi .big3 p {
+      color: white; }
+  body .sobre-mi .historia-mia-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    body .sobre-mi .historia-mia-mobile img {
+      width: 25rem; }
+    body .sobre-mi .historia-mia-mobile p {
+      width: 23rem;
+      text-align: left;
+      color: white;
+      margin-left: 1rem; }
+    body .sobre-mi .historia-mia-mobile .h2-historia, body .sobre-mi .historia-mia-mobile .h3-astro {
+      align-items: flex-start;
+      color: white;
+      margin-bottom: 2rem;
+      margin-left: 1rem; }
+  body .eric-carta {
+    margin-top: 5rem;
+    padding-bottom: 5rem; }
+    body .eric-carta .h4-micarta {
+      color: white;
+      margin-left: 0.5rem;
+      margin-bottom: 5rem;
+      padding-top: 3rem;
+      align-self: center;
+      font-size: x-large; }
+    body .eric-carta .mi-carta {
+      display: flex;
+      flex-direction: column;
+      align-content: center; }
+      body .eric-carta .mi-carta .imagen-carta {
+        width: 22rem;
+        height: 22rem;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: #fffff0;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 3rem; }
+        body .eric-carta .mi-carta .imagen-carta img {
+          width: 19rem;
+          height: 19rem;
+          margin-top: 1.5rem; }
+      body .eric-carta .mi-carta ul {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin: 0;
+        padding: 0; }
+        body .eric-carta .mi-carta ul li {
+          list-style: none;
+          text-decoration: none;
+          color: white; }
+    body .eric-carta .h4-texto-carta {
+      color: white;
+      margin-top: 5rem;
+      align-self: flex-start;
+      margin-bottom: 3rem;
+      margin-left: 1rem; }
+    body .eric-carta .texto-carta {
+      text-align: left;
+      color: white;
+      margin-bottom: 5rem;
+      width: 23rem; }
+  body footer .footer-contenedor {
+    display: none; }
+  body footer .footer-mobile {
+    background: linear-gradient(135deg, #69FF97 10%, #00E4FF 100%);
+    padding: 0.5rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    color: #1f1f1f; }
+    body footer .footer-mobile .derechos {
+      font-size: smaller; }
+      body footer .footer-mobile .derechos a {
+        text-decoration: none;
+        list-style: none;
+        color: #f76917; }
+    body footer .footer-mobile .imagenes-footer a {
+      list-style: none;
+      text-decoration: none; }
+      body footer .footer-mobile .imagenes-footer a img {
+        width: 2.2rem;
+        height: 2.2rem;
+        margin-right: 0.8rem;
+        margin-bottom: 2rem; } }
+
+@media (max-width: 768px) {
+  body .sobre-mi {
+    background: linear-gradient(to right, #4e4376, #2b5876); }
+    body .sobre-mi h1 {
+      color: white;
+      margin-top: 3rem;
+      margin-left: 0.5rem;
+      margin-bottom: 2rem;
+      padding-top: 2rem; }
+    body .sobre-mi .big3 {
+      display: flex;
+      margin-bottom: 3rem; }
+      body .sobre-mi .big3 img {
+        width: 8rem; }
+      body .sobre-mi .big3 p {
+        flex-direction: column;
+        align-self: center;
+        color: white; }
+    body .sobre-mi .historia-mia {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 0.2fr 1fr 0.2fr 1fr;
+      grid-template-areas: "imagen-eric imagen-eric" "h2-historia h2-historia" "historia historia" "h3-astro h3-astro" "historia-astro historia-astro"; }
+      body .sobre-mi .historia-mia .h2-historia {
+        grid-area: h2-historia; }
+      body .sobre-mi .historia-mia .historia {
+        grid-area: historia; }
+      body .sobre-mi .historia-mia .h3-astro {
+        grid-area: h3-astro; }
+      body .sobre-mi .historia-mia .historia-astro {
+        grid-area: historia-astro; }
+      body .sobre-mi .historia-mia .imagen-eric {
+        grid-area: imagen-eric;
+        width: 28rem;
+        align-self: center;
+        justify-self: center; }
+      body .sobre-mi .historia-mia h1, body .sobre-mi .historia-mia h2, body .sobre-mi .historia-mia h3, body .sobre-mi .historia-mia p {
+        color: white;
+        margin-left: 0.5rem; }
+  body .eric-carta {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr 1fr;
+    grid-template-areas: "h4-micarta h4-micarta" "imagen-carta ul" "h4-texto-carta h4-texto-carta" "texto-carta texto-carta"; }
+    body .eric-carta .mi-carta .imagen-carta {
+      grid-area: imagen-carta;
+      width: 20rem;
+      height: 20rem;
+      margin-left: 1.5rem; }
+      body .eric-carta .mi-carta .imagen-carta img {
+        width: 17rem;
+        height: 17rem; }
+    body .eric-carta .mi-carta ul {
+      grid-area: ul; }
+      body .eric-carta .mi-carta ul li {
+        text-align: left;
+        width: 20rem; }
+    body .eric-carta .h4-micarta {
+      grid-area: h4-micarta; }
+    body .eric-carta .h4-texto-carta {
+      grid-area: h4-texto-carta;
+      text-align: left;
+      margin-left: 1rem; }
+    body .eric-carta .texto-carta {
+      grid-area: texto-carta;
+      width: 45rem;
+      text-align: left;
+      margin-left: 1rem; }
+  body footer .footer-mobile {
+    display: none; }
+  body footer .footer-contenedor p {
+    width: 10rem; }
+  body footer .footer-contenedor .imagenes-footer {
+    flex-direction: column;
+    align-self: center; }
+    body footer .footer-contenedor .imagenes-footer a {
+      list-style: none;
+      text-decoration: none; }
+      body footer .footer-contenedor .imagenes-footer a img {
         width: 2.2rem;
         height: 2.2rem;
         margin-right: 0.3rem; } }

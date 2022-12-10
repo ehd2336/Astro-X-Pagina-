@@ -1,114 +1,129 @@
-
-.sobre-mi{
-    h1{
-        color: white;
-        margin-top: 3rem;
-        margin-left: 0.5rem;
-        margin-bottom: 2rem;
-        padding-top: 2rem;
-    }
-    .big3{
-        display: flex;
-        margin-bottom: 3rem;
-        img{
-            width: 8rem;
-        }
-        p{
-        flex-direction: column;
-        align-self: center;   
-        color: white; 
-           
-        }
-    }
-    // contiene los textos de mi historia y de astrologia
-    .historia-mia{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows:0.2fr 1fr 0.2fr 1fr ;
-        grid-template-areas: 
-        "h2-historia imagen-eric"
-        "historia imagen-eric"
-        "h3-astro imagen-eric"
-        "historia-astro imagen-eric";
-        gap: 1rem;
-        .h2-historia{
-            grid-area: h2-historia;
-        }
-        .historia{
-            grid-area: historia;
-            
-        }
-        .h3-astro{
-            grid-area: h3-astro;
-        }
-        .historia-astro{
-            grid-area: historia-astro;
-            
-        }
-        .imagen-eric{
-            grid-area: imagen-eric;
-            width: 35rem;
-        }
-        h1, h2, h3, p{
+body{
+    .sobre-mi{
+        background: $color-div;
+        h1{
             color: white;
+            margin-top: 3rem;
             margin-left: 0.5rem;
+            margin-bottom: 2rem;
+            padding-top: 2rem;
         }
-        
+        .big3{
+            display: flex;
+            margin-bottom: 3rem;
+            img{
+                width: 8rem;
+            }
+            p{
+            flex-direction: column;
+            align-self: center;   
+            color: white; 
+               
+            }
+        }
+        // contiene los textos de mi historia y de astrologia
+        .historia-mia-mobile{
+            display: none;
+        }
+        .historia-mia{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows:0.2fr 1fr 0.2fr 1fr ;
+            grid-template-areas: 
+            "h2-historia imagen-eric"
+            "historia imagen-eric"
+            "h3-astro imagen-eric"
+            "historia-astro imagen-eric";
+            gap: 1rem;
+            .h2-historia{
+                grid-area: h2-historia;
+            }
+            .historia{
+                grid-area: historia;
+                
+            }
+            .h3-astro{
+                grid-area: h3-astro;
+            }
+            .historia-astro{
+                grid-area: historia-astro;
+                
+            }
+            .imagen-eric{
+                grid-area: imagen-eric;
+                width: 35rem;
+            }
+            h1, h2, h3, p{
+                color: white;
+                margin-left: 0.5rem;
+            }
+            
+        }
     }
-}
-    //section que contiene carta natal y planetas
-
-.eric-carta{
+        //section que contiene carta natal y planetas
+    
+    .eric-carta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-top: 5rem;
         padding-bottom: 5rem;
-        h4{
+        .h4-micarta{
             color: white;
             margin-left: 0.5rem;
-            margin-bottom: 4rem;
+            margin-bottom: 10rem;
             padding-top: 3rem;
+            align-self: center;
+            font-size:xx-large;
         }
         .mi-carta{
-            display: flex;
-            justify-content: space-evenly;
-            text-align: center;
-            .imagen-carta{
-                width: 45rem;
-                height: 45rem;
-                -moz-border-radius: 50%;
-                -webkit-border-radius: 50%;
-                border-radius: 50%;
-                background: #fffff0;
-                margin-bottom: 2rem;
-                overflow: hidden;
-                img{
-                      width: 42rem;
-                      height: 42rem;
-                      margin-top: 1.5rem;
-                      transition: 0.5s;
-                      object-fit: cover;
-                }
-                img:hover{
-                      transform:scale(1.1)
-                }
-            }
-            ul{
                 display: flex;
-                flex-direction: column;
-                align-self: center;
-                margin-right: 6rem;
-                li{
-                    list-style: none;
-                    text-decoration: none;
-                    color: white;
+                text-align: center;
+                .imagen-carta{
+                    width: 45rem;
+                    height: 45rem;
+                    -moz-border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    border-radius: 50%;
+                    background: #fffff0;
+                    margin-bottom: 2rem;
+                    margin-right: 10rem;
+                    overflow: hidden;
+                    img{
+                          width: 42rem;
+                          height: 42rem;
+                          margin-top: 1.5rem;
+                          transition: 0.5s;
+                          object-fit: cover;
+                    }
+                    img:hover{
+                          transform:scale(1.1)
+                    }
                 }
-            }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    align-self: center;
+                    margin-right: 6rem;
+                    li{
+                        list-style: none;
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
         }
         .h4-texto-carta{
-            color: $color-h1;
+                color: $color-h1;
+                margin-top: 3rem;
+                align-self: center;
+                margin-bottom: 3rem;
         }
         .texto-carta{
-            color: $color-p;
-            margin-bottom: 5rem;
-            margin-left: 0.5rem;
+                text-align: center;
+                color: $color-p;
+                margin-bottom: 5rem;
+                width: 70rem;
         }
+    }
+    
 }

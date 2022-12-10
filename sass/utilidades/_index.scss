@@ -241,6 +241,9 @@ footer{
     background: $color-footer;
     padding: 0.7rem;
     margin-top: 5rem;
+    .footer-mobile{
+        display: none;
+    }
     .footer-contenedor{
         display: flex;
         justify-content: space-evenly;
