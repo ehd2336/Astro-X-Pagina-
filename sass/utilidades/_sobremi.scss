@@ -17,14 +17,10 @@ body{
             p{
             flex-direction: column;
             align-self: center;   
-            color: white; 
-               
+            color: white;  
             }
         }
         // contiene los textos de mi historia y de astrologia
-        .historia-mia-mobile{
-            display: none;
-        }
         .historia-mia{
             display: grid;
             grid-template-columns: 2fr 1fr;
@@ -126,4 +122,41 @@ body{
         }
     }
     
+    footer{
+        background: $color-footer;
+        padding: 0.7rem;
+        margin-top: 5rem;
+        .footer-mobile{
+            display: none;
+        }
+        .footer-contenedor{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: rgb(31, 31, 31);
+            .derechos{
+               a{
+                   text-decoration: none;
+                   list-style: none;
+                   color: rgb(247, 105, 23);
+               }
+            }
+                .imagenes-footer{
+                    a{
+                        list-style: none;
+                        text-decoration: none;
+                        img{
+                            width: 2.2rem;
+                            height: 2.2rem;
+                            margin-right: 0.3rem;
+                        }
+                    }
+                }
+        }
+        
+    }
 }
+
+// footer
