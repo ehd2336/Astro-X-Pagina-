@@ -588,6 +588,131 @@ footer{
                  }
              }  
            }
-         }
-}//esto es body
+         }//esto es body
+}
+
+// -------------------media querie mobile Carta Natal--------------------------
+@media (max-width:678px){
+    body{
+        .servicios-carta{
+            h1{
+                width: 23rem;
+                text-align: center;
+                margin-top: 3rem;
+            }
+            p{
+                width: 25rem;
+                text-align: center;
+            }
+        }
+        .servicios{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .carta-online, .carta-revo, .carta-escrita, .carta-escrita-revo{
+            border-radius: 3rem;
+            text-align: center;
+            margin: 1rem;
+            width: 23rem;
+            padding: 2rem;
+            }
+        }
+        .preguntas-frecuentes{
+            .divisor-preguntas{
+                img{
+                    width: 10rem;
+                }
+                h3{
+                    margin-bottom: 2rem;
+                }
+            }
+            h3, h4{
+                text-align: center;
+                margin-bottom: 2rem;
+                margin-top: 2rem;
+            }
+            p{
+                width: 25rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+//------------------mediaquerie para tablet Carta Natal------------
+
+@media (max-width:768px){
+    .servicios-carta{
+        p{
+            width: 40rem;
+            text-align: center;
+        }
+    }
+    .servicios{
+        gap: 2rem;
+        .carta-escrita, .carta-escrita-revo, .carta-online, .carta-revo{
+            width: 19em;
+            padding: 1rem;
+            h2{
+                margin-bottom: 2rem;
+                margin-top: 2rem;
+            }
+        }
+    }
+    .preguntas-frecuentes{
+        .divisor-preguntas{
+            img{
+                width: 12rem;
+            }
+            h3{
+                margin-bottom: 2rem;
+            }
+        }
+        h3,h4{
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+        p{
+            width: 40rem;
+        }
+    }
+}
+
+// mediaquerie mobile Cursos y talleres
+@media (max-width:678px){
+    body{
+        .main-talleres{
+            .taller-luna, .taller-ascendente, .taller-marte, .taller-venus{
+                width: 22rem;
+                padding: 4rem;
+                p{
+                    width: 15rem;
+                }
+            }
+            .taller-venus{
+                img{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+//media querie tablet Cursos y talleres
+
+@media (max-width:768px){
+    .body{
+        .main-talleres{
+            .taller-luna, .taller-ascendente, .taller-marte, .taller-venus{
+                width: 30rem;
+                padding: 3rem;
+            }
+            .taller-luna{
+                width: 30rem;
+                padding: 3rem;
+            }
+        }
+        
+    }
+}
 
