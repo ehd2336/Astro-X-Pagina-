@@ -681,38 +681,192 @@ footer{
 // mediaquerie mobile Cursos y talleres
 @media (max-width:678px){
     body{
-        .main-talleres{
-            .taller-luna, .taller-ascendente, .taller-marte, .taller-venus{
-                width: 22rem;
-                padding: 4rem;
-                p{
-                    width: 15rem;
-                }
+        #main-talleres-id{
+        .taller-luna, .taller-ascendente, .taller-marte, .taller-venus{
+            width: 22rem;
+            padding: 4rem;
+            p{
+                width: 15rem;
             }
-            .taller-venus{
-                img{
-                    display: none;
-                }
+        }
+        .taller-venus{
+            img{
+                display: none;
             }
         }
     }
 }
-
+}
+   
 //media querie tablet Cursos y talleres
 
 @media (max-width:768px){
-    .body{
+    body{
         .main-talleres{
-            .taller-luna, .taller-ascendente, .taller-marte, .taller-venus{
-                width: 30rem;
-                padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: none;
+            color: white;
+            div{
+                transition: transform 0.5s;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .luna-titulo, .ascendente-titulo, .marte-titulo, .venus-titulo{
+                    flex-direction: column;
+                    p{
+                        width: 30rem;
+                        text-align: center;
+                    }
+                }
+            }
+            div:hover{
+                transform: scale(1.1); 
+            }
+            h2{
+                margin-bottom: 3rem;
+        
             }
             .taller-luna{
-                width: 30rem;
-                padding: 3rem;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                background: $color-div;
+                width: 40rem;
+                text-align: center;
+                padding: 5rem;
+            }
+            .taller-ascendente{
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                background: $color-div;
+                width: 40rem;
+                text-align: center;
+                padding: 5rem;
+            }
+            .taller-marte{
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                background: $color-div;
+                width: 40rem;
+                text-align: center;
+                padding: 5rem;
+            }
+            .taller-venus{
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                background: $color-div;
+                width: 40rem;
+                padding: 5rem;
+                img{
+                    width: 20rem;
+                    margin-right: 5rem;
+                    display: none;
+                }
+              
             }
         }
-        
+        }
     }
+    
+
+//media queries Astro 101 mobile
+@media (max-width:678px){
+    body{
+        #main-101-id{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            div{
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                padding: 0rem;
+
+            }
+            .dropdown{
+                .btn{
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    .dropdown-menu{
+
+                    }
+                }
+            }
+            h1{
+                font-size: 1.5rem;
+                text-align: center;
+                margin-left: 0;
+            }
+            .aside{
+                display: none;
+                .lista{
+                }
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    li{
+                        margin: 0.5rem;
+                        text-align: center;
+                        margin-left: 0;
+                    }
+                }
+            }
+            .pluton-101, .jupiter-101, .luna-101{
+                flex-direction: column;
+                align-content: center;
+                h2{
+                    width:20rem;
+                }
+                img{
+                    width: 20rem;
+                }
+                p{
+                    width: 20rem ;
+                }
+
+            }
+       }
+   }
+
 }
 
+
+
+//mediaqueries Astro 101 tablet
+@media (max-width:768px) {
+    body{
+        .main-101{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .aside{
+                display: none;
+                .lista{
+                }
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    li{
+                        margin: 0.5rem;
+                        text-align: center;
+                        margin-left: 0;
+                    }
+                }
+            }
+            .pluton-101, .jupiter-101, .luna-101{
+                flex-direction: column;
+                align-content: center;
+                h2{
+                    width:30rem;
+                }
+                img{
+                    width: 35rem;
+                }
+                p{
+                    width: 30rem ;
+                }
+
+            }
+       }
+   }
+}

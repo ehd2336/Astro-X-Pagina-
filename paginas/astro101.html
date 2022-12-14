@@ -58,8 +58,18 @@
         </header>
       </div>
       <!-- arranca el main---------------->
-    <main class="main-101">
+    <main id="main-101-id" class="main-101">
         <h1>Astro 101: Nuestra Sección dedicada para que sigas aprendiendo</h1>
+        <div id="dropdown-id" class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Artículos
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#pluton">Plutón</a></li>
+            <li><a class="dropdown-item" href="#jupiter">Júpiter</a></li>
+            <li><a class="dropdown-item" href="#luna">Luna</a></li>
+          </ul>
+        </div>
         <div class="aside">
           <h2 class="lista"> Artículos</h2>
           <ul>
@@ -86,6 +96,23 @@
          </div>
     </main>
     <footer>
+      <!-- footer mobile-->
+      <div class="footer-mobile">
+        <p>¡Te invitamos a seguirnos en nuestras redes sociales!</p>
+        <div class="imagenes-footer">
+          <a href="https://www.instagram.com/astro.equis" target="blank" class="instagram">
+            <img src="../img/instalogo.png" alt="instagram logo">
+          </a>
+          <a href="https://www.facebook.com" target="blank" class="facebook">
+            <img src="../img/facebooklogo.png" alt="facebook logo">
+          </a>
+          <a href="https://www.youtube.com/@astro.x" target="blank" class="youtube">
+            <img src="../img/youtubelogo.png" alt="youtube logo">
+          </a>
+        </div>
+        <p class="derechos"> Todos los derechos reservados. Creado por <a href="https://instagram.com/eric.dallas" target="blank">Eric       Dallas</a> </p>
+      </div>
+      <!-- footer desktop-->
         <div class="footer-contenedor">
           <p>¡Te invitamos a seguirnos en nuestras redes sociales!</p>
           <div class="imagenes-footer">
