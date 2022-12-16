@@ -684,14 +684,26 @@ footer{
         #main-talleres-id{
         .taller-luna, .taller-ascendente, .taller-marte, .taller-venus{
             width: 22rem;
-            padding: 4rem;
-            p{
-                width: 15rem;
+            padding: 1.5rem;
+            .luna-titulo, .ascendente-titulo, .marte-titulo, .venus-titulo{
+                img{
+                    width: 10rem;
+                }
+                p{
+                    width: 20rem;
+                    text-align: left;
+                }
             }
-        }
-        .taller-venus{
-            img{
-                display: none;
+            .venus-titulo{
+                img{
+                    width: 8rem;
+                    margin-top: 1rem;
+                }
+            }
+            .marte-titulo{
+                img{
+                    width: 11rem;
+                }
             }
         }
     }
@@ -735,6 +747,11 @@ footer{
                 width: 40rem;
                 text-align: center;
                 padding: 5rem;
+                .luna-titulo{
+                    h2{
+                        margin-bottom: 0.5rem;
+                    }
+                }
             }
             .taller-ascendente{
                 margin-top: 3rem;
@@ -743,6 +760,11 @@ footer{
                 width: 40rem;
                 text-align: center;
                 padding: 5rem;
+                .ascendente-titulo{
+                    h2{
+                        margin-bottom: 0.5rem;
+                    }
+                }
             }
             .taller-marte{
                 margin-top: 3rem;
@@ -751,6 +773,14 @@ footer{
                 width: 40rem;
                 text-align: center;
                 padding: 5rem;
+                .marte-titulo{
+                    h2{
+                        margin-bottom: 0.5rem;
+                    }
+                    p{
+                        margin-top: 1rem;
+                    }
+                }
             }
             .taller-venus{
                 margin-top: 3rem;
@@ -758,12 +788,11 @@ footer{
                 background: $color-div;
                 width: 40rem;
                 padding: 5rem;
-                img{
-                    width: 20rem;
-                    margin-right: 5rem;
-                    display: none;
+                .venus-titulo{
+                    h2{
+                        margin-bottom: 0.5rem;
+                    }
                 }
-              
             }
         }
         }

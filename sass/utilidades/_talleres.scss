@@ -5,58 +5,98 @@
     background: none;
     color: white;
     div{
-        transition: transform 0.5s;
+        transition: transform 0.3s;
         display: flex;
         justify-content: space-between;
         align-items: center;
         .luna-titulo, .ascendente-titulo, .marte-titulo, .venus-titulo{
             flex-direction: column;
             p{
-                width: 30rem;
+                width: 40rem;
                 text-align: center;
             }
         }
     }
-    div:hover{
-        transform: scale(1.1); 
-    }
+    
     h2{
         margin-bottom: 3rem;
+
+    }
+    .taller-luna:hover{
+        transform: scale(1.1); 
 
     }
     .taller-luna{
         margin-top: 3rem;
         margin-bottom: 3rem;
         background: $color-div;
-        width: 80rem;
+        width: 70rem;
+        height: 40rem;
         text-align: center;
         padding: 15rem;
+        img{
+            width: 15rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        p{
+            margin-top: 1rem;
+        }
+    }
+    .taller-ascendente:hover{
+        transform: scale(1.1); 
+
     }
     .taller-ascendente{
         margin-top: 3rem;
         margin-bottom: 3rem;
         background: $color-div;
-        width: 80rem;
+        width: 70rem;
+        height: 40rem;
         text-align: center;
         padding: 15rem;
+        img{
+            width: 15rem;
+            margin-bottom: 1rem;
+
+        }
+    }
+    .taller-marte:hover{
+        transform: scale(1.1); 
+
     }
     .taller-marte{
         margin-top: 3rem;
         margin-bottom: 3rem;
         background: $color-div;
-        width: 80rem;
+        width: 70rem;
+        height: 40rem;
         text-align: center;
         padding: 15rem;
+        p{
+            margin-top: 1rem;
+        }
+        img{
+            width: 20rem;
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+    .taller-venus:hover{
+        transform: scale(1.1); 
+
     }
     .taller-venus{
         margin-top: 3rem;
         margin-bottom: 3rem;
         background: $color-div;
-        width: 80rem;
+        width: 70rem;
+        height: 40rem;
         padding: 15rem;
         img{
-            width: 20rem;
-            margin-right: 5rem;
-        } 
+            width: 10rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
     }
 }

@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link de font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <!-- otro link de font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- otro link de font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- link css-->
@@ -43,9 +49,6 @@
                   <li class="nav-item">
                     <a class="nav-link " href="../paginas/astro101.html">Astro 101</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="../paginas/blog.html">Blog</a>
-                  </li>
               </div>
             </div>
           </nav>
@@ -57,28 +60,28 @@
 </main>
 <!-- section servicio de cartas-->
 <section class="servicios">
-    <div class="carta-online">
+    <div id="informe-online-id" class="carta-online">
       <!-- Principio del widget de enlace de Calendly -->
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
         <h2 class="h2-carta-online"><a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/astrox/lectura-de-carta-natal'});return false;">Carta Natal (Online)</a></h2>
         <!-- Final del widget de enlace de Calendly -->
-        <p class="texto-carta-online"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita asperiores quasi illo consequuntur possimus odio rem recusandae sint ex deleniti eaque ipsam, quis at ratione aut iste omnis temporibus? Odio.</p>
+        <p class="texto-carta-online"> Sesión de 2hs en la que te vas a llevar una pdoerosa herramienta de autoconocimiento, que te va a servir para toda tu vida. Vamos a realizar la lectura en videollamada y vamos a charlar sobre las energías presentes en tu carta (Sol, Luna, Ascendente, etc). Luego te llevas un breve informe escrito para que puedas utilizarlo como guía.</p>
     </div>
     <div class="carta-revo">
         <!-- Principio del widget de enlace de Calendly -->
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
         <h2 class="h2-carta-revo"><a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/astrox/carta-natal-revo'});return false;">Carta Natal + Revolución Solar (Online)</a></h2>
-        <p class="texto-carta-revo"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit libero voluptatum deleniti quae! Doloremque ullam iure rem, natus ipsam excepturi possimus ab incidunt aliquam nulla vel pariatur architecto enim aliquid.</p>
+        <p class="texto-carta-revo"> A la sesión de carta natal le sumamos la lectura de Revolución Solar, que nos muestra las energías que te van a acompañar durante todo el año (Tomando como referencia el dia de tu cumpleaños, para ver la posición de los planetas).Es una excelente herramienta para saber con que energías podemos contar y trabajar en ese año específico.</p>
     </div>
     <div class="carta-escrita">
-      <h2 class="h2-carta-escrita"><a href="">Carta Natal (Informe escrito)</a> </h2>
-      <p class="texto-carta-escrita">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sint mollitia recusandae aliquid dicta molestiae, nobis neque, commodi harum soluta ea corrupti sit, aperiam atque cum itaque aspernatur dolor laudantium! </p>
+      <h2 id="informe-escrito-id"  class="h2-carta-escrita"><a href="">Carta Natal (Informe escrito)</a> </h2>
+      <p class="texto-carta-escrita"> Si sos de lxs que prefieren leer, el informe escrito es ideal para vos. Detallamos en una extensa cantidad de páginas, toda la infromacón sobre tu Carta Natal, hablando del Sol, Luna, Ascendente y los aspectos, para que tengas una guía (con muchísima información) y la puedas leer cuantas veces quieras. </p>
  </div>
  <div class="carta-escrita-revo">
      <h2 class="h2-carta-escrita-revo"> <a href="">Cara Natal + Revolución Solar (Informe Escrito)</a></h2>
-     <p class="texto-carta-escrita-revo"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptatum debitis iure magni perspiciatis laudantium quam doloremque temporibus est maxime saepe suscipit. Corrupti repellendus numquam magni doloribus ad sint rerum?</p>
+     <p class="texto-carta-escrita-revo"> Al informe escrito le sumamos el informe de Revolución Solar, detallando las energías que te van a acompañar durante todo el año (desde el día de tu cumpleaños hasta el próximo).</p>
  </div>
 </section>
 <section class="preguntas-frecuentes">
