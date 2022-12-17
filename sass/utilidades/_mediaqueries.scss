@@ -6,6 +6,20 @@
 body{
     margin: 0;
     padding: 0;
+    margin-right: 0;
+    .contenedor-menu{
+        .header-astrox{
+            .navbar{
+                    .logo-astrox{
+                       width: 6rem;
+                       height: 6rem;
+                    }
+                    .container-fluid{
+                        justify-content: space-between;
+                    }
+            }
+        }
+    }
     .boton-wpp{
         right: 15px;
         padding: 15px;
@@ -103,7 +117,7 @@ body{
         width: 25rem;
         p{
             text-align: center;
-            margin-right: 2rem;
+            width: 22rem;
         }
         .cursos{
             margin-bottom: 2rem;
@@ -117,7 +131,8 @@ body{
     }
     .video-youtube{
         iframe{
-            width: 22rem;
+            width: 18rem;
+            height: 15rem;
             margin: 2rem;
         }
     }
@@ -132,14 +147,14 @@ body{
     .carousel-inner{
         div{
             .conociendo-pluton{
-                width: 23rem;
-                height: 14rem;
+                width: 21rem;
+                height: 12rem;
             }  
         }
         .carousel-item{
             .conociendo-jupiter{
-                width: 23rem;
-                height: 14rem;
+                width: 21rem;
+                height: 12rem;
                 }
                 .conociendo-luna{
                 width: 23rem;
@@ -359,6 +374,19 @@ footer{
     body{
         margin: 0;
         padding: 0;
+        .contenedor-menu{
+            .header-astrox{
+                .navbar{
+                        .logo-astrox{
+                           width: 6rem;
+                           height: 6rem;
+                        }
+                        .container-fluid{
+                            justify-content: space-between;
+                        }
+                }
+            }
+        }
         .sobre-mi{
             background: $color-div;
             h1{
@@ -372,8 +400,17 @@ footer{
                     width: 5rem ;
                     height: 5rem;
                 }
+                p{
+                    font-size: 0.8rem;
+                    text-align: center;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
                 .asc-geminis{
                     margin-right: 1rem;
+                }
+                .p-luna-leo{
+                    width: 10rem;
                 }
             }
             #historia-mia-id{
@@ -388,22 +425,24 @@ footer{
                 "historia-astro historia-astro";
                 .h2-historia{
                     grid-area: h2-historia;
+                    width: 20rem;
                 }
                 .historia{
                     grid-area: historia;
-                    
+                    width: 21.5rem;
                 }
                 .h3-astro{
                     grid-area: h3-astro;
                 }
                 .historia-astro{
                     grid-area: historia-astro;
-                    
+                    width: 21.5rem;
                 }
                 #foto-eric{
-                    width: 25rem;
+                    width: 23rem;
                     justify-content: center;
-                    align-items: center;
+                    align-items: center;        
+                    margin-top: 1rem;
                 }
                 h1, h2, h3, p{
                     color: white;
@@ -421,10 +460,10 @@ footer{
                 flex-direction: column;
                 align-self: center;
                 .imagen-carta{
-                    margin-right: 0px;
+                    margin-right: 1.7rem;
                 }
                 ul{
-                    margin-right: 0px;
+                    margin-right: 2rem;
                     li{
                         text-align: center;
                         margin: 0;
@@ -432,8 +471,15 @@ footer{
                     }
                 }
             }
+            .h4-texto-carta{
+                align-self: flex-start;
+
+            }
             #texto-signos-micarta{
-                width: 23rem;
+                align-self: flex-start;
+                width: 22rem;
+                margin-left: 0.5rem;
+
             }
 
         }
@@ -481,6 +527,7 @@ footer{
                 }
                 .historia{
                     grid-area: historia;
+                    width: 45rem;
                     
                 }
                 .h3-astro{
@@ -488,6 +535,8 @@ footer{
                 }
                 .historia-astro{
                     grid-area: historia-astro;
+                                        width: 45rem;
+
                     
                 }
                 .imagen-eric{
@@ -509,7 +558,7 @@ footer{
             grid-template-rows: 0.5fr 1fr 0.5fr 1fr;
             grid-template-areas:
             "h4-micarta h4-micarta"
-            "imagen-carta ul"
+            "ul imagen-carta"
             "h4-texto-carta h4-texto-carta"
             "texto-carta texto-carta";
             .mi-carta{
@@ -525,9 +574,10 @@ footer{
                 }
                 ul{
                     grid-area: ul;
+                    padding-left: 0;
                     li{
                         text-align: left;
-                        width: 20rem;
+                        font-size: 13px;
                     }
 
                 }
@@ -592,7 +642,7 @@ footer{
 }
 
 // -------------------media querie mobile Carta Natal--------------------------
-@media (max-width:678px){
+@media (max-width:667px){
     body{
         .servicios-carta{
             h1{
@@ -601,7 +651,7 @@ footer{
                 margin-top: 3rem;
             }
             p{
-                width: 25rem;
+                width: 22rem;
                 text-align: center;
             }
         }
@@ -630,9 +680,10 @@ footer{
                 text-align: center;
                 margin-bottom: 2rem;
                 margin-top: 2rem;
+                width: 20rem;
             }
             p{
-                width: 25rem;
+                width: 22rem;
                 text-align: center;
             }
         }
@@ -679,8 +730,21 @@ footer{
 }
 
 // mediaquerie mobile Cursos y talleres
-@media (max-width:678px){
+@media (max-width:667px){
     body{
+        .contenedor-menu{
+            .header-astrox{
+                .navbar{
+                        .logo-astrox{
+                           width: 6rem;
+                           height: 6rem;
+                        }
+                        .container-fluid{
+                            justify-content: space-between;
+                        }
+                }
+            }
+        }
         #main-talleres-id{
         .taller-luna, .taller-ascendente, .taller-marte, .taller-venus{
             width: 22rem;
@@ -800,12 +864,25 @@ footer{
     
 
 //media queries Astro 101 mobile
-@media (max-width:678px){
+@media (max-width:667px){
     body{
         #main-101-id{
             display: flex;
             flex-direction: column;
             align-items: center;
+            .contenedor-menu{
+                .header-astrox{
+                    .navbar{
+                            .logo-astrox{
+                               width: 6rem;
+                               height: 6rem;
+                            }
+                            .container-fluid{
+                                justify-content: space-between;
+                            }
+                    }
+                }
+            }
             div{
                 margin-top: 2rem;
                 margin-bottom: 2rem;

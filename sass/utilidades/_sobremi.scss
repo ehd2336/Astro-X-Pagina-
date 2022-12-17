@@ -13,6 +13,7 @@ body{
             margin-bottom: 3rem;
             img{
                 width: 8rem;
+                filter: drop-shadow(2px 1px 3px);
             }
             p{
             flex-direction: column;
@@ -48,6 +49,8 @@ body{
             .imagen-eric{
                 grid-area: imagen-eric;
                 width: 35rem;
+                filter: drop-shadow(5px 4px 3px);
+
             }
             h1, h2, h3, p{
                 color: white;
@@ -75,6 +78,8 @@ body{
         .mi-carta{
                 display: flex;
                 text-align: center;
+                filter: drop-shadow(5px 4px 3px);
+
                 .imagen-carta{
                     width: 45rem;
                     height: 45rem;

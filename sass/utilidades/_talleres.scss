@@ -38,6 +38,7 @@
             width: 15rem;
             margin-top: 2rem;
             margin-bottom: 1rem;
+            filter: drop-shadow(5px 4px 3px black);
         }
         p{
             margin-top: 1rem;
@@ -58,7 +59,7 @@
         img{
             width: 15rem;
             margin-bottom: 1rem;
-
+            filter: drop-shadow(5px 4px 3px black);
         }
     }
     .taller-marte:hover{
@@ -80,6 +81,7 @@
             width: 20rem;
             margin-top: 2rem;
             margin-bottom: 0.5rem;
+            filter: drop-shadow(5px 4px 3px black);
         }
     }
     .taller-venus:hover{
@@ -97,6 +99,7 @@
             width: 10rem;
             margin-top: 1rem;
             margin-bottom: 2rem;
+            filter: drop-shadow(5px 4px 3px black);
         }
     }
 }

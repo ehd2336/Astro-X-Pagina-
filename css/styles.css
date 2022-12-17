@@ -23,7 +23,7 @@ body .boton-wpp {
   z-index: 999;
   border-radius: 50%;
   bottom: 20px;
-  right: 25px;
+  right: 20px;
   padding: 25px;
   transition: ease 0,3s;
   margin-bottom: 2rem; }
@@ -36,6 +36,24 @@ body .boton-wpp {
 body .boton-wpp:hover {
   transform: scale(1.1);
   transition: 0.3s; }
+
+body .boton-arriba {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 200px;
+  right: 72px;
+  padding: 25px;
+  transition: ease 0,3s;
+  margin-bottom: 2rem; }
+  body .boton-arriba .arriba {
+    color: white; }
+  body .boton-arriba .imagen-arriba img {
+    width: 3rem;
+    height: 3rem; }
 
 .contenedor-menu {
   background: linear-gradient(135deg, #69FF97 10%, #00E4FF 100%); }
@@ -76,7 +94,8 @@ body .boton-wpp:hover {
         font-family: 'Hanken Grotesk', sans-serif; }
       .main-index .contenido-principal .bloque-imagenes .mano {
         width: 30rem;
-        height: 30rem; }
+        height: 30rem;
+        filter: drop-shadow(5px -2px 1.5px); }
 
 section {
   background: linear-gradient(to right, #4e4376, #2b5876);
@@ -117,7 +136,8 @@ section {
         border-radius: 50%;
         background: #fffff0;
         margin-bottom: 2rem;
-        overflow: hidden; }
+        overflow: hidden;
+        filter: drop-shadow(5px 4px 3px); }
         .section-carta .section-astrox .cartanatal-servicios .cartanatal-index img {
           width: 32rem;
           height: 32rem;
@@ -151,7 +171,8 @@ section {
   .section-cursos .video-youtube iframe {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    margin-right: 2rem; }
+    margin-right: 2rem;
+    filter: drop-shadow(5px 2px 3px); }
   .section-cursos .texto-cursos {
     align-self: center;
     color: white;
@@ -169,7 +190,8 @@ section {
   flex-direction: column;
   align-items: center;
   margin-top: 1.5rem;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(5px 4px 3px); }
   .carousel .carousel-inner div .conociendo-pluton {
     width: 60rem;
     height: 40rem; }
@@ -203,7 +225,8 @@ footer {
       footer .footer-contenedor .imagenes-footer a img {
         width: 2.2rem;
         height: 2.2rem;
-        margin-right: 0.3rem; }
+        margin-right: 0.3rem;
+        filter: drop-shadow(2px 1px 3px); }
 
 body .sobre-mi {
   background: linear-gradient(to right, #4e4376, #2b5876); }
@@ -217,7 +240,8 @@ body .sobre-mi {
     display: flex;
     margin-bottom: 3rem; }
     body .sobre-mi .big3 img {
-      width: 8rem; }
+      width: 8rem;
+      filter: drop-shadow(2px 1px 3px); }
     body .sobre-mi .big3 p {
       flex-direction: column;
       align-self: center;
@@ -238,7 +262,8 @@ body .sobre-mi {
       grid-area: historia-astro; }
     body .sobre-mi .historia-mia .imagen-eric {
       grid-area: imagen-eric;
-      width: 35rem; }
+      width: 35rem;
+      filter: drop-shadow(5px 4px 3px); }
     body .sobre-mi .historia-mia h1, body .sobre-mi .historia-mia h2, body .sobre-mi .historia-mia h3, body .sobre-mi .historia-mia p {
       color: white;
       margin-left: 0.5rem; }
@@ -258,7 +283,8 @@ body .eric-carta {
     font-size: xx-large; }
   body .eric-carta .mi-carta {
     display: flex;
-    text-align: center; }
+    text-align: center;
+    filter: drop-shadow(5px 4px 3px); }
     body .eric-carta .mi-carta .imagen-carta {
       width: 45rem;
       height: 45rem;
@@ -380,7 +406,8 @@ body footer {
     flex-direction: column;
     align-items: center; }
     .preguntas-frecuentes .divisor-preguntas img {
-      width: 14rem; }
+      width: 14rem;
+      filter: drop-shadow(5px 4px 3px); }
     .preguntas-frecuentes .divisor-preguntas h3 {
       margin-bottom: 5rem; }
   .preguntas-frecuentes h3, .preguntas-frecuentes h4, .preguntas-frecuentes p {
@@ -420,7 +447,8 @@ body footer {
     .main-talleres .taller-luna img {
       width: 15rem;
       margin-top: 2rem;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      filter: drop-shadow(5px 4px 3px black); }
     .main-talleres .taller-luna p {
       margin-top: 1rem; }
   .main-talleres .taller-ascendente:hover {
@@ -435,7 +463,8 @@ body footer {
     padding: 15rem; }
     .main-talleres .taller-ascendente img {
       width: 15rem;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      filter: drop-shadow(5px 4px 3px black); }
   .main-talleres .taller-marte:hover {
     transform: scale(1.1); }
   .main-talleres .taller-marte {
@@ -451,7 +480,8 @@ body footer {
     .main-talleres .taller-marte img {
       width: 20rem;
       margin-top: 2rem;
-      margin-bottom: 0.5rem; }
+      margin-bottom: 0.5rem;
+      filter: drop-shadow(5px 4px 3px black); }
   .main-talleres .taller-venus:hover {
     transform: scale(1.1); }
   .main-talleres .taller-venus {
@@ -464,7 +494,8 @@ body footer {
     .main-talleres .taller-venus img {
       width: 10rem;
       margin-top: 1rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      filter: drop-shadow(5px 4px 3px black); }
 
 .main-101 {
   display: grid;
@@ -520,7 +551,13 @@ body main {
 @media (max-width: 667px) {
   body {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    margin-right: 0; }
+    body .contenedor-menu .header-astrox .navbar .logo-astrox {
+      width: 6rem;
+      height: 6rem; }
+    body .contenedor-menu .header-astrox .navbar .container-fluid {
+      justify-content: space-between; }
     body .boton-wpp {
       right: 15px;
       padding: 15px;
@@ -591,7 +628,7 @@ body main {
         width: 25rem; }
         body .section-cursos .texto-cursos p {
           text-align: center;
-          margin-right: 2rem; }
+          width: 22rem; }
         body .section-cursos .texto-cursos .cursos {
           margin-bottom: 2rem;
           margin-right: 2rem; }
@@ -599,7 +636,8 @@ body main {
           text-decoration: none;
           color: white; }
       body .section-cursos .video-youtube iframe {
-        width: 22rem;
+        width: 18rem;
+        height: 15rem;
         margin: 2rem; }
     body .carousel {
       display: flex;
@@ -608,11 +646,11 @@ body main {
       margin-top: 1.5rem;
       margin-bottom: 1.5rem; }
       body .carousel .carousel-inner div .conociendo-pluton {
-        width: 23rem;
-        height: 14rem; }
+        width: 21rem;
+        height: 12rem; }
       body .carousel .carousel-inner .carousel-item .conociendo-jupiter {
-        width: 23rem;
-        height: 14rem; }
+        width: 21rem;
+        height: 12rem; }
       body .carousel .carousel-inner .carousel-item .conociendo-luna {
         width: 23rem;
         height: 14rem; }
@@ -755,6 +793,11 @@ body main {
   body {
     margin: 0;
     padding: 0; }
+    body .contenedor-menu .header-astrox .navbar .logo-astrox {
+      width: 6rem;
+      height: 6rem; }
+    body .contenedor-menu .header-astrox .navbar .container-fluid {
+      justify-content: space-between; }
     body .sobre-mi {
       background: linear-gradient(to right, #4e4376, #2b5876); }
       body .sobre-mi h1 {
@@ -766,25 +809,36 @@ body main {
         body .sobre-mi .big3 img {
           width: 5rem;
           height: 5rem; }
+        body .sobre-mi .big3 p {
+          font-size: 0.8rem;
+          text-align: center;
+          margin-top: 0;
+          margin-bottom: 0; }
         body .sobre-mi .big3 .asc-geminis {
           margin-right: 1rem; }
+        body .sobre-mi .big3 .p-luna-leo {
+          width: 10rem; }
       body .sobre-mi #historia-mia-id {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 0.1fr 1fr 0.1fr 1fr;
         grid-template-areas: "imagen-eric imagen-eric" "h2-historia h2-historia" "historia historia" "h3-astro h3-astro" "historia-astro historia-astro"; }
         body .sobre-mi #historia-mia-id .h2-historia {
-          grid-area: h2-historia; }
+          grid-area: h2-historia;
+          width: 20rem; }
         body .sobre-mi #historia-mia-id .historia {
-          grid-area: historia; }
+          grid-area: historia;
+          width: 21.5rem; }
         body .sobre-mi #historia-mia-id .h3-astro {
           grid-area: h3-astro; }
         body .sobre-mi #historia-mia-id .historia-astro {
-          grid-area: historia-astro; }
+          grid-area: historia-astro;
+          width: 21.5rem; }
         body .sobre-mi #historia-mia-id #foto-eric {
-          width: 25rem;
+          width: 23rem;
           justify-content: center;
-          align-items: center; }
+          align-items: center;
+          margin-top: 1rem; }
         body .sobre-mi #historia-mia-id h1, body .sobre-mi #historia-mia-id h2, body .sobre-mi #historia-mia-id h3, body .sobre-mi #historia-mia-id p {
           color: white;
           margin-left: 0.5rem; }
@@ -797,15 +851,19 @@ body main {
         flex-direction: column;
         align-self: center; }
         body #eric-carta-flex .mi-carta .imagen-carta {
-          margin-right: 0px; }
+          margin-right: 1.7rem; }
         body #eric-carta-flex .mi-carta ul {
-          margin-right: 0px; }
+          margin-right: 2rem; }
           body #eric-carta-flex .mi-carta ul li {
             text-align: center;
             margin: 0;
             padding: 0; }
+      body #eric-carta-flex .h4-texto-carta {
+        align-self: flex-start; }
       body #eric-carta-flex #texto-signos-micarta {
-        width: 23rem; } }
+        align-self: flex-start;
+        width: 22rem;
+        margin-left: 0.5rem; } }
 
 @media (max-width: 768px) {
   body .sobre-mi {
@@ -833,11 +891,13 @@ body main {
       body .sobre-mi .historia-mia .h2-historia {
         grid-area: h2-historia; }
       body .sobre-mi .historia-mia .historia {
-        grid-area: historia; }
+        grid-area: historia;
+        width: 45rem; }
       body .sobre-mi .historia-mia .h3-astro {
         grid-area: h3-astro; }
       body .sobre-mi .historia-mia .historia-astro {
-        grid-area: historia-astro; }
+        grid-area: historia-astro;
+        width: 45rem; }
       body .sobre-mi .historia-mia .imagen-eric {
         grid-area: imagen-eric;
         width: 28rem;
@@ -850,7 +910,7 @@ body main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1fr 0.5fr 1fr;
-    grid-template-areas: "h4-micarta h4-micarta" "imagen-carta ul" "h4-texto-carta h4-texto-carta" "texto-carta texto-carta"; }
+    grid-template-areas: "h4-micarta h4-micarta" "ul imagen-carta" "h4-texto-carta h4-texto-carta" "texto-carta texto-carta"; }
     body .eric-carta .mi-carta .imagen-carta {
       grid-area: imagen-carta;
       width: 20rem;
@@ -860,10 +920,11 @@ body main {
         width: 17rem;
         height: 17rem; }
     body .eric-carta .mi-carta ul {
-      grid-area: ul; }
+      grid-area: ul;
+      padding-left: 0; }
       body .eric-carta .mi-carta ul li {
         text-align: left;
-        width: 20rem; }
+        font-size: 13px; }
     body .eric-carta .h4-micarta {
       grid-area: h4-micarta; }
     body .eric-carta .h4-texto-carta {
@@ -904,13 +965,13 @@ body main {
         margin-right: 0.8rem;
         margin-bottom: 2rem; } }
 
-@media (max-width: 678px) {
+@media (max-width: 667px) {
   body .servicios-carta h1 {
     width: 23rem;
     text-align: center;
     margin-top: 3rem; }
   body .servicios-carta p {
-    width: 25rem;
+    width: 22rem;
     text-align: center; }
   body .servicios {
     display: flex;
@@ -929,9 +990,10 @@ body main {
   body .preguntas-frecuentes h3, body .preguntas-frecuentes h4 {
     text-align: center;
     margin-bottom: 2rem;
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    width: 20rem; }
   body .preguntas-frecuentes p {
-    width: 25rem;
+    width: 22rem;
     text-align: center; } }
 
 @media (max-width: 768px) {
@@ -956,7 +1018,12 @@ body main {
   .preguntas-frecuentes p {
     width: 40rem; } }
 
-@media (max-width: 678px) {
+@media (max-width: 667px) {
+  body .contenedor-menu .header-astrox .navbar .logo-astrox {
+    width: 6rem;
+    height: 6rem; }
+  body .contenedor-menu .header-astrox .navbar .container-fluid {
+    justify-content: space-between; }
   body #main-talleres-id .taller-luna, body #main-talleres-id .taller-ascendente, body #main-talleres-id .taller-marte, body #main-talleres-id .taller-venus {
     width: 22rem;
     padding: 1.5rem; }
@@ -1030,11 +1097,16 @@ body main {
       body .main-talleres .taller-venus .venus-titulo h2 {
         margin-bottom: 0.5rem; } }
 
-@media (max-width: 678px) {
+@media (max-width: 667px) {
   body #main-101-id {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    body #main-101-id .contenedor-menu .header-astrox .navbar .logo-astrox {
+      width: 6rem;
+      height: 6rem; }
+    body #main-101-id .contenedor-menu .header-astrox .navbar .container-fluid {
+      justify-content: space-between; }
     body #main-101-id div {
       margin-top: 2rem;
       margin-bottom: 2rem;
