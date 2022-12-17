@@ -650,6 +650,10 @@ footer{
 // -------------------media querie mobile Carta Natal--------------------------
 @media (max-width:667px){
     body{
+        div{
+            transition: none;
+            transform: none;
+        }
         .servicios-carta{
             h1{
                 width: 23rem;
@@ -662,6 +666,7 @@ footer{
             }
         }
         .servicios{
+            transform: none;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -753,10 +758,13 @@ footer{
             }
         }
         #main-talleres-id{
+            div{
+                transform: none;
+            }
         .taller-luna, .taller-ascendente, .taller-marte, .taller-venus{
             width: 22rem;
             padding: 1.5rem;
-            transform: none;
+
             .luna-titulo, .ascendente-titulo, .marte-titulo, .venus-titulo{
                 img{
                     width: 10rem;
@@ -764,7 +772,6 @@ footer{
                 p{
                     width: 20rem;
                     text-align: left;
-                    transform: none;
                 }
             }
             .venus-titulo{
@@ -780,7 +787,7 @@ footer{
             }
         }
         .taller-ascendente:hover{
-            transform: none;
+
         }
     }
 }

@@ -971,6 +971,9 @@ body main {
         margin-bottom: 2rem; } }
 
 @media (max-width: 667px) {
+  body div {
+    transition: none;
+    transform: none; }
   body .servicios-carta h1 {
     width: 23rem;
     text-align: center;
@@ -979,6 +982,7 @@ body main {
     width: 22rem;
     text-align: center; }
   body .servicios {
+    transform: none;
     display: flex;
     flex-direction: column;
     align-items: center; }
@@ -1029,23 +1033,21 @@ body main {
     height: 6rem; }
   body .contenedor-menu .header-astrox .navbar .container-fluid {
     justify-content: space-between; }
+  body #main-talleres-id div {
+    transform: none; }
   body #main-talleres-id .taller-luna, body #main-talleres-id .taller-ascendente, body #main-talleres-id .taller-marte, body #main-talleres-id .taller-venus {
     width: 22rem;
-    padding: 1.5rem;
-    transform: none; }
+    padding: 1.5rem; }
     body #main-talleres-id .taller-luna .luna-titulo img, body #main-talleres-id .taller-luna .ascendente-titulo img, body #main-talleres-id .taller-luna .marte-titulo img, body #main-talleres-id .taller-luna .venus-titulo img, body #main-talleres-id .taller-ascendente .luna-titulo img, body #main-talleres-id .taller-ascendente .ascendente-titulo img, body #main-talleres-id .taller-ascendente .marte-titulo img, body #main-talleres-id .taller-ascendente .venus-titulo img, body #main-talleres-id .taller-marte .luna-titulo img, body #main-talleres-id .taller-marte .ascendente-titulo img, body #main-talleres-id .taller-marte .marte-titulo img, body #main-talleres-id .taller-marte .venus-titulo img, body #main-talleres-id .taller-venus .luna-titulo img, body #main-talleres-id .taller-venus .ascendente-titulo img, body #main-talleres-id .taller-venus .marte-titulo img, body #main-talleres-id .taller-venus .venus-titulo img {
       width: 10rem; }
     body #main-talleres-id .taller-luna .luna-titulo p, body #main-talleres-id .taller-luna .ascendente-titulo p, body #main-talleres-id .taller-luna .marte-titulo p, body #main-talleres-id .taller-luna .venus-titulo p, body #main-talleres-id .taller-ascendente .luna-titulo p, body #main-talleres-id .taller-ascendente .ascendente-titulo p, body #main-talleres-id .taller-ascendente .marte-titulo p, body #main-talleres-id .taller-ascendente .venus-titulo p, body #main-talleres-id .taller-marte .luna-titulo p, body #main-talleres-id .taller-marte .ascendente-titulo p, body #main-talleres-id .taller-marte .marte-titulo p, body #main-talleres-id .taller-marte .venus-titulo p, body #main-talleres-id .taller-venus .luna-titulo p, body #main-talleres-id .taller-venus .ascendente-titulo p, body #main-talleres-id .taller-venus .marte-titulo p, body #main-talleres-id .taller-venus .venus-titulo p {
       width: 20rem;
-      text-align: left;
-      transform: none; }
+      text-align: left; }
     body #main-talleres-id .taller-luna .venus-titulo img, body #main-talleres-id .taller-ascendente .venus-titulo img, body #main-talleres-id .taller-marte .venus-titulo img, body #main-talleres-id .taller-venus .venus-titulo img {
       width: 8rem;
       margin-top: 1rem; }
     body #main-talleres-id .taller-luna .marte-titulo img, body #main-talleres-id .taller-ascendente .marte-titulo img, body #main-talleres-id .taller-marte .marte-titulo img, body #main-talleres-id .taller-venus .marte-titulo img {
-      width: 11rem; }
-  body #main-talleres-id .taller-ascendente:hover {
-    transform: none; } }
+      width: 11rem; } }
 
 @media (max-width: 768px) {
   body .main-talleres {
