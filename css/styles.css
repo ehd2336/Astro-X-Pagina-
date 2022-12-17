@@ -549,6 +549,9 @@ body main {
     color: white; }
 
 @media (max-width: 667px) {
+  html, body {
+    width: 100% !important;
+    overflow-x: hidden !important; }
   body {
     margin: 0;
     padding: 0;
