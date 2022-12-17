@@ -372,7 +372,7 @@ footer{
 }
 }
 
-// ------------mediaquerie Sobremi -------------------
+// ------------mediaquerie Sobre mi -------------------
 
 @media (max-width:667px){
     body{
@@ -458,6 +458,7 @@ footer{
             display: flex;
             .h4-micarta{
                 margin-bottom: 5rem;
+                text-align: center;
             }
             .mi-carta{
                 display: flex;
@@ -472,11 +473,12 @@ footer{
                         text-align: center;
                         margin: 0;
                         padding: 0;
+                        margin-left: 2rem;
                     }
                 }
             }
             .h4-texto-carta{
-                align-self: flex-start;
+                align-self: center;
 
             }
             #texto-signos-micarta{
@@ -734,6 +736,7 @@ footer{
 }
 
 // mediaquerie mobile Cursos y talleres
+
 @media (max-width:667px){
     body{
         .contenedor-menu{
@@ -753,6 +756,7 @@ footer{
         .taller-luna, .taller-ascendente, .taller-marte, .taller-venus{
             width: 22rem;
             padding: 1.5rem;
+            transform: none;
             .luna-titulo, .ascendente-titulo, .marte-titulo, .venus-titulo{
                 img{
                     width: 10rem;
@@ -760,6 +764,7 @@ footer{
                 p{
                     width: 20rem;
                     text-align: left;
+                    transform: none;
                 }
             }
             .venus-titulo{
@@ -773,6 +778,9 @@ footer{
                     width: 11rem;
                 }
             }
+        }
+        .taller-ascendente:hover{
+            transform: none;
         }
     }
 }
