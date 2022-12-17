@@ -571,6 +571,23 @@ body main {
       body .boton-wpp .whatsapp img {
         width: 5rem;
         height: 5rem; }
+    body .boton-arriba {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      z-index: 999;
+      border-radius: 50%;
+      bottom: 120px;
+      right: 20px;
+      padding: 25px;
+      transition: ease 0,3s;
+      margin-bottom: 2rem; }
+      body .boton-arriba .arriba {
+        color: white; }
+      body .boton-arriba .imagen-arriba img {
+        width: 2rem;
+        height: 2rem; }
     body .main-index .contenido-principal .bloque-imagenes .mano {
       align-self: center;
       width: 15rem;

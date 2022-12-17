@@ -39,6 +39,30 @@ body{
                }
         }
     }
+    .boton-arriba{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        z-index: 999;
+        border-radius: 50%;
+        bottom: 120px;
+        right: 20px;
+        padding: 25px;
+        transition: ease 0,3s;
+        margin-bottom: 2rem;
+        .arriba{
+            color: $color-p
+                }
+         .imagen-arriba{
+            img{
+                width: 2rem;
+                height: 2rem;
+               }
+            
+        }
+    
+    }
     .main-index{
         .contenido-principal{
             .bloque-imagenes{
