@@ -44,7 +44,7 @@ body .boton-arriba {
   position: fixed;
   z-index: 999;
   border-radius: 50%;
-  bottom: 200px;
+  bottom: 230px;
   right: 72px;
   padding: 25px;
   transition: ease 0,3s;
@@ -562,7 +562,7 @@ body main {
     body .contenedor-menu .header-astrox .navbar .container-fluid {
       justify-content: space-between; }
     body .boton-wpp {
-      right: 15px;
+      right: 10px;
       padding: 15px;
       transition: ease 0,3s;
       margin-bottom: 1rem; }
@@ -579,7 +579,7 @@ body main {
       z-index: 999;
       border-radius: 50%;
       bottom: 120px;
-      right: 20px;
+      right: 22px;
       padding: 25px;
       transition: ease 0,3s;
       margin-bottom: 2rem; }
