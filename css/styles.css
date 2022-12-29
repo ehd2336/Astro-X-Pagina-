@@ -542,11 +542,123 @@ body footer {
     grid-area: luna-101; }
 
 body main {
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(to right, #4e4376, #2b5876);
-  margin-top: 3rem; }
-  body main h1, body main p {
-    margin-top: 2rem;
-    color: white; }
+  margin-top: 3rem;
+  padding-bottom: 3rem; }
+  body main .articulo-pluton-img {
+    width: 60rem;
+    align-self: center; }
+  body main p {
+    width: 78rem; }
+  body main .acordeon-casas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    body main .acordeon-casas .accordion {
+      --bs-accordion-bg: transparent;
+      --bs-background-color: white;
+      --bs-accordion-btn-color: white;
+      --bs-accordion-active-color: black;
+      --bs-accordion-btn-icon-width: 2rem;
+      --bs-accordion-active-bg: #e7f1ff;
+      width: 50rem;
+      align-self: center; }
+      body main .acordeon-casas .accordion p {
+        color: white; }
+    body main .acordeon-casas .accordion-body {
+      color: white; }
+  body main h1 {
+    margin-bottom: 3rem;
+    margin-top: 2rem; }
+  body main .h1-serie {
+    padding-top: 3rem; }
+  body main h1, body main h2, body main h3, body main p {
+    margin-left: 1rem;
+    text-align: center;
+    color: white;
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
+  body main p {
+    align-self: center;
+    text-align: left; }
+  body main .p-indicadores {
+    font-style: italic;
+    font-size: medium;
+    text-decoration: underline;
+    width: 40rem; }
+  body main .imagen-hades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
+    body main .imagen-hades img {
+      width: 50rem; }
+  body main .pluton-casas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 50rem;
+    justify-content: center;
+    align-items: center; }
+    body main .pluton-casas h3 {
+      text-align: center;
+      margin-bottom: 1rem; }
+    body main .pluton-casas p {
+      text-align: center;
+      margin-bottom: 2rem; }
+  body main .pluton-aspectos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem; }
+    body main .pluton-aspectos h3 {
+      text-align: center;
+      margin-bottom: 1rem; }
+    body main .pluton-aspectos p {
+      text-align: left;
+      margin-bottom: 2rem; }
+    body main .pluton-aspectos .div-fluidos, body main .pluton-aspectos .div-tensos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem; }
+      body main .pluton-aspectos .div-fluidos img, body main .pluton-aspectos .div-tensos img {
+        width: 5rem;
+        height: 5rem; }
+      body main .pluton-aspectos .div-fluidos #conjuncion, body main .pluton-aspectos .div-tensos #conjuncion {
+        width: 3rem;
+        height: 3rem;
+        margin-left: 1rem; }
+      body main .pluton-aspectos .div-fluidos .texto-fluidos, body main .pluton-aspectos .div-tensos .texto-fluidos {
+        padding-left: 2rem; }
+      body main .pluton-aspectos .div-fluidos p, body main .pluton-aspectos .div-tensos p {
+        width: 50rem; }
+        body main .pluton-aspectos .div-fluidos p span, body main .pluton-aspectos .div-tensos p span {
+          text-decoration: underline; }
+    body main .pluton-aspectos .texto-continuacion {
+      width: 70rem;
+      font-style: italic;
+      font-size: 0.9rem; }
+    body main .pluton-aspectos .aspectos-acordeon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      body main .pluton-aspectos .aspectos-acordeon .accordion {
+        color: white;
+        --bs-accordion-bg: transparent;
+        --bs-background-color: white;
+        --bs-accordion-btn-color: white;
+        --bs-accordion-active-color: black;
+        --bs-accordion-btn-icon-width: 2rem;
+        --bs-accordion-active-bg: #e7f1ff;
+        width: 50rem;
+        align-self: center;
+        --bs-accordion-border-color: var(--bs-border-color);
+        --bs-accordion-border-width: 1px; }
+      body main .pluton-aspectos .aspectos-acordeon .accordion-body {
+        color: white; }
 
 @media (max-width: 667px) {
   html, body {
@@ -672,7 +784,7 @@ body main {
         width: 21rem;
         height: 12rem; }
       body .carousel .carousel-inner .carousel-item .conociendo-luna {
-        width: 23rem;
+        width: 21rem;
         height: 14rem; }
   footer .footer-contenedor {
     display: none; }
@@ -1185,6 +1297,177 @@ body main {
         width: 35rem; }
       body .main-101 .pluton-101 p, body .main-101 .jupiter-101 p, body .main-101 .luna-101 p {
         width: 30rem; } }
+
+@media (max-width: 667px) {
+  body main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    body main .articulo-pluton-img {
+      width: 20rem !important;
+      align-self: center; }
+    body main h1, body main h2, body main h3 {
+      width: 22rem; }
+    body main p {
+      width: 20rem !important; }
+    body main .p-indicadores {
+      width: 20rem; }
+    body main #hades-img {
+      width: 18rem; }
+    body main .acordeon-casas {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: left;
+      text-align: left; }
+      body main .acordeon-casas .accordion {
+        width: 22rem !important; }
+      body main .acordeon-casas .accordion-button {
+        width: auto;
+        margin-right: 3rem; }
+    body main .pluton-aspectos {
+      display: flex;
+      flex-direction: column; }
+      body main .pluton-aspectos .div-fluidos, body main .pluton-aspectos .div-tensos {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        body main .pluton-aspectos .div-fluidos p, body main .pluton-aspectos .div-tensos p {
+          width: 20rem; }
+      body main .pluton-aspectos .aspectos-acordeon {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        text-align: left; }
+        body main .pluton-aspectos .aspectos-acordeon .accordion {
+          width: 22rem !important; }
+        body main .pluton-aspectos .aspectos-acordeon .accordion-button {
+          width: auto;
+          margin-right: 3rem; }
+    body main #texto-siguiente {
+      width: 20rem; } }
+
+@media (max-width: 768px) {
+  body main {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #4e4376, #2b5876);
+    margin-top: 3rem;
+    padding-bottom: 3rem; }
+    body main .articulo-pluton-img {
+      width: 40rem;
+      align-self: center; }
+    body main p {
+      width: 45rem; }
+    body main .acordeon-casas {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      body main .acordeon-casas .accordion {
+        --bs-accordion-bg: transparent;
+        --bs-background-color: white;
+        --bs-accordion-btn-color: white;
+        --bs-accordion-active-color: black;
+        --bs-accordion-btn-icon-width: 2rem;
+        --bs-accordion-active-bg: #e7f1ff;
+        width: 40rem;
+        align-self: center; }
+        body main .acordeon-casas .accordion p {
+          color: white; }
+      body main .acordeon-casas .accordion-body {
+        color: white; }
+    body main h1 {
+      margin-bottom: 3rem;
+      margin-top: 2rem; }
+    body main .h1-serie {
+      padding-top: 3rem; }
+    body main h1, body main h2, body main h3, body main p {
+      margin-left: 1rem;
+      text-align: center;
+      color: white;
+      margin-top: 3rem;
+      margin-bottom: 3rem; }
+    body main p {
+      align-self: center;
+      text-align: left; }
+    body main .p-indicadores {
+      font-style: italic;
+      font-size: medium;
+      text-decoration: underline;
+      width: 40rem; }
+    body main .imagen-hades {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3rem;
+      margin-bottom: 3rem; }
+      body main .imagen-hades img {
+        width: 40rem; }
+    body main .pluton-casas {
+      display: flex;
+      flex-direction: column;
+      margin-top: 5rem;
+      width: 30rem;
+      justify-content: center;
+      align-items: center; }
+      body main .pluton-casas h3 {
+        text-align: center;
+        margin-bottom: 1rem; }
+      body main .pluton-casas p {
+        text-align: center;
+        margin-bottom: 2rem; }
+    body main .pluton-aspectos {
+      display: flex;
+      flex-direction: column;
+      margin-top: 8rem; }
+      body main .pluton-aspectos h3 {
+        text-align: center;
+        margin-bottom: 1rem; }
+      body main .pluton-aspectos p {
+        text-align: left;
+        margin-bottom: 2rem; }
+      body main .pluton-aspectos .div-fluidos, body main .pluton-aspectos .div-tensos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem; }
+        body main .pluton-aspectos .div-fluidos img, body main .pluton-aspectos .div-tensos img {
+          width: 5rem;
+          height: 5rem; }
+        body main .pluton-aspectos .div-fluidos #conjuncion, body main .pluton-aspectos .div-tensos #conjuncion {
+          width: 3rem;
+          height: 3rem;
+          margin-left: 1rem; }
+        body main .pluton-aspectos .div-fluidos .texto-fluidos, body main .pluton-aspectos .div-tensos .texto-fluidos {
+          padding-left: 2rem; }
+        body main .pluton-aspectos .div-fluidos p, body main .pluton-aspectos .div-tensos p {
+          width: 50rem; }
+          body main .pluton-aspectos .div-fluidos p span, body main .pluton-aspectos .div-tensos p span {
+            text-decoration: underline; }
+      body main .pluton-aspectos .texto-continuacion {
+        width: 45rem;
+        font-style: italic;
+        font-size: 0.9rem; }
+      body main .pluton-aspectos .aspectos-acordeon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        body main .pluton-aspectos .aspectos-acordeon .accordion {
+          color: white;
+          --bs-accordion-bg: transparent;
+          --bs-background-color: white;
+          --bs-accordion-btn-color: white;
+          --bs-accordion-active-color: black;
+          --bs-accordion-btn-icon-width: 2rem;
+          --bs-accordion-active-bg: #e7f1ff;
+          width: 40rem;
+          align-self: center;
+          --bs-accordion-border-color: var(--bs-border-color);
+          --bs-accordion-border-width: 1px; }
+        body main .pluton-aspectos .aspectos-acordeon .accordion-body {
+          color: white; } }
 
 * {
   margin: 0;
