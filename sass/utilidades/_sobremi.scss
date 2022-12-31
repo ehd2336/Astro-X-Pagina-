@@ -1,64 +1,33 @@
 body{
-    .sobre-mi{
-        background: $color-div;
-        h1{
-            color: white;
-            margin-top: 3rem;
-            margin-left: 0.5rem;
-            margin-bottom: 2rem;
-            padding-top: 2rem;
-        }
-        .big3{
-            display: flex;
-            margin-bottom: 3rem;
-            img{
-                width: 8rem;
-                filter: drop-shadow(2px 1px 3px);
-            }
-            p{
-            flex-direction: column;
-            align-self: center;   
-            color: white;  
-            }
-        }
-        // contiene los textos de mi historia y de astrologia
-        .historia-mia{
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            grid-template-rows:0.2fr 1fr 0.2fr 1fr ;
-            grid-template-areas: 
-            "h2-historia imagen-eric"
-            "historia imagen-eric"
-            "h3-astro imagen-eric"
-            "historia-astro imagen-eric";
-            gap: 1rem;
-            .h2-historia{
-                grid-area: h2-historia;
-            }
-            .historia{
-                grid-area: historia;
-                
-            }
-            .h3-astro{
-                grid-area: h3-astro;
-            }
-            .historia-astro{
-                grid-area: historia-astro;
-                
-            }
-            .imagen-eric{
-                grid-area: imagen-eric;
-                width: 35rem;
-                filter: drop-shadow(5px 4px 3px);
-
-            }
-            h1, h2, h3, p{
-                color: white;
-                margin-left: 0.5rem;
-            }
+   .sobre-mi{
+    .big3-mobilecs{
+        display: none;
+    }
+    .big3{
+        display: flex;
+        justify-content: space-evenly;
+        img{
+            width: 9rem;
+            margin-left: 3rem;
             
         }
     }
+    .historia-mia{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin-top: 3rem;
+        p{
+            text-align: center;
+            margin: 0;
+            width: 70rem;
+        }
+        img{
+            width: 40rem;
+            align-self: center;
+        }
+    }
+   }
         //section que contiene carta natal y planetas
     
     .eric-carta{

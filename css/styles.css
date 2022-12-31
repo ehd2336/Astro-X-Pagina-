@@ -228,45 +228,28 @@ footer {
         margin-right: 0.3rem;
         filter: drop-shadow(2px 1px 3px); }
 
-body .sobre-mi {
-  background: linear-gradient(to right, #4e4376, #2b5876); }
-  body .sobre-mi h1 {
-    color: white;
-    margin-top: 3rem;
-    margin-left: 0.5rem;
-    margin-bottom: 2rem;
-    padding-top: 2rem; }
-  body .sobre-mi .big3 {
-    display: flex;
-    margin-bottom: 3rem; }
-    body .sobre-mi .big3 img {
-      width: 8rem;
-      filter: drop-shadow(2px 1px 3px); }
-    body .sobre-mi .big3 p {
-      flex-direction: column;
-      align-self: center;
-      color: white; }
-  body .sobre-mi .historia-mia {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
-    grid-template-areas: "h2-historia imagen-eric" "historia imagen-eric" "h3-astro imagen-eric" "historia-astro imagen-eric";
-    gap: 1rem; }
-    body .sobre-mi .historia-mia .h2-historia {
-      grid-area: h2-historia; }
-    body .sobre-mi .historia-mia .historia {
-      grid-area: historia; }
-    body .sobre-mi .historia-mia .h3-astro {
-      grid-area: h3-astro; }
-    body .sobre-mi .historia-mia .historia-astro {
-      grid-area: historia-astro; }
-    body .sobre-mi .historia-mia .imagen-eric {
-      grid-area: imagen-eric;
-      width: 35rem;
-      filter: drop-shadow(5px 4px 3px); }
-    body .sobre-mi .historia-mia h1, body .sobre-mi .historia-mia h2, body .sobre-mi .historia-mia h3, body .sobre-mi .historia-mia p {
-      color: white;
-      margin-left: 0.5rem; }
+body .sobre-mi .big3-mobilecs {
+  display: none; }
+
+body .sobre-mi .big3 {
+  display: flex;
+  justify-content: space-evenly; }
+  body .sobre-mi .big3 img {
+    width: 9rem;
+    margin-left: 3rem; }
+
+body .sobre-mi .historia-mia {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 3rem; }
+  body .sobre-mi .historia-mia p {
+    text-align: center;
+    margin: 0;
+    width: 70rem; }
+  body .sobre-mi .historia-mia img {
+    width: 40rem;
+    align-self: center; }
 
 body .eric-carta {
   display: flex;
@@ -934,26 +917,23 @@ body main {
       background: linear-gradient(to right, #4e4376, #2b5876); }
       body .sobre-mi h1 {
         text-align: center; }
-      body .sobre-mi .big3 {
+      body .sobre-mi #big3-id {
+        display: none; }
+      body .sobre-mi #big3-mobile {
         display: flex;
-        text-align: center;
-        justify-content: center; }
-        body .sobre-mi .big3 img {
-          width: 5rem;
-          height: 5rem; }
-        body .sobre-mi .big3 p {
-          font-size: 0.8rem;
-          text-align: center;
-          margin-top: 0;
-          margin-bottom: 0; }
-        body .sobre-mi .big3 .asc-geminis {
-          margin-right: 1rem; }
-        body .sobre-mi .big3 .p-luna-leo {
-          width: 10rem; }
+        flex-direction: column; }
+        body .sobre-mi #big3-mobile .sol, body .sobre-mi #big3-mobile .luna, body .sobre-mi #big3-mobile .ascendente {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding-left: 3rem; }
+        body .sobre-mi #big3-mobile img {
+          width: 6rem; }
       body .sobre-mi #historia-mia-id {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 0.1fr 1fr 0.1fr 1fr;
+        grid-template-rows: 0.5fr 0.1fr 1fr 0.1fr 0.5fr;
         grid-template-areas: "imagen-eric imagen-eric" "h2-historia h2-historia" "historia historia" "h3-astro h3-astro" "historia-astro historia-astro"; }
         body .sobre-mi #historia-mia-id .h2-historia {
           grid-area: h2-historia;
@@ -973,7 +953,8 @@ body main {
           margin-top: 1rem; }
         body .sobre-mi #historia-mia-id h1, body .sobre-mi #historia-mia-id h2, body .sobre-mi #historia-mia-id h3, body .sobre-mi #historia-mia-id p {
           color: white;
-          margin-left: 0.5rem; }
+          margin-left: 2rem;
+          text-align: center; }
     body #eric-carta-flex {
       display: flex; }
       body #eric-carta-flex .h4-micarta {
@@ -995,7 +976,7 @@ body main {
       body #eric-carta-flex .h4-texto-carta {
         align-self: center; }
       body #eric-carta-flex #texto-signos-micarta {
-        align-self: flex-start;
+        text-align: center;
         width: 22rem;
         margin-left: 0.5rem; } }
 
@@ -1008,6 +989,8 @@ body main {
       margin-left: 0.5rem;
       margin-bottom: 2rem;
       padding-top: 2rem; }
+    body .sobre-mi .big3-mobilecs {
+      display: none; }
     body .sobre-mi .big3 {
       display: flex;
       margin-bottom: 3rem; }
@@ -1020,7 +1003,7 @@ body main {
     body .sobre-mi .historia-mia {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 0.2fr 1fr 0.2fr 1fr;
+      grid-template-rows: 1fr 0.2fr 1fr 0.2fr 0.5fr;
       grid-template-areas: "imagen-eric imagen-eric" "h2-historia h2-historia" "historia historia" "h3-astro h3-astro" "historia-astro historia-astro"; }
       body .sobre-mi .historia-mia .h2-historia {
         grid-area: h2-historia; }
@@ -1039,7 +1022,8 @@ body main {
         justify-self: center; }
       body .sobre-mi .historia-mia h1, body .sobre-mi .historia-mia h2, body .sobre-mi .historia-mia h3, body .sobre-mi .historia-mia p {
         color: white;
-        margin-left: 0.5rem; }
+        margin-left: 0.5rem;
+        text-align: center; }
   body .eric-carta {
     display: grid;
     grid-template-columns: 1fr;
@@ -1063,12 +1047,12 @@ body main {
       grid-area: h4-micarta; }
     body .eric-carta .h4-texto-carta {
       grid-area: h4-texto-carta;
-      text-align: left;
+      text-align: center;
       margin-left: 1rem; }
     body .eric-carta .texto-carta {
       grid-area: texto-carta;
       width: 45rem;
-      text-align: left;
+      text-align: center;
       margin-left: 1rem; }
   body footer .footer-contenedor {
     display: none; }
@@ -1162,21 +1146,31 @@ body main {
     height: 6rem; }
   body .contenedor-menu .header-astrox .navbar .container-fluid {
     justify-content: space-between; }
-  body #main-talleres-id div {
-    transform: none; }
-  body #main-talleres-id .taller-luna, body #main-talleres-id .taller-ascendente, body #main-talleres-id .taller-marte, body #main-talleres-id .taller-venus {
-    width: 22rem;
-    padding: 1.5rem; }
-    body #main-talleres-id .taller-luna .luna-titulo img, body #main-talleres-id .taller-luna .ascendente-titulo img, body #main-talleres-id .taller-luna .marte-titulo img, body #main-talleres-id .taller-luna .venus-titulo img, body #main-talleres-id .taller-ascendente .luna-titulo img, body #main-talleres-id .taller-ascendente .ascendente-titulo img, body #main-talleres-id .taller-ascendente .marte-titulo img, body #main-talleres-id .taller-ascendente .venus-titulo img, body #main-talleres-id .taller-marte .luna-titulo img, body #main-talleres-id .taller-marte .ascendente-titulo img, body #main-talleres-id .taller-marte .marte-titulo img, body #main-talleres-id .taller-marte .venus-titulo img, body #main-talleres-id .taller-venus .luna-titulo img, body #main-talleres-id .taller-venus .ascendente-titulo img, body #main-talleres-id .taller-venus .marte-titulo img, body #main-talleres-id .taller-venus .venus-titulo img {
-      width: 10rem; }
-    body #main-talleres-id .taller-luna .luna-titulo p, body #main-talleres-id .taller-luna .ascendente-titulo p, body #main-talleres-id .taller-luna .marte-titulo p, body #main-talleres-id .taller-luna .venus-titulo p, body #main-talleres-id .taller-ascendente .luna-titulo p, body #main-talleres-id .taller-ascendente .ascendente-titulo p, body #main-talleres-id .taller-ascendente .marte-titulo p, body #main-talleres-id .taller-ascendente .venus-titulo p, body #main-talleres-id .taller-marte .luna-titulo p, body #main-talleres-id .taller-marte .ascendente-titulo p, body #main-talleres-id .taller-marte .marte-titulo p, body #main-talleres-id .taller-marte .venus-titulo p, body #main-talleres-id .taller-venus .luna-titulo p, body #main-talleres-id .taller-venus .ascendente-titulo p, body #main-talleres-id .taller-venus .marte-titulo p, body #main-talleres-id .taller-venus .venus-titulo p {
-      width: 20rem;
-      text-align: left; }
-    body #main-talleres-id .taller-luna .venus-titulo img, body #main-talleres-id .taller-ascendente .venus-titulo img, body #main-talleres-id .taller-marte .venus-titulo img, body #main-talleres-id .taller-venus .venus-titulo img {
-      width: 8rem;
-      margin-top: 1rem; }
-    body #main-talleres-id .taller-luna .marte-titulo img, body #main-talleres-id .taller-ascendente .marte-titulo img, body #main-talleres-id .taller-marte .marte-titulo img, body #main-talleres-id .taller-venus .marte-titulo img {
-      width: 11rem; } }
+  body #main-talleres-id {
+    display: flex;
+    flex-direction: column; }
+    body #main-talleres-id div {
+      transform: none; }
+    body #main-talleres-id .taller-luna, body #main-talleres-id .taller-ascendente, body #main-talleres-id .taller-marte, body #main-talleres-id .taller-venus {
+      align-items: center;
+      justify-content: center;
+      width: 21rem;
+      height: 55rem;
+      padding: 1.5rem; }
+      body #main-talleres-id .taller-luna .intensamente, body #main-talleres-id .taller-ascendente .intensamente, body #main-talleres-id .taller-marte .intensamente, body #main-talleres-id .taller-venus .intensamente {
+        padding-bottom: 3rem; }
+      body #main-talleres-id .taller-luna .rocket, body #main-talleres-id .taller-ascendente .rocket, body #main-talleres-id .taller-marte .rocket, body #main-talleres-id .taller-venus .rocket {
+        padding-bottom: 3rem; }
+      body #main-talleres-id .taller-luna .luna-titulo img, body #main-talleres-id .taller-luna .ascendente-titulo img, body #main-talleres-id .taller-luna .marte-titulo img, body #main-talleres-id .taller-luna .venus-titulo img, body #main-talleres-id .taller-ascendente .luna-titulo img, body #main-talleres-id .taller-ascendente .ascendente-titulo img, body #main-talleres-id .taller-ascendente .marte-titulo img, body #main-talleres-id .taller-ascendente .venus-titulo img, body #main-talleres-id .taller-marte .luna-titulo img, body #main-talleres-id .taller-marte .ascendente-titulo img, body #main-talleres-id .taller-marte .marte-titulo img, body #main-talleres-id .taller-marte .venus-titulo img, body #main-talleres-id .taller-venus .luna-titulo img, body #main-talleres-id .taller-venus .ascendente-titulo img, body #main-talleres-id .taller-venus .marte-titulo img, body #main-talleres-id .taller-venus .venus-titulo img {
+        width: 10rem; }
+      body #main-talleres-id .taller-luna .luna-titulo p, body #main-talleres-id .taller-luna .ascendente-titulo p, body #main-talleres-id .taller-luna .marte-titulo p, body #main-talleres-id .taller-luna .venus-titulo p, body #main-talleres-id .taller-ascendente .luna-titulo p, body #main-talleres-id .taller-ascendente .ascendente-titulo p, body #main-talleres-id .taller-ascendente .marte-titulo p, body #main-talleres-id .taller-ascendente .venus-titulo p, body #main-talleres-id .taller-marte .luna-titulo p, body #main-talleres-id .taller-marte .ascendente-titulo p, body #main-talleres-id .taller-marte .marte-titulo p, body #main-talleres-id .taller-marte .venus-titulo p, body #main-talleres-id .taller-venus .luna-titulo p, body #main-talleres-id .taller-venus .ascendente-titulo p, body #main-talleres-id .taller-venus .marte-titulo p, body #main-talleres-id .taller-venus .venus-titulo p {
+        width: 18rem !important;
+        text-align: left; }
+      body #main-talleres-id .taller-luna .venus-titulo img, body #main-talleres-id .taller-ascendente .venus-titulo img, body #main-talleres-id .taller-marte .venus-titulo img, body #main-talleres-id .taller-venus .venus-titulo img {
+        width: 8rem;
+        margin-top: 1rem; }
+      body #main-talleres-id .taller-luna .marte-titulo img, body #main-talleres-id .taller-ascendente .marte-titulo img, body #main-talleres-id .taller-marte .marte-titulo img, body #main-talleres-id .taller-venus .marte-titulo img {
+        width: 11rem; } }
 
 @media (max-width: 768px) {
   body .main-talleres {
@@ -1193,7 +1187,7 @@ body main {
       body .main-talleres div .luna-titulo, body .main-talleres div .ascendente-titulo, body .main-talleres div .marte-titulo, body .main-talleres div .venus-titulo {
         flex-direction: column; }
         body .main-talleres div .luna-titulo p, body .main-talleres div .ascendente-titulo p, body .main-talleres div .marte-titulo p, body .main-talleres div .venus-titulo p {
-          width: 30rem;
+          width: 35rem;
           text-align: center; }
     body .main-talleres div:hover {
       transform: scale(1.1); }
@@ -1205,7 +1199,7 @@ body main {
       background: linear-gradient(to right, #4e4376, #2b5876);
       width: 40rem;
       text-align: center;
-      padding: 5rem; }
+      padding: 2rem; }
       body .main-talleres .taller-luna .luna-titulo h2 {
         margin-bottom: 0.5rem; }
     body .main-talleres .taller-ascendente {
@@ -1214,7 +1208,7 @@ body main {
       background: linear-gradient(to right, #4e4376, #2b5876);
       width: 40rem;
       text-align: center;
-      padding: 5rem; }
+      padding: 2rem; }
       body .main-talleres .taller-ascendente .ascendente-titulo h2 {
         margin-bottom: 0.5rem; }
     body .main-talleres .taller-marte {
@@ -1223,17 +1217,22 @@ body main {
       background: linear-gradient(to right, #4e4376, #2b5876);
       width: 40rem;
       text-align: center;
-      padding: 5rem; }
+      padding: 2rem; }
+      body .main-talleres .taller-marte img {
+        padding-top: 2rem;
+        width: 18rem; }
       body .main-talleres .taller-marte .marte-titulo h2 {
         margin-bottom: 0.5rem; }
       body .main-talleres .taller-marte .marte-titulo p {
-        margin-top: 1rem; }
+        padding-bottom: 2rem;
+        margin-top: 1rem;
+        width: 35rem; }
     body .main-talleres .taller-venus {
       margin-top: 3rem;
       margin-bottom: 3rem;
       background: linear-gradient(to right, #4e4376, #2b5876);
       width: 40rem;
-      padding: 5rem; }
+      padding: 2rem; }
       body .main-talleres .taller-venus .venus-titulo h2 {
         margin-bottom: 0.5rem; } }
 

@@ -420,31 +420,27 @@ footer{
             h1{
                 text-align: center;
             }
-            .big3{
+            #big3-id{
+                display: none;
+            }
+            #big3-mobile{
                 display: flex;
-                text-align: center;
-                justify-content: center;
+                flex-direction: column;
+                .sol, .luna, .ascendente{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 3rem;
+                }
                 img{
-                    width: 5rem ;
-                    height: 5rem;
-                }
-                p{
-                    font-size: 0.8rem;
-                    text-align: center;
-                    margin-top: 0;
-                    margin-bottom: 0;
-                }
-                .asc-geminis{
-                    margin-right: 1rem;
-                }
-                .p-luna-leo{
-                    width: 10rem;
+                    width: 6rem;
                 }
             }
             #historia-mia-id{
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: 0.5fr 0.1fr 1fr 0.1fr 1fr;
+                grid-template-rows: 0.5fr 0.1fr 1fr 0.1fr 0.5fr;
                 grid-template-areas: 
                 "imagen-eric imagen-eric"
                 "h2-historia h2-historia"
@@ -474,7 +470,8 @@ footer{
                 }
                 h1, h2, h3, p{
                     color: white;
-                    margin-left: 0.5rem;
+                    margin-left: 2rem;
+                    text-align: center;
                 }
             }
         }// hasta aca va el main
@@ -506,7 +503,7 @@ footer{
 
             }
             #texto-signos-micarta{
-                align-self: flex-start;
+                text-align: center;
                 width: 22rem;
                 margin-left: 0.5rem;
 
@@ -529,6 +526,9 @@ footer{
                 margin-bottom: 2rem;
                 padding-top: 2rem;
             }
+            .big3-mobilecs{
+                display: none;
+            }
             .big3{
                 display: flex;
                 margin-bottom: 3rem;
@@ -545,7 +545,7 @@ footer{
             .historia-mia{
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: 1fr 0.2fr 1fr 0.2fr 1fr;
+                grid-template-rows: 1fr 0.2fr 1fr 0.2fr 0.5fr;
                 grid-template-areas: 
                 "imagen-eric imagen-eric"
                 "h2-historia h2-historia"
@@ -578,6 +578,7 @@ footer{
                 h1, h2, h3, p{
                     color: white;
                     margin-left: 0.5rem;
+                    text-align: center;
                 }
                 
             }
@@ -617,13 +618,13 @@ footer{
             }
             .h4-texto-carta{
                 grid-area: h4-texto-carta;
-                text-align: left;
+                text-align: center;
                 margin-left: 1rem;
             }
             .texto-carta{
                 grid-area: texto-carta;
                 width: 45rem;
-                text-align: left;
+                text-align: center;
                 margin-left: 1rem;
             }
 
@@ -782,19 +783,32 @@ footer{
             }
         }
         #main-talleres-id{
+            display: flex;
+            flex-direction: column;
+            
             div{
                 transform: none;
             }
         .taller-luna, .taller-ascendente, .taller-marte, .taller-venus{
-            width: 22rem;
+            align-items: center;
+            justify-content: center;
+            width: 21rem;
+            height: 55rem;
             padding: 1.5rem;
+            .intensamente{
+                padding-bottom: 3rem;
+            }
+            .rocket{
+                padding-bottom: 3rem;
+
+            }
 
             .luna-titulo, .ascendente-titulo, .marte-titulo, .venus-titulo{
                 img{
                     width: 10rem;
                 }
                 p{
-                    width: 20rem;
+                    width: 18rem!important;
                     text-align: left;
                 }
             }
@@ -835,7 +849,7 @@ footer{
                 .luna-titulo, .ascendente-titulo, .marte-titulo, .venus-titulo{
                     flex-direction: column;
                     p{
-                        width: 30rem;
+                        width: 35rem;
                         text-align: center;
                     }
                 }
@@ -853,7 +867,7 @@ footer{
                 background: $color-div;
                 width: 40rem;
                 text-align: center;
-                padding: 5rem;
+                padding: 2rem;
                 .luna-titulo{
                     h2{
                         margin-bottom: 0.5rem;
@@ -866,7 +880,7 @@ footer{
                 background: $color-div;
                 width: 40rem;
                 text-align: center;
-                padding: 5rem;
+                padding: 2rem;
                 .ascendente-titulo{
                     h2{
                         margin-bottom: 0.5rem;
@@ -879,13 +893,20 @@ footer{
                 background: $color-div;
                 width: 40rem;
                 text-align: center;
-                padding: 5rem;
+                padding: 2rem;
+                img{
+                    padding-top: 2rem;
+                    width: 18rem;
+
+                }
                 .marte-titulo{
                     h2{
                         margin-bottom: 0.5rem;
                     }
                     p{
+                        padding-bottom: 2rem;
                         margin-top: 1rem;
+                        width: 35rem ;
                     }
                 }
             }
@@ -894,7 +915,7 @@ footer{
                 margin-bottom: 3rem;
                 background: $color-div;
                 width: 40rem;
-                padding: 5rem;
+                padding: 2rem;
                 .venus-titulo{
                     h2{
                         margin-bottom: 0.5rem;
