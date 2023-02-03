@@ -1,0 +1,1278 @@
+//Desktop first 
+//mediaquerie para telefonos------------
+
+@media (max-width:667px){
+//section carta natal
+html, body{
+    width: 100%!important;
+    overflow-x: hidden!important;
+}
+body{
+    margin: 0;
+    padding: 0;
+    margin-right: 0;
+    .contenedor-menu{
+        .header-astrox{
+            .navbar{
+                    .logo-astrox{
+                       width: 6rem;
+                       height: 6rem;
+                    }
+                    .container-fluid{
+                        justify-content: space-between;
+                    }
+            }
+        }
+    }
+    .boton-wpp{
+        right: 10px;
+        padding: 15px;
+        transition: ease 0,3s;
+        margin-bottom: 1rem;
+        .hablemos{
+            color: $color-p
+                }
+         .whatsapp{
+            img{
+                width: 5rem;
+                height: 5rem;
+               }
+        }
+    }
+    .boton-arriba{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        z-index: 999;
+        border-radius: 50%;
+        bottom: 120px;
+        right: 22px;
+        padding: 25px;
+        transition: ease 0,3s;
+        margin-bottom: 2rem;
+        .arriba{
+            color: $color-p
+                }
+         .imagen-arriba{
+            img{
+                width: 2rem;
+                height: 2rem;
+               }
+            
+        }
+    
+    }
+    .main-index{
+        .contenido-principal{
+            .bloque-imagenes{
+                .mano{
+                    align-self: center;
+                    width:15rem;
+                    height: 15rem;
+                }
+            }
+        }
+    }
+    // section carta natal
+.section-carta{
+     .section-astrox{
+         .texto-h2{
+             width: 20rem;
+         }
+       .cartanatal-servicios{
+           display: flex;
+           .cartanatal-index{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 18rem;
+              height: 18rem;
+              -moz-border-radius: 50%;
+              -webkit-border-radius: 50%;
+              border-radius: 50%;
+              background: #fffff0;
+              margin-bottom: 2rem;
+              overflow: hidden;
+               img{
+                     width: 15rem;
+                     height: 15rem;
+                     margin-top: 1.5rem;
+                     transition: 0.5s;
+                     object-fit: cover;
+                   }
+             }
+         }
+         .servicios-texto{
+             margin-top:2rem;
+             text-align: center;
+             }
+             h3{
+                 text-align: center;
+                 font-size: larger;
+                 color: white;
+                 margin-bottom: 1.5rem;
+             }
+             ul{
+                 margin-left: 0px;
+                 padding: 0px;
+                 margin-bottom: 2rem;
+                 text-align: center;
+                 width: 20rem;
+                 li{
+                     font-size: small;
+                     text-align: center;
+                     color: white;
+                     list-style: none;
+                     margin: 0 0 0 0;
+                     margin-top: 1rem;
+                     
+                 }
+             }
+     }
+}
+// section cursos y talleres
+.section-cursos{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    .texto-cursos{
+        align-self: center;
+        color: white;
+        text-align: center;
+        width: 25rem;
+        p{
+            text-align: center;
+            width: 22rem;
+        }
+        .cursos{
+            margin-bottom: 2rem;
+            margin-right: 2rem;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+    }
+    .video-youtube{
+        iframe{
+            width: 18rem;
+            height: 15rem;
+            margin: 2rem;
+        }
+    }
+}
+//section astro 101
+.carousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    .carousel-inner{
+        div{
+            .conociendo-pluton{
+                width: 21rem;
+                height: 12rem;
+            }  
+        }
+        .carousel-item{
+            .conociendo-jupiter{
+                width: 21rem;
+                height: 12rem;
+                }
+                .conociendo-luna{
+                width: 21rem;
+                height: 14rem;
+                }
+            }  
+        }
+    }
+}
+//footer --------------
+footer{
+   .footer-contenedor{
+    display: none;
+   }
+   .footer-mobile{
+         background: $color-footer;
+         padding: 0.5rem;
+         margin-top: 5rem;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-evenly;
+         margin-top: 2rem;
+         margin-bottom: 1.2rem;
+         text-align: center;
+         color: rgb(31, 31, 31);
+        .derechos{
+            font-size: smaller;
+           a{
+               text-decoration: none;
+               list-style: none;
+               color: rgb(247, 105, 23);
+               
+           }
+        }
+        .imagenes-footer{
+            a{
+                list-style: none;
+                text-decoration: none;
+                img{
+                    width: 2.2rem;
+                    height: 2.2rem;
+                    margin-right: 0.8rem;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }  
+  }
+}
+
+//section carta-----
+
+
+    
+//mq para index tablet
+@media (max-width:768px){
+   //main del index
+.main-index{
+    .contenido-principal{
+        .bloque-imagenes{
+            display: flex;
+            flex-direction: column;
+            p{
+                align-self: center;
+                color: $color-p;
+                width: 15rem;
+                margin-top: 1.5rem;
+                margin-left: 3rem;
+                margin-right: 3rem;
+                text-align: center;
+            }
+            .mano{ 
+                width: 30rem;
+                height: 30rem;
+            }
+        }
+    }
+}
+//section carta
+.section-carta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .section-astrox{
+        h2{
+          text-align: center;
+          color: white;
+          margin-top: 3rem;
+        }
+        a{
+            text-decoration: none;
+            color: orange;
+            margin-bottom: 1.5rem;
+        }
+        .texto-h2{
+             text-align: center;
+             color: white;
+             margin-bottom: 4rem;
+             width: 40rem;
+            }
+            .cartanatal-servicios{
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+            }
+            .servicios-texto{
+                margin-top: 2rem;
+                h3{
+                    text-align: center;
+                    color: white;
+                    margin-top: 2rem;
+                }
+                ul{
+                    align-self: center;
+                    margin: 0 0 0 0;
+                    margin-bottom: 2rem;
+                    li{
+                        color: white;
+                        list-style: none;
+                        text-align: center;
+                        margin: 0 0 0 0;
+                    }
+                }
+
+            }  
+        }  
+}
+//section crusos
+.section-cursos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    .video-youtube{
+        iframe{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            margin-right: 2rem;
+        }
+    }
+    .texto-cursos{
+        align-self: center;
+        color: white;
+        width: 40rem;
+        margin-left: 2rem;
+        .cursos{
+            text-align: center;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+    }
+}
+.carousel{
+    h4{
+        text-align: center;
+        color: white;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    .carousel-inner{
+        div{
+            .conociendo-pluton{
+                width: 40rem;
+                height: 25rem;
+            }   
+        }
+        .carousel-item{
+            .conociendo-jupiter, .conociendo-luna{
+                width: 40rem;
+                height: 25rem;
+                }
+            }
+        }
+    }
+//...................footer
+footer{
+    .footer-mobile{
+        display: none;
+    }
+    .footer-contenedor{
+        p{
+            width: 10rem;
+        }
+        .imagenes-footer{
+            flex-direction: column;
+            align-self: center;
+            a{
+              list-style: none;
+              text-decoration: none;
+            img{
+                width: 2.2rem;
+                height: 2.2rem;
+                margin-right: 0.3rem;
+            }
+            }
+        }
+    }
+}
+}
+
+// ------------mediaquerie Sobre mi -------------------
+
+@media (max-width:667px){
+    body{
+        margin: 0;
+        padding: 0;
+        .contenedor-menu{
+            .header-astrox{
+                .navbar{
+                        .logo-astrox{
+                           width: 6rem;
+                           height: 6rem;
+                        }
+                        .container-fluid{
+                            justify-content: space-between;
+                        }
+                }
+            }
+        }
+        .sobre-mi{
+            background: $color-div;
+            h1{
+                text-align: center;
+            }
+            #big3-id{
+                display: none;
+            }
+            #big3-mobile{
+                display: flex;
+                flex-direction: column;
+                .sol, .luna, .ascendente{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 3rem;
+                }
+                img{
+                    width: 6rem;
+                }
+            }
+            #historia-mia-id{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 0.5fr 0.1fr 1fr 0.1fr 0.5fr;
+                grid-template-areas: 
+                "imagen-eric imagen-eric"
+                "h2-historia h2-historia"
+                "historia historia"
+                "h3-astro h3-astro"
+                "historia-astro historia-astro";
+                .h2-historia{
+                    grid-area: h2-historia;
+                    width: 20rem;
+                }
+                .historia{
+                    grid-area: historia;
+                    width: 21.5rem;
+                }
+                .h3-astro{
+                    grid-area: h3-astro;
+                }
+                .historia-astro{
+                    grid-area: historia-astro;
+                    width: 21.5rem;
+                }
+                #foto-eric{
+                    width: 23rem;
+                    justify-content: center;
+                    align-items: center;        
+                    margin-top: 1rem;
+                }
+                h1, h2, h3, p{
+                    color: white;
+                    margin-left: 2rem;
+                    text-align: center;
+                }
+            }
+        }// hasta aca va el main
+        #eric-carta-flex{
+            display: flex;
+            .h4-micarta{
+                margin-bottom: 5rem;
+                text-align: center;
+            }
+            .mi-carta{
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                .imagen-carta{
+                    margin-right: 1.7rem;
+                }
+                ul{
+                    margin-right: 2rem;
+                    li{
+                        text-align: center;
+                        margin: 0;
+                        padding: 0;
+                        margin-left: 2rem;
+                    }
+                }
+            }
+            .h4-texto-carta{
+                align-self: center;
+
+            }
+            #texto-signos-micarta{
+                text-align: center;
+                width: 22rem;
+                margin-left: 0.5rem;
+
+            }
+
+        }
+    }
+}
+
+//mediaquerie para tablet (sobre mi)
+//el tema esta en el mq de tablet
+@media (max-width:768px){
+    body{
+        .sobre-mi{
+            background: $color-div;
+            h1{
+                color: white;
+                margin-top: 3rem;
+                margin-left: 0.5rem;
+                margin-bottom: 2rem;
+                padding-top: 2rem;
+            }
+            .big3-mobilecs{
+                display: none;
+            }
+            .big3{
+                display: flex;
+                margin-bottom: 3rem;
+                img{
+                    width: 8rem;
+                }
+                p{
+                flex-direction: column;
+                align-self: center;   
+                color: white; 
+                   
+                }
+            }
+            .historia-mia{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 0.2fr 1fr 0.2fr 0.5fr;
+                grid-template-areas: 
+                "imagen-eric imagen-eric"
+                "h2-historia h2-historia"
+                "historia historia"
+                "h3-astro h3-astro"
+                "historia-astro historia-astro";
+                .h2-historia{
+                    grid-area: h2-historia;
+                }
+                .historia{
+                    grid-area: historia;
+                    width: 45rem;
+                    
+                }
+                .h3-astro{
+                    grid-area: h3-astro;
+                }
+                .historia-astro{
+                    grid-area: historia-astro;
+                                        width: 45rem;
+
+                    
+                }
+                .imagen-eric{
+                    grid-area: imagen-eric;
+                    width: 28rem;
+                    align-self: center;
+                    justify-self: center;
+                }
+                h1, h2, h3, p{
+                    color: white;
+                    margin-left: 0.5rem;
+                    text-align: center;
+                }
+                
+            }
+        }// hasta aca grid
+        .eric-carta{
+            display: grid;
+            grid-template-columns:1fr;
+            grid-template-rows: 0.5fr 1fr 0.5fr 1fr;
+            grid-template-areas:
+            "h4-micarta h4-micarta"
+            "ul imagen-carta"
+            "h4-texto-carta h4-texto-carta"
+            "texto-carta texto-carta";
+            .mi-carta{
+                .imagen-carta{
+                    grid-area: imagen-carta;
+                    width: 20rem;
+                    height: 20rem;
+                    margin-left: 1.5rem;
+                    img{
+                        width: 17rem;
+                        height: 17rem;
+                    }
+                }
+                ul{
+                    grid-area: ul;
+                    padding-left: 0;
+                    li{
+                        text-align: left;
+                        font-size: 13px;
+                    }
+
+                }
+            }
+            .h4-micarta{
+                grid-area: h4-micarta;
+            }
+            .h4-texto-carta{
+                grid-area: h4-texto-carta;
+                text-align: center;
+                margin-left: 1rem;
+            }
+            .texto-carta{
+                grid-area: texto-carta;
+                width: 45rem;
+                text-align: center;
+                margin-left: 1rem;
+            }
+
+        }
+        //...................footer
+        footer{
+            .footer-contenedor{
+             display: none;
+            }
+            .footer-mobile{
+                  background: $color-footer;
+                  padding: 0.5rem;
+                  margin-top: 5rem;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: space-evenly;
+                  margin-top: 2rem;
+                  margin-bottom: 1.2rem;
+                  text-align: center;
+                  color: rgb(31, 31, 31);
+                 .derechos{
+                     font-size: smaller;
+                    a{
+                        text-decoration: none;
+                        list-style: none;
+                        color: rgb(247, 105, 23);
+                        
+                    }
+                 }
+                 .imagenes-footer{
+                     a{
+                         list-style: none;
+                         text-decoration: none;
+                         img{
+                             width: 2.2rem;
+                             height: 2.2rem;
+                             margin-right: 0.8rem;
+                             margin-bottom: 2rem;
+                         }
+                     }
+                 }
+             }  
+           }
+         }//esto es body
+}
+
+// -------------------media querie mobile Carta Natal--------------------------
+@media (max-width:667px){
+    body{
+        div{
+            transition: none;
+            transform: none;
+        }
+        .servicios-carta{
+            h1{
+                width: 23rem;
+                text-align: center;
+                margin-top: 3rem;
+            }
+            p{
+                width: 22rem;
+                text-align: center;
+            }
+        }
+        .servicios{
+            transform: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .carta-online, .carta-revo, .carta-escrita, .carta-escrita-revo{
+            border-radius: 3rem;
+            text-align: center;
+            margin: 1rem;
+            width: 23rem;
+            padding: 2rem;
+            }
+        }
+        .preguntas-frecuentes{
+            .divisor-preguntas{
+                img{
+                    width: 10rem;
+                }
+                h3{
+                    margin-bottom: 2rem;
+                }
+            }
+            h3, h4{
+                text-align: center;
+                margin-bottom: 2rem;
+                margin-top: 2rem;
+                width: 20rem;
+            }
+            p{
+                width: 22rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+//------------------mediaquerie para tablet Carta Natal------------
+
+@media (max-width:768px){
+    .servicios-carta{
+        p{
+            width: 40rem;
+            text-align: center;
+        }
+    }
+    .servicios{
+        gap: 2rem;
+        .carta-escrita, .carta-escrita-revo, .carta-online, .carta-revo{
+            width: 19em;
+            padding: 1rem;
+            h2{
+                margin-bottom: 2rem;
+                margin-top: 2rem;
+            }
+        }
+    }
+    .preguntas-frecuentes{
+        .divisor-preguntas{
+            img{
+                width: 12rem;
+            }
+            h3{
+                margin-bottom: 2rem;
+            }
+        }
+        h3,h4{
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+        p{
+            width: 40rem;
+        }
+    }
+}
+
+// mediaquerie mobile Cursos y talleres
+
+@media (max-width:667px){
+    body{
+        .contenedor-menu{
+            .header-astrox{
+                .navbar{
+                        .logo-astrox{
+                           width: 6rem;
+                           height: 6rem;
+                        }
+                        .container-fluid{
+                            justify-content: space-between;
+                        }
+                }
+            }
+        }
+        #main-talleres-id{
+            display: flex;
+            flex-direction: column;
+            
+            div{
+                transform: none;
+            }
+        .taller-luna, .taller-ascendente, .taller-marte, .taller-venus{
+            align-items: center;
+            justify-content: center;
+            width: 21rem;
+            height: 55rem;
+            padding: 1.5rem;
+            .intensamente{
+                padding-bottom: 3rem;
+            }
+            .rocket{
+                padding-bottom: 3rem;
+
+            }
+
+            .luna-titulo, .ascendente-titulo, .marte-titulo, .venus-titulo{
+                img{
+                    width: 10rem;
+                }
+                p{
+                    width: 18rem!important;
+                    text-align: left;
+                }
+            }
+            .venus-titulo{
+                img{
+                    width: 8rem;
+                    margin-top: 1rem;
+                }
+            }
+            .marte-titulo{
+                img{
+                    width: 11rem;
+                }
+            }
+        }
+        .taller-ascendente:hover{
+
+        }
+    }
+}
+}
+   
+//media querie tablet Cursos y talleres
+
+@media (max-width:768px){
+    body{
+        .main-talleres{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: none;
+            color: white;
+            div{
+                transition: transform 0.5s;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .luna-titulo, .ascendente-titulo, .marte-titulo, .venus-titulo{
+                    flex-direction: column;
+                    p{
+                        width: 35rem;
+                        text-align: center;
+                    }
+                }
+            }
+            div:hover{
+                transform: scale(1.1); 
+            }
+            h2{
+                margin-bottom: 3rem;
+        
+            }
+            .taller-luna{
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                background: $color-div;
+                width: 40rem;
+                text-align: center;
+                padding: 2rem;
+                .luna-titulo{
+                    h2{
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+            .taller-ascendente{
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                background: $color-div;
+                width: 40rem;
+                text-align: center;
+                padding: 2rem;
+                .ascendente-titulo{
+                    h2{
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+            .taller-marte{
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                background: $color-div;
+                width: 40rem;
+                text-align: center;
+                padding: 2rem;
+                img{
+                    padding-top: 2rem;
+                    width: 18rem;
+
+                }
+                .marte-titulo{
+                    h2{
+                        margin-bottom: 0.5rem;
+                    }
+                    p{
+                        padding-bottom: 2rem;
+                        margin-top: 1rem;
+                        width: 35rem ;
+                    }
+                }
+            }
+            .taller-venus{
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                background: $color-div;
+                width: 40rem;
+                padding: 2rem;
+                .venus-titulo{
+                    h2{
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+        }
+        }
+    }
+    
+
+//media queries Astro 101 mobile
+@media (max-width:667px){
+    body{
+        #main-101-id{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .contenedor-menu{
+                .header-astrox{
+                    .navbar{
+                            .logo-astrox{
+                               width: 6rem;
+                               height: 6rem;
+                            }
+                            .container-fluid{
+                                justify-content: space-between;
+                            }
+                    }
+                }
+            }
+            div{
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                padding: 0rem;
+
+            }
+            h1{
+                font-size: 1.5rem;
+                text-align: center;
+                margin-left: 0;
+            }
+            .aside{
+                display: none;
+                .lista{
+                }
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    li{
+                        margin: 0.5rem;
+                        text-align: center;
+                        margin-left: 0;
+                    }
+                }
+            }
+            .pluton-101, .jupiter-101, .luna-101{
+                flex-direction: column;
+                align-content: center;
+                h2{
+                    width:20rem;
+                }
+                img{
+                    width: 20rem;
+                }
+                p{
+                    width: 20rem ;
+                }
+
+            }
+       }
+   }
+
+}
+
+
+
+//mediaqueries Astro 101 tablet
+@media (max-width:768px) {
+    body{
+        .main-101{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .aside{
+                display: none;
+                .lista{
+                }
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    li{
+                        margin: 0.5rem;
+                        text-align: center;
+                        margin-left: 0;
+                    }
+                }
+            }
+            .pluton-101, .jupiter-101, .luna-101{
+                flex-direction: column;
+                align-content: center;
+                h2{
+                    width:30rem;
+                }
+                img{
+                    width: 35rem;
+                }
+                p{
+                    width: 30rem ;
+                }
+
+            }
+       }
+   }
+}
+
+// mq para artiuclo pluton 
+
+// mq para mobile
+@media (max-width:667px){
+    body{
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .articulo-pluton-img{
+                width: 20rem!important;
+                align-self: center;
+            }
+            h1,h2,h3{
+                width: 22rem;
+
+            }
+            p{
+                width: 20rem!important;
+            }
+            .p-indicadores{
+                width: 20rem;
+            }
+            #hades-img{
+                width: 18rem;
+            }
+            .acordeon-casas{
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+                align-items: left;
+                text-align: left;
+                .accordion{
+                    width: 22rem!important;
+                }
+                .accordion-button{
+                    width: auto;
+                    margin-right: 3rem;
+                }
+            }
+            .pluton-aspectos{
+                display: flex;
+                flex-direction: column;
+                .div-fluidos, .div-tensos{
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    p{
+                        width: 20rem;
+                    }
+
+                }
+                .aspectos-acordeon{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: left;
+                    align-items: left;
+                    text-align: left;
+
+                    .accordion{
+                        width: 22rem!important;
+                        
+                    }
+                    .accordion-button{
+                        width: auto;
+                        margin-right: 3rem;
+                    }
+                }
+            }
+            #texto-siguiente{
+                width: 20rem;
+            }
+            
+            }
+           
+           
+             }
+
+
+}
+
+//mq de articulo pluton para tablet
+
+@media (max-width:768px) {
+    body{
+        main{
+            display: flex;
+            flex-direction: column;
+            background: $color-div;
+            margin-top: 3rem;
+            padding-bottom: 3rem;
+            .articulo-pluton-img{
+                width: 40rem;
+                align-self:  center;
+            }
+            p{
+                width: 45rem;
+            }
+            .acordeon-casas{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+    
+                .accordion{
+                    p{
+                        color: white;
+                    }
+                    --bs-accordion-bg: transparent;
+                    --bs-background-color: white;
+                    --bs-accordion-btn-color: white;
+                    --bs-accordion-active-color: black;
+                    --bs-accordion-btn-icon-width: 2rem;
+                    --bs-accordion-active-bg: #e7f1ff;
+                    width: 40rem;
+                    align-self: center;
+                }
+                .accordion-body{
+                    color: white;
+                }
+            }
+            h1{
+                margin-bottom: 3rem;
+                margin-top: 2rem;
+            }
+            .h1-serie{
+                padding-top: 3rem;
+            }
+    
+            h1, h2, h3, p{
+                margin-left: 1rem;
+                text-align: center;
+                color: white;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+            }
+            p{
+               align-self: center;
+               text-align: left;
+            }
+            .p-indicadores{
+                font-style: italic ;
+                font-size: medium;
+                text-decoration: underline;
+                width: 40rem;
+            }
+            .imagen-hades{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                img{
+                    width: 40rem;
+                }
+            }
+    
+           
+            .pluton-casas{
+                display: flex;
+                flex-direction: column;
+                margin-top: 5rem;
+                width: 30rem;
+                justify-content: center;
+                align-items: center;
+                h3{
+                    text-align: center;
+                    margin-bottom: 1rem;
+                }
+                p{
+                    text-align: center;
+                    margin-bottom: 2rem;
+                    
+                }
+            }
+            .pluton-aspectos{
+                display: flex;
+                flex-direction: column;
+                margin-top: 8rem;
+                h3{
+                    text-align: center;
+                    margin-bottom: 1rem;
+                }
+                p{
+                    text-align: left;
+                    margin-bottom: 2rem;
+                }
+                .div-fluidos, .div-tensos{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 2rem;
+                    img{
+                        width: 5rem;
+                        height: 5rem;
+                    }
+                    #conjuncion{
+                        width: 3rem;
+                        height: 3rem;
+                        margin-left: 1rem;
+    
+                    }
+                    .texto-fluidos{
+                        padding-left: 2rem;
+                    }
+                    p{
+                        width: 50rem;
+                        span{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .texto-continuacion{
+                    width: 45rem;
+                    font-style: italic;
+                    font-size: 0.9rem
+    
+                }
+                .aspectos-acordeon{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+    
+                    .accordion{
+                        color: white;
+                        --bs-accordion-bg: transparent;
+                        --bs-background-color: white;
+                        --bs-accordion-btn-color: white;
+                        --bs-accordion-active-color: black;
+                        --bs-accordion-btn-icon-width: 2rem;
+                        --bs-accordion-active-bg: #e7f1ff;
+                        width: 40rem;
+                        align-self: center;
+                        --bs-accordion-border-color: var(--bs-border-color);
+                        --bs-accordion-border-width: 1px;
+                    }
+                    .accordion-body{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

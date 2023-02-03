@@ -1,0 +1,1474 @@
+body h1, body h2, body h3, body h4, body h5 {
+  color: white;
+  margin-top: 1rem;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+body p {
+  font-family: 'Hanken Grotesk', sans-serif; }
+
+body video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translatex(-50%) translatey(-50%);
+  z-index: -1; }
+
+body .boton-wpp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 20px;
+  padding: 25px;
+  transition: ease 0,3s;
+  margin-bottom: 2rem; }
+  body .boton-wpp .hablemos {
+    color: white; }
+  body .boton-wpp .whatsapp img {
+    width: 10rem;
+    height: 10rem; }
+
+body .boton-wpp:hover {
+  transform: scale(1.1);
+  transition: 0.3s; }
+
+body .boton-arriba {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 230px;
+  right: 72px;
+  padding: 25px;
+  transition: ease 0,3s;
+  margin-bottom: 2rem; }
+  body .boton-arriba .arriba {
+    color: white; }
+  body .boton-arriba .imagen-arriba img {
+    width: 3rem;
+    height: 3rem; }
+
+.contenedor-menu {
+  background: linear-gradient(135deg, #69FF97 10%, #00E4FF 100%); }
+  .contenedor-menu .header-astrox {
+    margin-left: 3rem;
+    margin-right: 3rem; }
+    .contenedor-menu .header-astrox .navbar {
+      background: linear-gradient(135deg, #69FF97 10%, #00E4FF 100%); }
+    .contenedor-menu .header-astrox .logo-astrox {
+      width: 10rem;
+      height: 10rem; }
+
+.main-index {
+  background: linear-gradient(to right, #4e4376, #2b5876);
+  margin-top: 5rem; }
+  .main-index .contenido-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .main-index .contenido-principal h1 {
+      color: white;
+      text-align: center;
+      margin-bottom: 4rem; }
+    .main-index .contenido-principal .bloque-imagenes {
+      display: flex; }
+      .main-index .contenido-principal .bloque-imagenes p {
+        flex-direction: column;
+        align-self: center;
+        color: white;
+        width: 15rem;
+        margin-top: 1.5rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        font-family: 'Hanken Grotesk', sans-serif; }
+      .main-index .contenido-principal .bloque-imagenes .mano {
+        width: 30rem;
+        height: 30rem;
+        filter: drop-shadow(5px -2px 1.5px); }
+
+section {
+  background: linear-gradient(to right, #4e4376, #2b5876);
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+
+.section-carta {
+  display: flex;
+  justify-content: space-evenly; }
+  .section-carta .section-astrox {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-carta .section-astrox h2 {
+      text-align: center;
+      color: white;
+      margin-top: 3rem; }
+    .section-carta .section-astrox .texto-h2 {
+      text-align: center;
+      color: white;
+      margin-bottom: 4rem;
+      margin-top: 1.5rem;
+      width: 50rem; }
+    .section-carta .section-astrox a {
+      text-decoration: none;
+      color: orange;
+      margin-bottom: 1.2rem; }
+    .section-carta .section-astrox .cartanatal-servicios {
+      display: flex; }
+      .section-carta .section-astrox .cartanatal-servicios .cartanatal-index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 35rem;
+        height: 35rem;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: #fffff0;
+        margin-bottom: 2rem;
+        overflow: hidden;
+        filter: drop-shadow(5px 4px 3px); }
+        .section-carta .section-astrox .cartanatal-servicios .cartanatal-index img {
+          width: 32rem;
+          height: 32rem;
+          margin-top: 1.5rem;
+          transition: 0.5s;
+          object-fit: cover; }
+        .section-carta .section-astrox .cartanatal-servicios .cartanatal-index img:hover {
+          transform: scale(1.1); }
+    .section-carta .section-astrox .servicios-texto {
+      margin-top: 5rem;
+      text-align: center; }
+    .section-carta .section-astrox h3 {
+      text-align: center;
+      font-size: larger;
+      color: white;
+      margin-bottom: 1.5rem; }
+    .section-carta .section-astrox ul {
+      margin: 0 0 0 0;
+      margin-bottom: 2rem; }
+      .section-carta .section-astrox ul li {
+        margin-left: 4rem;
+        color: white;
+        list-style: none;
+        margin: 0 0 0 0; }
+
+.section-cursos {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+  .section-cursos .video-youtube iframe {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    filter: drop-shadow(5px 2px 3px); }
+  .section-cursos .texto-cursos {
+    align-self: center;
+    color: white;
+    width: 30rem;
+    margin-left: 2rem; }
+    .section-cursos .texto-cursos .cursos {
+      text-align: center;
+      margin-bottom: 2rem; }
+    .section-cursos .texto-cursos a {
+      text-decoration: none;
+      color: white; }
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(5px 4px 3px); }
+  .carousel .carousel-inner div .conociendo-pluton {
+    width: 60rem;
+    height: 40rem; }
+  .carousel .carousel-inner .carousel-item .conociendo-jupiter {
+    width: 60rem;
+    height: 40rem; }
+  .carousel .carousel-inner .carousel-item .conociendo-luna {
+    width: 60rem;
+    height: 40rem; }
+
+footer {
+  background: linear-gradient(135deg, #69FF97 10%, #00E4FF 100%);
+  padding: 0.7rem;
+  margin-top: 5rem; }
+  footer .footer-mobile {
+    display: none; }
+  footer .footer-contenedor {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #1f1f1f; }
+    footer .footer-contenedor .derechos a {
+      text-decoration: none;
+      list-style: none;
+      color: #f76917; }
+    footer .footer-contenedor .imagenes-footer a {
+      list-style: none;
+      text-decoration: none; }
+      footer .footer-contenedor .imagenes-footer a img {
+        width: 2.2rem;
+        height: 2.2rem;
+        margin-right: 0.3rem;
+        filter: drop-shadow(2px 1px 3px); }
+
+body .sobre-mi .big3-mobilecs {
+  display: none; }
+
+body .sobre-mi .big3 {
+  display: flex;
+  justify-content: space-evenly; }
+  body .sobre-mi .big3 img {
+    width: 9rem;
+    margin-left: 3rem; }
+
+body .sobre-mi .historia-mia {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 3rem; }
+  body .sobre-mi .historia-mia p {
+    text-align: center;
+    margin: 0;
+    width: 70rem; }
+  body .sobre-mi .historia-mia img {
+    width: 40rem;
+    align-self: center; }
+
+body .eric-carta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  padding-bottom: 5rem; }
+  body .eric-carta .h4-micarta {
+    color: white;
+    margin-left: 0.5rem;
+    margin-bottom: 10rem;
+    padding-top: 3rem;
+    align-self: center;
+    font-size: xx-large; }
+  body .eric-carta .mi-carta {
+    display: flex;
+    text-align: center;
+    filter: drop-shadow(5px 4px 3px); }
+    body .eric-carta .mi-carta .imagen-carta {
+      width: 45rem;
+      height: 45rem;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background: #fffff0;
+      margin-bottom: 2rem;
+      margin-right: 10rem;
+      overflow: hidden; }
+      body .eric-carta .mi-carta .imagen-carta img {
+        width: 42rem;
+        height: 42rem;
+        margin-top: 1.5rem;
+        transition: 0.5s;
+        object-fit: cover; }
+      body .eric-carta .mi-carta .imagen-carta img:hover {
+        transform: scale(1.1); }
+    body .eric-carta .mi-carta ul {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      margin-right: 6rem; }
+      body .eric-carta .mi-carta ul li {
+        list-style: none;
+        text-decoration: none;
+        color: white; }
+  body .eric-carta .h4-texto-carta {
+    color: white;
+    margin-top: 3rem;
+    align-self: center;
+    margin-bottom: 3rem; }
+  body .eric-carta .texto-carta {
+    text-align: center;
+    color: white;
+    margin-bottom: 5rem;
+    width: 70rem; }
+
+body footer {
+  background: linear-gradient(135deg, #69FF97 10%, #00E4FF 100%);
+  padding: 0.7rem;
+  margin-top: 5rem; }
+  body footer .footer-mobile {
+    display: none; }
+  body footer .footer-contenedor {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #1f1f1f; }
+    body footer .footer-contenedor .derechos a {
+      text-decoration: none;
+      list-style: none;
+      color: #f76917; }
+    body footer .footer-contenedor .imagenes-footer a {
+      list-style: none;
+      text-decoration: none; }
+      body footer .footer-contenedor .imagenes-footer a img {
+        width: 2.2rem;
+        height: 2.2rem;
+        margin-right: 0.3rem; }
+
+.servicios-carta {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  justify-content: center;
+  align-items: center; }
+  .servicios-carta h1, .servicios-carta p {
+    color: white;
+    margin-top: 2rem; }
+  .servicios-carta p {
+    width: 60rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem; }
+
+.servicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "carta-online carta-revo" "carta-escrita carta-escrita-revo";
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  gap: 1rem;
+  background: none; }
+  .servicios div {
+    background: linear-gradient(to right, #4e4376, #2b5876);
+    color: white;
+    border-radius: 3rem;
+    text-align: center;
+    margin: 1rem;
+    width: 35rem;
+    padding: 2rem;
+    transition: transform 0.2s; }
+    .servicios div h2 {
+      margin-bottom: 3rem; }
+    .servicios div a {
+      text-decoration: none;
+      color: white; }
+  .servicios div:hover {
+    transform: scale(1.1); }
+  .servicios .carta-escrita {
+    grid-area: carta-escrita; }
+  .servicios .carta-escrita-revo {
+    grid-area: carta-escrita-revo; }
+  .servicios .carta-online {
+    grid-area: carta-online; }
+  .servicios .carta-revo {
+    grid-area: carta-revo; }
+
+.preguntas-frecuentes {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .preguntas-frecuentes .divisor-preguntas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .preguntas-frecuentes .divisor-preguntas img {
+      width: 14rem;
+      filter: drop-shadow(5px 4px 3px); }
+    .preguntas-frecuentes .divisor-preguntas h3 {
+      margin-bottom: 5rem; }
+  .preguntas-frecuentes h3, .preguntas-frecuentes h4, .preguntas-frecuentes p {
+    color: white; }
+  .preguntas-frecuentes p {
+    width: 50rem;
+    text-align: center; }
+
+.main-talleres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  color: white; }
+  .main-talleres div {
+    transition: transform 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .main-talleres div .luna-titulo, .main-talleres div .ascendente-titulo, .main-talleres div .marte-titulo, .main-talleres div .venus-titulo {
+      flex-direction: column; }
+      .main-talleres div .luna-titulo p, .main-talleres div .ascendente-titulo p, .main-talleres div .marte-titulo p, .main-talleres div .venus-titulo p {
+        width: 40rem;
+        text-align: center; }
+  .main-talleres h2 {
+    margin-bottom: 3rem; }
+  .main-talleres .taller-luna:hover {
+    transform: scale(1.1); }
+  .main-talleres .taller-luna {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: linear-gradient(to right, #4e4376, #2b5876);
+    width: 70rem;
+    height: 40rem;
+    text-align: center;
+    padding: 15rem; }
+    .main-talleres .taller-luna img {
+      width: 15rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      filter: drop-shadow(5px 4px 3px black); }
+    .main-talleres .taller-luna p {
+      margin-top: 1rem; }
+  .main-talleres .taller-ascendente:hover {
+    transform: scale(1.1); }
+  .main-talleres .taller-ascendente {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: linear-gradient(to right, #4e4376, #2b5876);
+    width: 70rem;
+    height: 40rem;
+    text-align: center;
+    padding: 15rem; }
+    .main-talleres .taller-ascendente img {
+      width: 15rem;
+      margin-bottom: 1rem;
+      filter: drop-shadow(5px 4px 3px black); }
+  .main-talleres .taller-marte:hover {
+    transform: scale(1.1); }
+  .main-talleres .taller-marte {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: linear-gradient(to right, #4e4376, #2b5876);
+    width: 70rem;
+    height: 40rem;
+    text-align: center;
+    padding: 15rem; }
+    .main-talleres .taller-marte p {
+      margin-top: 1rem; }
+    .main-talleres .taller-marte img {
+      width: 20rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      filter: drop-shadow(5px 4px 3px black); }
+  .main-talleres .taller-venus:hover {
+    transform: scale(1.1); }
+  .main-talleres .taller-venus {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: linear-gradient(to right, #4e4376, #2b5876);
+    width: 70rem;
+    height: 40rem;
+    padding: 15rem; }
+    .main-talleres .taller-venus img {
+      width: 10rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      filter: drop-shadow(5px 4px 3px black); }
+
+.main-101 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr;
+  grid-template-areas: "h1 h1" "pluton-101 aside" "jupiter-101 aside" "luna-101 aside";
+  justify-content: center;
+  background: linear-gradient(to right, #4e4376, #2b5876);
+  margin-top: 3rem; }
+  .main-101 div {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 4rem; }
+    .main-101 div img {
+      width: 60rem; }
+    .main-101 div p {
+      width: 40rem;
+      margin-top: 3rem;
+      color: white; }
+  .main-101 h1 {
+    grid-area: h1;
+    text-align: center;
+    color: white;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    text-align: left; }
+  .main-101 h2 {
+    color: white;
+    margin-bottom: 5rem; }
+  .main-101 .aside {
+    grid-area: aside;
+    text-align: center; }
+    .main-101 .aside ul li {
+      list-style: none; }
+      .main-101 .aside ul li a {
+        text-decoration: none;
+        color: white; }
+  .main-101 .pluton-101 {
+    grid-area: pluton-101; }
+  .main-101 .jupiter-101 {
+    grid-area: jupiter-101; }
+  .main-101 .luna-101 {
+    grid-area: luna-101; }
+
+body main {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #4e4376, #2b5876);
+  margin-top: 3rem;
+  padding-bottom: 3rem; }
+  body main .articulo-pluton-img {
+    width: 60rem;
+    align-self: center; }
+  body main p {
+    width: 78rem; }
+  body main .acordeon-casas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    body main .acordeon-casas .accordion {
+      --bs-accordion-bg: transparent;
+      --bs-background-color: white;
+      --bs-accordion-btn-color: white;
+      --bs-accordion-active-color: black;
+      --bs-accordion-btn-icon-width: 2rem;
+      --bs-accordion-active-bg: #e7f1ff;
+      width: 50rem;
+      align-self: center; }
+      body main .acordeon-casas .accordion p {
+        color: white; }
+    body main .acordeon-casas .accordion-body {
+      color: white; }
+  body main h1 {
+    margin-bottom: 3rem;
+    margin-top: 2rem; }
+  body main .h1-serie {
+    padding-top: 3rem; }
+  body main h1, body main h2, body main h3, body main p {
+    margin-left: 1rem;
+    text-align: center;
+    color: white;
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
+  body main p {
+    align-self: center;
+    text-align: left; }
+  body main .p-indicadores {
+    font-style: italic;
+    font-size: medium;
+    text-decoration: underline;
+    width: 40rem; }
+  body main .imagen-hades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
+    body main .imagen-hades img {
+      width: 50rem; }
+  body main .pluton-casas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 50rem;
+    justify-content: center;
+    align-items: center; }
+    body main .pluton-casas h3 {
+      text-align: center;
+      margin-bottom: 1rem; }
+    body main .pluton-casas p {
+      text-align: center;
+      margin-bottom: 2rem; }
+  body main .pluton-aspectos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem; }
+    body main .pluton-aspectos h3 {
+      text-align: center;
+      margin-bottom: 1rem; }
+    body main .pluton-aspectos p {
+      text-align: left;
+      margin-bottom: 2rem; }
+    body main .pluton-aspectos .div-fluidos, body main .pluton-aspectos .div-tensos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem; }
+      body main .pluton-aspectos .div-fluidos img, body main .pluton-aspectos .div-tensos img {
+        width: 5rem;
+        height: 5rem; }
+      body main .pluton-aspectos .div-fluidos #conjuncion, body main .pluton-aspectos .div-tensos #conjuncion {
+        width: 3rem;
+        height: 3rem;
+        margin-left: 1rem; }
+      body main .pluton-aspectos .div-fluidos .texto-fluidos, body main .pluton-aspectos .div-tensos .texto-fluidos {
+        padding-left: 2rem; }
+      body main .pluton-aspectos .div-fluidos p, body main .pluton-aspectos .div-tensos p {
+        width: 50rem; }
+        body main .pluton-aspectos .div-fluidos p span, body main .pluton-aspectos .div-tensos p span {
+          text-decoration: underline; }
+    body main .pluton-aspectos .texto-continuacion {
+      width: 70rem;
+      font-style: italic;
+      font-size: 0.9rem; }
+    body main .pluton-aspectos .aspectos-acordeon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      body main .pluton-aspectos .aspectos-acordeon .accordion {
+        color: white;
+        --bs-accordion-bg: transparent;
+        --bs-background-color: white;
+        --bs-accordion-btn-color: white;
+        --bs-accordion-active-color: black;
+        --bs-accordion-btn-icon-width: 2rem;
+        --bs-accordion-active-bg: #e7f1ff;
+        width: 50rem;
+        align-self: center;
+        --bs-accordion-border-color: var(--bs-border-color);
+        --bs-accordion-border-width: 1px; }
+      body main .pluton-aspectos .aspectos-acordeon .accordion-body {
+        color: white; }
+
+@media (max-width: 667px) {
+  html, body {
+    width: 100% !important;
+    overflow-x: hidden !important; }
+  body {
+    margin: 0;
+    padding: 0;
+    margin-right: 0; }
+    body .contenedor-menu .header-astrox .navbar .logo-astrox {
+      width: 6rem;
+      height: 6rem; }
+    body .contenedor-menu .header-astrox .navbar .container-fluid {
+      justify-content: space-between; }
+    body .boton-wpp {
+      right: 10px;
+      padding: 15px;
+      transition: ease 0,3s;
+      margin-bottom: 1rem; }
+      body .boton-wpp .hablemos {
+        color: white; }
+      body .boton-wpp .whatsapp img {
+        width: 5rem;
+        height: 5rem; }
+    body .boton-arriba {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      z-index: 999;
+      border-radius: 50%;
+      bottom: 120px;
+      right: 22px;
+      padding: 25px;
+      transition: ease 0,3s;
+      margin-bottom: 2rem; }
+      body .boton-arriba .arriba {
+        color: white; }
+      body .boton-arriba .imagen-arriba img {
+        width: 2rem;
+        height: 2rem; }
+    body .main-index .contenido-principal .bloque-imagenes .mano {
+      align-self: center;
+      width: 15rem;
+      height: 15rem; }
+    body .section-carta .section-astrox .texto-h2 {
+      width: 20rem; }
+    body .section-carta .section-astrox .cartanatal-servicios {
+      display: flex; }
+      body .section-carta .section-astrox .cartanatal-servicios .cartanatal-index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 18rem;
+        height: 18rem;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: #fffff0;
+        margin-bottom: 2rem;
+        overflow: hidden; }
+        body .section-carta .section-astrox .cartanatal-servicios .cartanatal-index img {
+          width: 15rem;
+          height: 15rem;
+          margin-top: 1.5rem;
+          transition: 0.5s;
+          object-fit: cover; }
+    body .section-carta .section-astrox .servicios-texto {
+      margin-top: 2rem;
+      text-align: center; }
+    body .section-carta .section-astrox h3 {
+      text-align: center;
+      font-size: larger;
+      color: white;
+      margin-bottom: 1.5rem; }
+    body .section-carta .section-astrox ul {
+      margin-left: 0px;
+      padding: 0px;
+      margin-bottom: 2rem;
+      text-align: center;
+      width: 20rem; }
+      body .section-carta .section-astrox ul li {
+        font-size: small;
+        text-align: center;
+        color: white;
+        list-style: none;
+        margin: 0 0 0 0;
+        margin-top: 1rem; }
+    body .section-cursos {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      margin-top: 3rem;
+      margin-bottom: 3rem; }
+      body .section-cursos .texto-cursos {
+        align-self: center;
+        color: white;
+        text-align: center;
+        width: 25rem; }
+        body .section-cursos .texto-cursos p {
+          text-align: center;
+          width: 22rem; }
+        body .section-cursos .texto-cursos .cursos {
+          margin-bottom: 2rem;
+          margin-right: 2rem; }
+        body .section-cursos .texto-cursos a {
+          text-decoration: none;
+          color: white; }
+      body .section-cursos .video-youtube iframe {
+        width: 18rem;
+        height: 15rem;
+        margin: 2rem; }
+    body .carousel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem; }
+      body .carousel .carousel-inner div .conociendo-pluton {
+        width: 21rem;
+        height: 12rem; }
+      body .carousel .carousel-inner .carousel-item .conociendo-jupiter {
+        width: 21rem;
+        height: 12rem; }
+      body .carousel .carousel-inner .carousel-item .conociendo-luna {
+        width: 21rem;
+        height: 14rem; }
+  footer .footer-contenedor {
+    display: none; }
+  footer .footer-mobile {
+    background: linear-gradient(135deg, #69FF97 10%, #00E4FF 100%);
+    padding: 0.5rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    color: #1f1f1f; }
+    footer .footer-mobile .derechos {
+      font-size: smaller; }
+      footer .footer-mobile .derechos a {
+        text-decoration: none;
+        list-style: none;
+        color: #f76917; }
+    footer .footer-mobile .imagenes-footer a {
+      list-style: none;
+      text-decoration: none; }
+      footer .footer-mobile .imagenes-footer a img {
+        width: 2.2rem;
+        height: 2.2rem;
+        margin-right: 0.8rem;
+        margin-bottom: 2rem; } }
+
+@media (max-width: 768px) {
+  .main-index .contenido-principal .bloque-imagenes {
+    display: flex;
+    flex-direction: column; }
+    .main-index .contenido-principal .bloque-imagenes p {
+      align-self: center;
+      color: white;
+      width: 15rem;
+      margin-top: 1.5rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
+      text-align: center; }
+    .main-index .contenido-principal .bloque-imagenes .mano {
+      width: 30rem;
+      height: 30rem; }
+  .section-carta {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-carta .section-astrox h2 {
+      text-align: center;
+      color: white;
+      margin-top: 3rem; }
+    .section-carta .section-astrox a {
+      text-decoration: none;
+      color: orange;
+      margin-bottom: 1.5rem; }
+    .section-carta .section-astrox .texto-h2 {
+      text-align: center;
+      color: white;
+      margin-bottom: 4rem;
+      width: 40rem; }
+    .section-carta .section-astrox .cartanatal-servicios {
+      display: flex;
+      flex-direction: column;
+      align-self: center; }
+    .section-carta .section-astrox .servicios-texto {
+      margin-top: 2rem; }
+      .section-carta .section-astrox .servicios-texto h3 {
+        text-align: center;
+        color: white;
+        margin-top: 2rem; }
+      .section-carta .section-astrox .servicios-texto ul {
+        align-self: center;
+        margin: 0 0 0 0;
+        margin-bottom: 2rem; }
+        .section-carta .section-astrox .servicios-texto ul li {
+          color: white;
+          list-style: none;
+          text-align: center;
+          margin: 0 0 0 0; }
+  .section-cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
+    .section-cursos .video-youtube iframe {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      margin-right: 2rem; }
+    .section-cursos .texto-cursos {
+      align-self: center;
+      color: white;
+      width: 40rem;
+      margin-left: 2rem; }
+      .section-cursos .texto-cursos .cursos {
+        text-align: center;
+        margin-bottom: 2rem;
+        margin-top: 2rem; }
+      .section-cursos .texto-cursos a {
+        text-decoration: none;
+        color: white; }
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem; }
+    .carousel h4 {
+      text-align: center;
+      color: white;
+      margin-top: 2rem;
+      margin-bottom: 1rem; }
+    .carousel .carousel-inner div .conociendo-pluton {
+      width: 40rem;
+      height: 25rem; }
+    .carousel .carousel-inner .carousel-item .conociendo-jupiter, .carousel .carousel-inner .carousel-item .conociendo-luna {
+      width: 40rem;
+      height: 25rem; }
+  footer .footer-mobile {
+    display: none; }
+  footer .footer-contenedor p {
+    width: 10rem; }
+  footer .footer-contenedor .imagenes-footer {
+    flex-direction: column;
+    align-self: center; }
+    footer .footer-contenedor .imagenes-footer a {
+      list-style: none;
+      text-decoration: none; }
+      footer .footer-contenedor .imagenes-footer a img {
+        width: 2.2rem;
+        height: 2.2rem;
+        margin-right: 0.3rem; } }
+
+@media (max-width: 667px) {
+  body {
+    margin: 0;
+    padding: 0; }
+    body .contenedor-menu .header-astrox .navbar .logo-astrox {
+      width: 6rem;
+      height: 6rem; }
+    body .contenedor-menu .header-astrox .navbar .container-fluid {
+      justify-content: space-between; }
+    body .sobre-mi {
+      background: linear-gradient(to right, #4e4376, #2b5876); }
+      body .sobre-mi h1 {
+        text-align: center; }
+      body .sobre-mi #big3-id {
+        display: none; }
+      body .sobre-mi #big3-mobile {
+        display: flex;
+        flex-direction: column; }
+        body .sobre-mi #big3-mobile .sol, body .sobre-mi #big3-mobile .luna, body .sobre-mi #big3-mobile .ascendente {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding-left: 3rem; }
+        body .sobre-mi #big3-mobile img {
+          width: 6rem; }
+      body .sobre-mi #historia-mia-id {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.1fr 1fr 0.1fr 0.5fr;
+        grid-template-areas: "imagen-eric imagen-eric" "h2-historia h2-historia" "historia historia" "h3-astro h3-astro" "historia-astro historia-astro"; }
+        body .sobre-mi #historia-mia-id .h2-historia {
+          grid-area: h2-historia;
+          width: 20rem; }
+        body .sobre-mi #historia-mia-id .historia {
+          grid-area: historia;
+          width: 21.5rem; }
+        body .sobre-mi #historia-mia-id .h3-astro {
+          grid-area: h3-astro; }
+        body .sobre-mi #historia-mia-id .historia-astro {
+          grid-area: historia-astro;
+          width: 21.5rem; }
+        body .sobre-mi #historia-mia-id #foto-eric {
+          width: 23rem;
+          justify-content: center;
+          align-items: center;
+          margin-top: 1rem; }
+        body .sobre-mi #historia-mia-id h1, body .sobre-mi #historia-mia-id h2, body .sobre-mi #historia-mia-id h3, body .sobre-mi #historia-mia-id p {
+          color: white;
+          margin-left: 2rem;
+          text-align: center; }
+    body #eric-carta-flex {
+      display: flex; }
+      body #eric-carta-flex .h4-micarta {
+        margin-bottom: 5rem;
+        text-align: center; }
+      body #eric-carta-flex .mi-carta {
+        display: flex;
+        flex-direction: column;
+        align-self: center; }
+        body #eric-carta-flex .mi-carta .imagen-carta {
+          margin-right: 1.7rem; }
+        body #eric-carta-flex .mi-carta ul {
+          margin-right: 2rem; }
+          body #eric-carta-flex .mi-carta ul li {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            margin-left: 2rem; }
+      body #eric-carta-flex .h4-texto-carta {
+        align-self: center; }
+      body #eric-carta-flex #texto-signos-micarta {
+        text-align: center;
+        width: 22rem;
+        margin-left: 0.5rem; } }
+
+@media (max-width: 768px) {
+  body .sobre-mi {
+    background: linear-gradient(to right, #4e4376, #2b5876); }
+    body .sobre-mi h1 {
+      color: white;
+      margin-top: 3rem;
+      margin-left: 0.5rem;
+      margin-bottom: 2rem;
+      padding-top: 2rem; }
+    body .sobre-mi .big3-mobilecs {
+      display: none; }
+    body .sobre-mi .big3 {
+      display: flex;
+      margin-bottom: 3rem; }
+      body .sobre-mi .big3 img {
+        width: 8rem; }
+      body .sobre-mi .big3 p {
+        flex-direction: column;
+        align-self: center;
+        color: white; }
+    body .sobre-mi .historia-mia {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 0.2fr 1fr 0.2fr 0.5fr;
+      grid-template-areas: "imagen-eric imagen-eric" "h2-historia h2-historia" "historia historia" "h3-astro h3-astro" "historia-astro historia-astro"; }
+      body .sobre-mi .historia-mia .h2-historia {
+        grid-area: h2-historia; }
+      body .sobre-mi .historia-mia .historia {
+        grid-area: historia;
+        width: 45rem; }
+      body .sobre-mi .historia-mia .h3-astro {
+        grid-area: h3-astro; }
+      body .sobre-mi .historia-mia .historia-astro {
+        grid-area: historia-astro;
+        width: 45rem; }
+      body .sobre-mi .historia-mia .imagen-eric {
+        grid-area: imagen-eric;
+        width: 28rem;
+        align-self: center;
+        justify-self: center; }
+      body .sobre-mi .historia-mia h1, body .sobre-mi .historia-mia h2, body .sobre-mi .historia-mia h3, body .sobre-mi .historia-mia p {
+        color: white;
+        margin-left: 0.5rem;
+        text-align: center; }
+  body .eric-carta {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr 1fr;
+    grid-template-areas: "h4-micarta h4-micarta" "ul imagen-carta" "h4-texto-carta h4-texto-carta" "texto-carta texto-carta"; }
+    body .eric-carta .mi-carta .imagen-carta {
+      grid-area: imagen-carta;
+      width: 20rem;
+      height: 20rem;
+      margin-left: 1.5rem; }
+      body .eric-carta .mi-carta .imagen-carta img {
+        width: 17rem;
+        height: 17rem; }
+    body .eric-carta .mi-carta ul {
+      grid-area: ul;
+      padding-left: 0; }
+      body .eric-carta .mi-carta ul li {
+        text-align: left;
+        font-size: 13px; }
+    body .eric-carta .h4-micarta {
+      grid-area: h4-micarta; }
+    body .eric-carta .h4-texto-carta {
+      grid-area: h4-texto-carta;
+      text-align: center;
+      margin-left: 1rem; }
+    body .eric-carta .texto-carta {
+      grid-area: texto-carta;
+      width: 45rem;
+      text-align: center;
+      margin-left: 1rem; }
+  body footer .footer-contenedor {
+    display: none; }
+  body footer .footer-mobile {
+    background: linear-gradient(135deg, #69FF97 10%, #00E4FF 100%);
+    padding: 0.5rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    color: #1f1f1f; }
+    body footer .footer-mobile .derechos {
+      font-size: smaller; }
+      body footer .footer-mobile .derechos a {
+        text-decoration: none;
+        list-style: none;
+        color: #f76917; }
+    body footer .footer-mobile .imagenes-footer a {
+      list-style: none;
+      text-decoration: none; }
+      body footer .footer-mobile .imagenes-footer a img {
+        width: 2.2rem;
+        height: 2.2rem;
+        margin-right: 0.8rem;
+        margin-bottom: 2rem; } }
+
+@media (max-width: 667px) {
+  body div {
+    transition: none;
+    transform: none; }
+  body .servicios-carta h1 {
+    width: 23rem;
+    text-align: center;
+    margin-top: 3rem; }
+  body .servicios-carta p {
+    width: 22rem;
+    text-align: center; }
+  body .servicios {
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body .servicios .carta-online, body .servicios .carta-revo, body .servicios .carta-escrita, body .servicios .carta-escrita-revo {
+      border-radius: 3rem;
+      text-align: center;
+      margin: 1rem;
+      width: 23rem;
+      padding: 2rem; }
+  body .preguntas-frecuentes .divisor-preguntas img {
+    width: 10rem; }
+  body .preguntas-frecuentes .divisor-preguntas h3 {
+    margin-bottom: 2rem; }
+  body .preguntas-frecuentes h3, body .preguntas-frecuentes h4 {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width: 20rem; }
+  body .preguntas-frecuentes p {
+    width: 22rem;
+    text-align: center; } }
+
+@media (max-width: 768px) {
+  .servicios-carta p {
+    width: 40rem;
+    text-align: center; }
+  .servicios {
+    gap: 2rem; }
+    .servicios .carta-escrita, .servicios .carta-escrita-revo, .servicios .carta-online, .servicios .carta-revo {
+      width: 19em;
+      padding: 1rem; }
+      .servicios .carta-escrita h2, .servicios .carta-escrita-revo h2, .servicios .carta-online h2, .servicios .carta-revo h2 {
+        margin-bottom: 2rem;
+        margin-top: 2rem; }
+  .preguntas-frecuentes .divisor-preguntas img {
+    width: 12rem; }
+  .preguntas-frecuentes .divisor-preguntas h3 {
+    margin-bottom: 2rem; }
+  .preguntas-frecuentes h3, .preguntas-frecuentes h4 {
+    margin-bottom: 2rem;
+    margin-top: 2rem; }
+  .preguntas-frecuentes p {
+    width: 40rem; } }
+
+@media (max-width: 667px) {
+  body .contenedor-menu .header-astrox .navbar .logo-astrox {
+    width: 6rem;
+    height: 6rem; }
+  body .contenedor-menu .header-astrox .navbar .container-fluid {
+    justify-content: space-between; }
+  body #main-talleres-id {
+    display: flex;
+    flex-direction: column; }
+    body #main-talleres-id div {
+      transform: none; }
+    body #main-talleres-id .taller-luna, body #main-talleres-id .taller-ascendente, body #main-talleres-id .taller-marte, body #main-talleres-id .taller-venus {
+      align-items: center;
+      justify-content: center;
+      width: 21rem;
+      height: 55rem;
+      padding: 1.5rem; }
+      body #main-talleres-id .taller-luna .intensamente, body #main-talleres-id .taller-ascendente .intensamente, body #main-talleres-id .taller-marte .intensamente, body #main-talleres-id .taller-venus .intensamente {
+        padding-bottom: 3rem; }
+      body #main-talleres-id .taller-luna .rocket, body #main-talleres-id .taller-ascendente .rocket, body #main-talleres-id .taller-marte .rocket, body #main-talleres-id .taller-venus .rocket {
+        padding-bottom: 3rem; }
+      body #main-talleres-id .taller-luna .luna-titulo img, body #main-talleres-id .taller-luna .ascendente-titulo img, body #main-talleres-id .taller-luna .marte-titulo img, body #main-talleres-id .taller-luna .venus-titulo img, body #main-talleres-id .taller-ascendente .luna-titulo img, body #main-talleres-id .taller-ascendente .ascendente-titulo img, body #main-talleres-id .taller-ascendente .marte-titulo img, body #main-talleres-id .taller-ascendente .venus-titulo img, body #main-talleres-id .taller-marte .luna-titulo img, body #main-talleres-id .taller-marte .ascendente-titulo img, body #main-talleres-id .taller-marte .marte-titulo img, body #main-talleres-id .taller-marte .venus-titulo img, body #main-talleres-id .taller-venus .luna-titulo img, body #main-talleres-id .taller-venus .ascendente-titulo img, body #main-talleres-id .taller-venus .marte-titulo img, body #main-talleres-id .taller-venus .venus-titulo img {
+        width: 10rem; }
+      body #main-talleres-id .taller-luna .luna-titulo p, body #main-talleres-id .taller-luna .ascendente-titulo p, body #main-talleres-id .taller-luna .marte-titulo p, body #main-talleres-id .taller-luna .venus-titulo p, body #main-talleres-id .taller-ascendente .luna-titulo p, body #main-talleres-id .taller-ascendente .ascendente-titulo p, body #main-talleres-id .taller-ascendente .marte-titulo p, body #main-talleres-id .taller-ascendente .venus-titulo p, body #main-talleres-id .taller-marte .luna-titulo p, body #main-talleres-id .taller-marte .ascendente-titulo p, body #main-talleres-id .taller-marte .marte-titulo p, body #main-talleres-id .taller-marte .venus-titulo p, body #main-talleres-id .taller-venus .luna-titulo p, body #main-talleres-id .taller-venus .ascendente-titulo p, body #main-talleres-id .taller-venus .marte-titulo p, body #main-talleres-id .taller-venus .venus-titulo p {
+        width: 18rem !important;
+        text-align: left; }
+      body #main-talleres-id .taller-luna .venus-titulo img, body #main-talleres-id .taller-ascendente .venus-titulo img, body #main-talleres-id .taller-marte .venus-titulo img, body #main-talleres-id .taller-venus .venus-titulo img {
+        width: 8rem;
+        margin-top: 1rem; }
+      body #main-talleres-id .taller-luna .marte-titulo img, body #main-talleres-id .taller-ascendente .marte-titulo img, body #main-talleres-id .taller-marte .marte-titulo img, body #main-talleres-id .taller-venus .marte-titulo img {
+        width: 11rem; } }
+
+@media (max-width: 768px) {
+  body .main-talleres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    color: white; }
+    body .main-talleres div {
+      transition: transform 0.5s;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      body .main-talleres div .luna-titulo, body .main-talleres div .ascendente-titulo, body .main-talleres div .marte-titulo, body .main-talleres div .venus-titulo {
+        flex-direction: column; }
+        body .main-talleres div .luna-titulo p, body .main-talleres div .ascendente-titulo p, body .main-talleres div .marte-titulo p, body .main-talleres div .venus-titulo p {
+          width: 35rem;
+          text-align: center; }
+    body .main-talleres div:hover {
+      transform: scale(1.1); }
+    body .main-talleres h2 {
+      margin-bottom: 3rem; }
+    body .main-talleres .taller-luna {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      background: linear-gradient(to right, #4e4376, #2b5876);
+      width: 40rem;
+      text-align: center;
+      padding: 2rem; }
+      body .main-talleres .taller-luna .luna-titulo h2 {
+        margin-bottom: 0.5rem; }
+    body .main-talleres .taller-ascendente {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      background: linear-gradient(to right, #4e4376, #2b5876);
+      width: 40rem;
+      text-align: center;
+      padding: 2rem; }
+      body .main-talleres .taller-ascendente .ascendente-titulo h2 {
+        margin-bottom: 0.5rem; }
+    body .main-talleres .taller-marte {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      background: linear-gradient(to right, #4e4376, #2b5876);
+      width: 40rem;
+      text-align: center;
+      padding: 2rem; }
+      body .main-talleres .taller-marte img {
+        padding-top: 2rem;
+        width: 18rem; }
+      body .main-talleres .taller-marte .marte-titulo h2 {
+        margin-bottom: 0.5rem; }
+      body .main-talleres .taller-marte .marte-titulo p {
+        padding-bottom: 2rem;
+        margin-top: 1rem;
+        width: 35rem; }
+    body .main-talleres .taller-venus {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      background: linear-gradient(to right, #4e4376, #2b5876);
+      width: 40rem;
+      padding: 2rem; }
+      body .main-talleres .taller-venus .venus-titulo h2 {
+        margin-bottom: 0.5rem; } }
+
+@media (max-width: 667px) {
+  body #main-101-id {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body #main-101-id .contenedor-menu .header-astrox .navbar .logo-astrox {
+      width: 6rem;
+      height: 6rem; }
+    body #main-101-id .contenedor-menu .header-astrox .navbar .container-fluid {
+      justify-content: space-between; }
+    body #main-101-id div {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      padding: 0rem; }
+    body #main-101-id h1 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-left: 0; }
+    body #main-101-id .aside {
+      display: none; }
+      body #main-101-id .aside ul {
+        display: flex;
+        flex-direction: row; }
+        body #main-101-id .aside ul li {
+          margin: 0.5rem;
+          text-align: center;
+          margin-left: 0; }
+    body #main-101-id .pluton-101, body #main-101-id .jupiter-101, body #main-101-id .luna-101 {
+      flex-direction: column;
+      align-content: center; }
+      body #main-101-id .pluton-101 h2, body #main-101-id .jupiter-101 h2, body #main-101-id .luna-101 h2 {
+        width: 20rem; }
+      body #main-101-id .pluton-101 img, body #main-101-id .jupiter-101 img, body #main-101-id .luna-101 img {
+        width: 20rem; }
+      body #main-101-id .pluton-101 p, body #main-101-id .jupiter-101 p, body #main-101-id .luna-101 p {
+        width: 20rem; } }
+
+@media (max-width: 768px) {
+  body .main-101 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body .main-101 .aside {
+      display: none; }
+      body .main-101 .aside ul {
+        display: flex;
+        flex-direction: row; }
+        body .main-101 .aside ul li {
+          margin: 0.5rem;
+          text-align: center;
+          margin-left: 0; }
+    body .main-101 .pluton-101, body .main-101 .jupiter-101, body .main-101 .luna-101 {
+      flex-direction: column;
+      align-content: center; }
+      body .main-101 .pluton-101 h2, body .main-101 .jupiter-101 h2, body .main-101 .luna-101 h2 {
+        width: 30rem; }
+      body .main-101 .pluton-101 img, body .main-101 .jupiter-101 img, body .main-101 .luna-101 img {
+        width: 35rem; }
+      body .main-101 .pluton-101 p, body .main-101 .jupiter-101 p, body .main-101 .luna-101 p {
+        width: 30rem; } }
+
+@media (max-width: 667px) {
+  body main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    body main .articulo-pluton-img {
+      width: 20rem !important;
+      align-self: center; }
+    body main h1, body main h2, body main h3 {
+      width: 22rem; }
+    body main p {
+      width: 20rem !important; }
+    body main .p-indicadores {
+      width: 20rem; }
+    body main #hades-img {
+      width: 18rem; }
+    body main .acordeon-casas {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: left;
+      text-align: left; }
+      body main .acordeon-casas .accordion {
+        width: 22rem !important; }
+      body main .acordeon-casas .accordion-button {
+        width: auto;
+        margin-right: 3rem; }
+    body main .pluton-aspectos {
+      display: flex;
+      flex-direction: column; }
+      body main .pluton-aspectos .div-fluidos, body main .pluton-aspectos .div-tensos {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        body main .pluton-aspectos .div-fluidos p, body main .pluton-aspectos .div-tensos p {
+          width: 20rem; }
+      body main .pluton-aspectos .aspectos-acordeon {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        text-align: left; }
+        body main .pluton-aspectos .aspectos-acordeon .accordion {
+          width: 22rem !important; }
+        body main .pluton-aspectos .aspectos-acordeon .accordion-button {
+          width: auto;
+          margin-right: 3rem; }
+    body main #texto-siguiente {
+      width: 20rem; } }
+
+@media (max-width: 768px) {
+  body main {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #4e4376, #2b5876);
+    margin-top: 3rem;
+    padding-bottom: 3rem; }
+    body main .articulo-pluton-img {
+      width: 40rem;
+      align-self: center; }
+    body main p {
+      width: 45rem; }
+    body main .acordeon-casas {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      body main .acordeon-casas .accordion {
+        --bs-accordion-bg: transparent;
+        --bs-background-color: white;
+        --bs-accordion-btn-color: white;
+        --bs-accordion-active-color: black;
+        --bs-accordion-btn-icon-width: 2rem;
+        --bs-accordion-active-bg: #e7f1ff;
+        width: 40rem;
+        align-self: center; }
+        body main .acordeon-casas .accordion p {
+          color: white; }
+      body main .acordeon-casas .accordion-body {
+        color: white; }
+    body main h1 {
+      margin-bottom: 3rem;
+      margin-top: 2rem; }
+    body main .h1-serie {
+      padding-top: 3rem; }
+    body main h1, body main h2, body main h3, body main p {
+      margin-left: 1rem;
+      text-align: center;
+      color: white;
+      margin-top: 3rem;
+      margin-bottom: 3rem; }
+    body main p {
+      align-self: center;
+      text-align: left; }
+    body main .p-indicadores {
+      font-style: italic;
+      font-size: medium;
+      text-decoration: underline;
+      width: 40rem; }
+    body main .imagen-hades {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3rem;
+      margin-bottom: 3rem; }
+      body main .imagen-hades img {
+        width: 40rem; }
+    body main .pluton-casas {
+      display: flex;
+      flex-direction: column;
+      margin-top: 5rem;
+      width: 30rem;
+      justify-content: center;
+      align-items: center; }
+      body main .pluton-casas h3 {
+        text-align: center;
+        margin-bottom: 1rem; }
+      body main .pluton-casas p {
+        text-align: center;
+        margin-bottom: 2rem; }
+    body main .pluton-aspectos {
+      display: flex;
+      flex-direction: column;
+      margin-top: 8rem; }
+      body main .pluton-aspectos h3 {
+        text-align: center;
+        margin-bottom: 1rem; }
+      body main .pluton-aspectos p {
+        text-align: left;
+        margin-bottom: 2rem; }
+      body main .pluton-aspectos .div-fluidos, body main .pluton-aspectos .div-tensos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem; }
+        body main .pluton-aspectos .div-fluidos img, body main .pluton-aspectos .div-tensos img {
+          width: 5rem;
+          height: 5rem; }
+        body main .pluton-aspectos .div-fluidos #conjuncion, body main .pluton-aspectos .div-tensos #conjuncion {
+          width: 3rem;
+          height: 3rem;
+          margin-left: 1rem; }
+        body main .pluton-aspectos .div-fluidos .texto-fluidos, body main .pluton-aspectos .div-tensos .texto-fluidos {
+          padding-left: 2rem; }
+        body main .pluton-aspectos .div-fluidos p, body main .pluton-aspectos .div-tensos p {
+          width: 50rem; }
+          body main .pluton-aspectos .div-fluidos p span, body main .pluton-aspectos .div-tensos p span {
+            text-decoration: underline; }
+      body main .pluton-aspectos .texto-continuacion {
+        width: 45rem;
+        font-style: italic;
+        font-size: 0.9rem; }
+      body main .pluton-aspectos .aspectos-acordeon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        body main .pluton-aspectos .aspectos-acordeon .accordion {
+          color: white;
+          --bs-accordion-bg: transparent;
+          --bs-background-color: white;
+          --bs-accordion-btn-color: white;
+          --bs-accordion-active-color: black;
+          --bs-accordion-btn-icon-width: 2rem;
+          --bs-accordion-active-bg: #e7f1ff;
+          width: 40rem;
+          align-self: center;
+          --bs-accordion-border-color: var(--bs-border-color);
+          --bs-accordion-border-width: 1px; }
+        body main .pluton-aspectos .aspectos-acordeon .accordion-body {
+          color: white; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }

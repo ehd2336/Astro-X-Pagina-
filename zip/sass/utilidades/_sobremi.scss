@@ -1,0 +1,136 @@
+body{
+   .sobre-mi{
+    .big3-mobilecs{
+        display: none;
+    }
+    .big3{
+        display: flex;
+        justify-content: space-evenly;
+        img{
+            width: 9rem;
+            margin-left: 3rem;
+            
+        }
+    }
+    .historia-mia{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin-top: 3rem;
+        p{
+            text-align: center;
+            margin: 0;
+            width: 70rem;
+        }
+        img{
+            width: 40rem;
+            align-self: center;
+        }
+    }
+   }
+        //section que contiene carta natal y planetas
+    
+    .eric-carta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+        padding-bottom: 5rem;
+        .h4-micarta{
+            color: white;
+            margin-left: 0.5rem;
+            margin-bottom: 10rem;
+            padding-top: 3rem;
+            align-self: center;
+            font-size:xx-large;
+        }
+        .mi-carta{
+                display: flex;
+                text-align: center;
+                filter: drop-shadow(5px 4px 3px);
+
+                .imagen-carta{
+                    width: 45rem;
+                    height: 45rem;
+                    -moz-border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    border-radius: 50%;
+                    background: #fffff0;
+                    margin-bottom: 2rem;
+                    margin-right: 10rem;
+                    overflow: hidden;
+                    img{
+                          width: 42rem;
+                          height: 42rem;
+                          margin-top: 1.5rem;
+                          transition: 0.5s;
+                          object-fit: cover;
+                    }
+                    img:hover{
+                          transform:scale(1.1)
+                    }
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    align-self: center;
+                    margin-right: 6rem;
+                    li{
+                        list-style: none;
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+        }
+        .h4-texto-carta{
+                color: $color-h1;
+                margin-top: 3rem;
+                align-self: center;
+                margin-bottom: 3rem;
+        }
+        .texto-carta{
+                text-align: center;
+                color: $color-p;
+                margin-bottom: 5rem;
+                width: 70rem;
+        }
+    }
+    
+    footer{
+        background: $color-footer;
+        padding: 0.7rem;
+        margin-top: 5rem;
+        .footer-mobile{
+            display: none;
+        }
+        .footer-contenedor{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: rgb(31, 31, 31);
+            .derechos{
+               a{
+                   text-decoration: none;
+                   list-style: none;
+                   color: rgb(247, 105, 23);
+               }
+            }
+                .imagenes-footer{
+                    a{
+                        list-style: none;
+                        text-decoration: none;
+                        img{
+                            width: 2.2rem;
+                            height: 2.2rem;
+                            margin-right: 0.3rem;
+                        }
+                    }
+                }
+        }
+        
+    }
+}
+
+// footer
