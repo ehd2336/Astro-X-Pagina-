@@ -22,16 +22,16 @@ body .boton-wpp {
   position: fixed;
   z-index: 999;
   border-radius: 50%;
-  bottom: 20px;
-  right: 20px;
+  bottom: 0px;
+  right: 5px;
   padding: 25px;
   transition: ease 0,3s;
   margin-bottom: 2rem; }
   body .boton-wpp .hablemos {
     color: white; }
   body .boton-wpp .whatsapp img {
-    width: 10rem;
-    height: 10rem; }
+    width: 11rem;
+    height: 11rem; }
 
 body .boton-wpp:hover {
   transform: scale(1.1);
@@ -44,11 +44,11 @@ body .boton-arriba {
   position: fixed;
   z-index: 999;
   border-radius: 50%;
-  bottom: 230px;
-  right: 72px;
+  bottom: 80px;
+  left: 40px;
   padding: 25px;
   transition: ease 0,3s;
-  margin-bottom: 2rem; }
+  margin-bottom: 1rem; }
   body .boton-arriba .arriba {
     color: white; }
   body .boton-arriba .imagen-arriba img {
@@ -662,7 +662,8 @@ body main {
       transition: ease 0,3s;
       margin-bottom: 1rem; }
       body .boton-wpp .hablemos {
-        color: white; }
+        color: black;
+        font-weight: bold; }
       body .boton-wpp .whatsapp img {
         width: 5rem;
         height: 5rem; }
@@ -673,8 +674,8 @@ body main {
       position: fixed;
       z-index: 999;
       border-radius: 50%;
-      bottom: 120px;
-      right: 22px;
+      bottom: 35px;
+      left: 10px;
       padding: 25px;
       transition: ease 0,3s;
       margin-bottom: 2rem; }
